@@ -1,12 +1,9 @@
-# HeatPumpController
-The Valden Heat Pump controller is a platform to precisely control heat pumps
-
 ### Valden: Heat Pump Controller v1.x
 <b>  The Valden Heat Pump controller is a platform to precisely control heat 
 pumps. Controller can be easily used for newly designed heat pumps (HPs), including series, as repair controller or as control system for experiments with refrigeration equipment.</b>
 <br><br>
 
-[[_TOC_]]
+<p style='color:red'>GENERATE TOC HERE</p>
 
 ## Specs
 - 12V 0.5A DC power supply, 
