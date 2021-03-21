@@ -176,8 +176,8 @@ For refrigerants and oils types comparison see wiki.<br>
 
 ## Personal experience
 Note that the SCT013 sensor and the current monitoring scheme cannot be used for accurate measurements and accurate COP calculations. Use wattmeter for accurate power measurements.<br>
-Measure the temperature of a warm floor with sensor at one point does not make sense - it's better to deal with temperature of the "hot in" water coming from all over the floor, as implemented in firmware.<br>
-The weather-dependent  (both outdoor and indoor temperature dependent) system does not make sense for 30-150 m2 buildings . The system turns out to be difficult and works bad due to unpredictable ventilation. And also due to the unpredictability of heat emitted in the house by other sources.<br>
+Measuring the temperature of a warm floor with sensor at one point is a bad idea - it's better to deal with temperature of the "hot in" water coming from all over the floor, as implemented in firmware.<br>
+The weather-dependent  (both outdoor and indoor temperature dependent) system does not work fine for 30-150 m2 buildings. The system turns out to be difficult and works bad due to unpredictable ventilation. And also due to the unpredictability of heat emitted in the house by other sources.<br>
 I tried the scheme with a flooded evaporator in 2019 and found it extremely problematic, then refused to use it.<br>
 Deep regeneration schemes are useful only for some refrigerants and only in certain temperature ranges. I also tried deep regeneration, I was convinced that the theory coincides with the practice and then also refused this idea.<br>
 In general, it is possible by complicating the refrigeration scheme to win somewhere 1%, somewhere 3%, but all this leads to significant time and money costs, compared to not very much profit.<br>
