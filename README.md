@@ -9,9 +9,9 @@ pumps. Controller can be easily used for newly designed heat pumps (HPs), includ
 - 12V 0.5A DC power supply, 
 - 230V output
 - up to 12 T sensors, -55..+125 °C range,
-- 4 relays (<sub><sup>Compressor, Hot CP or Air Fan, Cold CP or Air Fan, Crankcase Heater</sup></sub>)
+- 4 relays (<sup>Compressor, Hot CP or Air Fan, Cold CP or Air Fan, Crankcase Heater</sup>)
 - 2 inputs (<sub>Hot and cold side refrigerant over/under pressure NC sensors</sub>)
-- 6 pin EEV connection (4 * coils + 2 * 12V)
+- 6 pin EEV connection <sub>(4 * coils + 2 * 12V)</sub>
 - control via remote display or local Serial(UART 5V)
 - automatically turns on/of system when heating required
 - takes care of system components, built-in protections: cold start, overheat, short-term power loss, power overload, ground loop freeze and compressor protection against liquid.
