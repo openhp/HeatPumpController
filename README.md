@@ -130,21 +130,23 @@ qwer
 ## Diagnostic and status messages
 **LastStopCause messages. Why system was stopped**<br><br>
 
-| **Normal_stop** | normal stop, i.e. setpoint sensor temperature > setpoint, so no need to heat anymore<br>
-| **P.WtMax:_WATTS_**| 	Protective stop, overcurrent, double check your system, **MAX_WATTS** and **POWERON_HIGHTIME** options<br>
-**E.Tci, E.Tco, E.Tbe, E.Tae, E.Ts1, E.Ts2, E.Tcrc, E.Treg, E.Tac, E.Tbc, E.Tho, E.Thi** 	Sensor lost, check wiring. Refer to "T sensors abbreviations"<br>
-**E.PresCold**	Cold side pressure too low, check refrigerant charge and pressure sensors<br>
-**E.PresHot**	Hot side pressure too high, check refrigerant charge and pressure sensors<br>
-**P.Tho** Protective stop, check system, see **T_HOT_MAX** option <br>
-**P.Thi** Protective stop, check system, see **T_HOT_MAX** option <br>
-**P.Tcrc** Protective stop, check system, see **T_CRANKCASE_MAX** option <br>
-**P.Tae** Protective stop, check system, see **T_COLDREF_MIN** option <br>
-**P.Tbe** Protective stop, check system, see **T_BEFORE_EVAP_WORK_MIN** option <br>
-**P.Tbc** Protective stop, check system, see **T_BEFORE_CONDENSER_MAX** option <br>
-**P.Tci** Protective stop, check system, see **T_COLD_MIN** option <br>
-**P.Tco** Protective stop, check system, see **T_COLD_MIN** option <br>
-P.W.TcrcMIN , see **T_WORKINGOK_CRANKCASE_MIN** option <br>
-P.W.wattMIN  c_wattage_max/5 , see **MAX_WATTS** option <br>
+| Message | description |
+| ------------- | ------------- |
+| **Normal_stop** 	| Normal stop, i.e. setpoint sensor temperature > setpoint, so no need to heat anymore	|
+| **P.WtMax:_WATTS_**	| Protective stop, overcurrent, double check your system, **MAX_WATTS** and **POWERON_HIGHTIME** options |
+| **E.Tci, E.Tco, E.Tbe, <br> E.Tae, E.Ts1, E.Ts2, <br> E.Tcrc, E.Treg, E.Tac, <br> E.Tbc, E.Tho, E.Thi** |	Sensor lost, check wiring. Refer to "T sensors abbreviations"|
+| **E.PresCold**	| Cold side pressure too low, check refrigerant charge and pressure sensors |
+| **E.PresHot**		| Hot side pressure too high, check refrigerant charge and pressure sensors |
+| **P.Tho** 		| Protective stop, check system, see **T_HOT_MAX** option |
+| **P.Thi** 		| Protective stop, check system, see **T_HOT_MAX** option |
+| **P.Tcrc**		| Protective stop, check system, see **T_CRANKCASE_MAX** option |
+| **P.Tae**		| Protective stop, check system, see **T_COLDREF_MIN** option |
+| **P.Tbe**		| Protective stop, check system, see **T_BEFORE_EVAP_WORK_MIN** option |
+| **P.Tbc**		| Protective stop, check system, see **T_BEFORE_CONDENSER_MAX** option |
+| **P.Tci**		| Protective stop, check system, see **T_COLD_MIN** option |
+| **P.Tco**		| Protective stop, check system, see **T_COLD_MIN** option |
+| **P.W.TcrcMIN**	| see **T_WORKINGOK_CRANKCASE_MIN** option |
+| **P.W.wattMIN**	| c_wattage_max/5 , see **MAX_WATTS** option |
 
 **LastStartMessage messages. What event system is waiting for starting work and some additional events**<br><br>
 **StCntd:_seconds_**	startup countdown, short-term power loss protection<br>
