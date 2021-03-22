@@ -37,7 +37,7 @@ pumps. Controller can be easily used for newly designed heat pumps (HPs), includ
 ## Get your own copy and PCB assembly
 - download the PCB gerber file, [Valden_HeatPumpController_Gerber](./Valden_HeatPumpController_Gerber.zip)
 - find in Google, [where to order a printed circuit board](https://www.google.com/search?q=order+pcb+gerber) (keywords: order pcb gerber), place an order,
-- order electronic components, see BOM (Bill Of Materials) list, *PCB_BOM.html* ,
+- order electronic components, see BOM (Bill Of Materials) appendix below,
 - solder electronic components. {- assembly instructions here-}
 
 ## Firmware upload
@@ -135,7 +135,6 @@ Let's say you don't know how to calculate the amount of refrigerant in a newly b
 
 This algo is good and safe both the first time and as a starting point. As you gain experience, you will get yours much easier and faster.<br>
 Also use "manual EEV mode" during charging process.<br>
-{-?manifold photos with comments?-}
 
 ## Hints 
 For more information about Heat Pumps look at [Wikipedia about HP](https://en.wikipedia.org/wiki/Heat_pump).<br>
