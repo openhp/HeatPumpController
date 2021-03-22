@@ -98,6 +98,7 @@ You may prefer to solder the wires over using connectors. But in this case, it w
 {-Photo: T sensors with abbreviations and full names-}<br>
 {-Photo: RS485 and 12V power for display-}<br>
 {-Photo: all together-}<br>
+{-Photo: DS18B20 sensor installed -}<br>
 
 ## Control and usage: serial console
 This is a first interface to Heat Pump controller you'll see after uploading firmware (Tools->Serial Monitor).<br>
