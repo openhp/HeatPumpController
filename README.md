@@ -128,15 +128,13 @@ qwer
 qwer
 
 ## Diagnostic and status messages
+<br>
+**LastStopCause messages. Why system was stopped**<br>
+**P.WtMax:_WATTS_** 	Protective stop, overcurrent, double check your system, **MAX_WATTS** and **POWERON_HIGHTIME** options<br>
+**E.Tci, E.Tco, E.Tbe, E.Tae, E.Ts1, E.Ts2, E.Tcrc, E.Treg, E.Tac, E.Tbc, E.Tho, E.Thi** 	Sensor lost, check wiring. Refer to "T sensors abbreviations"
 
-P.WtMax:<WATTS> Protective stop, overcurrent, double check your system, MAX_WATTS and POWERON_HIGHTIME options
 
-E.Tci, E.Tco, E.Tbe, E.Tae, E.Ts1, E.Ts2, E.Tcrc, E.Treg, E.Tac, E.Tbc, E.Tho, E.Thi - error, sensor lost, check wiring. Refer to "T sensors abbreviations"
-OK:E.T.Sens. - sensor connection restored
-
-OK:Pr.Cold
-OK:Pr.Hot
-
+**LastStartMessage messages. what event system is waiting for starting work**<br>
 
 "StCntd:" + outString; //start countdown, max 5 numerical places (1st start)
 "E.PresCold");
@@ -239,6 +237,11 @@ _LO) {
 
 "Err: ");
 				PrintSS_SaI(errorcode);
+
+**Additional messages**
+**OK:E.T.Sens.**	Sensor restored
+**OK:Pr.Cold**		Cold side pressure restored
+**OK:Pr.Hot**		Hot side pressure restored
 
 
 ## Firmware options and fine tunings
