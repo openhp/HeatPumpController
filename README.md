@@ -349,12 +349,11 @@ Additional sensors, disabled and not used by default:
 | Ts2   | additional sensor2    |
 
 ## Hints 
-<br>
 For more information about Heat Pumps look at [Wikipedia about HP](https://en.wikipedia.org/wiki/Heat_pump).<br>
 If you are interested in questions like "how refrigeration systems works" read Patrick Kotzaoglanian books.<br>
 If you want more technical details, sophisticated scmemes, "how EEV can be driven by temperature" diagrams, etc. refer to vendors manuals (you can find a lot in Alfa Laval brochures, Danfoss guides, and so on).<br>
-For refrigerants and oils types comparison see wiki.<br>
-<br>
+For refrigerants and oils types comparison see wiki.<br><br>
+
 ## Personal experience
 Note that the SCT013 sensor and the current monitoring scheme cannot be used for accurate measurements and accurate COP calculations. Use wattmeter for accurate power measurements.<br>
 Measuring the temperature of a warm floor with sensor at one point is a bad idea - it's better to deal with temperature of the "hot in" water coming from all over the floor, as implemented in firmware.<br>
