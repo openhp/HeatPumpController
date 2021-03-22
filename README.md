@@ -134,10 +134,18 @@ qwer
 **E.Tci, E.Tco, E.Tbe, E.Tae, E.Ts1, E.Ts2, E.Tcrc, E.Treg, E.Tac, E.Tbc, E.Tho, E.Thi** 	Sensor lost, check wiring. Refer to "T sensors abbreviations"<br>
 **E.PresCold**	Cold side pressure too low, check refrigerant charge and pressure sensors<br>
 **E.PresHot**	Hot side pressure too high, check refrigerant charge and pressure sensors<br>
-<br>
-<br>
+**P.Tho** Protective stop, check system, see **T_HOT_MAX** option <br>
+**P.Thi** Protective stop, check system, see **T_HOT_MAX** option <br>
+**P.Tcrc** Protective stop, check system, see **T_CRANKCASE_MAX** option <br>
+**P.Tae** Protective stop, check system, see **T_COLDREF_MIN** option <br>
+**P.Tbe** Protective stop, check system, see **T_BEFORE_EVAP_WORK_MIN** option <br>
+**P.Tbc** Protective stop, check system, see **T_BEFORE_CONDENSER_MAX** option <br>
+**P.Tci** Protective stop, check system, see **T_COLD_MIN** option <br>
+**P.Tco** Protective stop, check system, see **T_COLD_MIN** option <br>
+P.W.TcrcMIN , see **T_WORKINGOK_CRANKCASE_MIN** option <br>
+P.W.wattMIN  c_wattage_max/5 , see **MAX_WATTS** option <br>
 
-**LastStartMessage messages. what event system is waiting for starting work**<br><br>
+**LastStartMessage messages. What event system is waiting for starting work and some additional events**<br><br>
 **StCntd:_seconds_**	startup countdown, short-term power loss protection<br>
 **HP_Started** normal start<br>
 **HWP_OFF**	setpoint sensor temperature > setpoint, so hot side pump powered off and going to power saving mode, see **HOTCIRCLE_STOP_AFTER** <br>
@@ -160,42 +168,12 @@ qwer
 **#Tco<ColdMin** Cold In temperature is too high, see **T_COLD_MIN** option <br>
 **CWP_ON_CoMin** coldside pump started, cold side temperature is too low, so preventing cold loop freeze, see **T_COLD_MIN** option <br>
 
-				
-cT_hot_max)			{heatpump_state = 0; 	lastStopCauseTxt = F("P.Tho");
-cT_hot_max)			{heatpump_state = 0; 	lastStopCauseTxt = F("P.Thi");
-cT_crc_max)   		{heatpump_state = 0; 	lastStopCauseTxt = F("P.Tcrc")
-cT_coldref_min)		{heatpump_state = 0; 	lastStopCauseTxt = F("P.Tae");
-cT_before_evap_work_min) 	{heatpump_state = 0; 	lastStopCauseTxt = F("P.Tbe");
-cT_coldref_min)		{heatpump_state = 0; 	lastStopCauseTxt = F("P.Tsuc")
-cT_before_condenser_max)	{heatpump_state = 0; 	lastStopCauseTxt = F("P.Tbc");
-cT_cold_min)       		{heatpump_state = 0; 	lastStopCauseTxt = F("P.Tci");
-cT_cold_min)			{heatpump_state = 0; 	lastStopCauseTxt = F("P.Tco");
-
-
-cT_workingOK_crc_min )  ) {
-					//errorcode = ERR_HEATPUMP;
-					millis_last_heatpump_on = millis_now;
-					heatpump_state = 0;
-					LSCint = LSCint_protective;
-					lastStopCauseTxt = F("P.W.TcrcMIN");
-c_workingOK_wattage_min )  ) {
-					//errorcode = ERR_WATTAGE;
-					millis_last_heatpump_on = millis_now;
-					heatpump_state = 0;
-					LSCint = LSCint_protective;
-					lastStopCauseTxt = F("P.W.wattMIN");
-"E.PressHot");
-_LO) {
-"E.PressCold");
-
-"Err: ");
-				PrintSS_SaI(errorcode);
-
 **Additional messages**<br>
 **OK:E.T.Sens.**	Sensor restored<br>
 **OK:Pr.Cold**		Cold side pressure restored<br>
-**OK:Pr.Hot**		Hot side pressure restored<br><br>
+**OK:Pr.Hot**		Hot side pressure restored<br>
 **HWP_ON** 		hot side pump powered on<br>
+**Err:_errorcode_**	Error code: 1 = temperature sensor error, 2 = Hot side pressure too high  3 = cold side pressure too low<br>
 
 ## Firmware options and fine tunings
 
