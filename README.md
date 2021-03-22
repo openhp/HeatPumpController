@@ -153,7 +153,7 @@ This product is distributed in the hope that it will be useful,	but WITHOUT ANY 
 <br>
 gonzho АТ web.de (c) 2018-2021<br>
 
-## T sensors abbreviations
+## Appendix A: T sensors abbreviations
 Abbreviations used in the documentation and firmware <br><br> 
 
 Main sensors:
@@ -180,7 +180,7 @@ Additional sensors, disabled and not used by default:
 | Treg  | regenerator temperature|
 | Ts2   | additional sensor2    |
 
-## Diagnostic and status messages
+## Appendix B: Diagnostic and status messages
 **LastStopCause messages. Why system was stopped**
 | Message | description |
 | ------------- | ------------- |
@@ -234,7 +234,7 @@ Additional sensors, disabled and not used by default:
 | **HWP_ON** 		| Hot side pump powered on|
 | **Err:_errorcode_**	| Error code: 1 = temperature sensor error, 2 = Hot side pressure too high  3 = cold side pressure too low|
 
-## Firmware options and fine tunings
+##  Appendix C: Firmware options and fine tunings
 
 QA tests, uncomment to enable
 ```c
