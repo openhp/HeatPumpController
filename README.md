@@ -396,7 +396,7 @@ Last option
 | Red (error LEDs)	| 2	|
 | Green (OK LED)	| 1	|
 | Yellow 		| 11	|
-| **SOP(SOIC) ICs:**	|	||
+| **SOP(SOIC) ICs:**	|	|
 | ADM2587EBRWZ (SOIC-20)	| 1	|
 | 74HC4067D (SOIC-24)		| 1	|
 | 74HC595D (SOP-16)		| 3	|
