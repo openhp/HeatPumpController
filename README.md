@@ -374,6 +374,56 @@ Last option
 ```c
 #define MAX_SEQUENTIAL_ERRORS 	15 		//max cycles to wait auto-clean error, ex: T sensor appears, stop compressor after counter exceeded (millis_cycle * MAX_SEQUENTIAL_ERRORS)
 ```
+## Appendix D: bill of materials
+| Part | Quantity |
+| ------------- | ------------- |
+| **1206 Resistors:**	||
+| 100K	| 2	|
+| 22	| 1	|
+| 10	| 1	|
+| 10K	| 6	|
+| 120	| 1	|
+| 1K	| 7	|
+| 2.2K	| 4	|
+| 470	| 10	|
+| 100	| 1	|
+| **1206 Caps:**	||
+| 1uF		| 3	|
+| 0.1uF		| 4	|
+| 10uF		| 5	|
+| 0.01uF	| 2	|
+| 1uF		| 5	|
+| **1206 LEDs:**	||
+| Red (error LEDs)	| 2	|
+| Green (OK LED)	| 1	|
+| Yellow 		| 11	|
+| **SOP(SOIC) ICs:**	|	||
+| ADM2587EBRWZ (SOIC-20)	| 1	|
+| 74HC4067D (SOIC-24)		| 1	|
+| 74HC595D (SOP-16)		| 3	|
+| ULN2003A_(SOP-16)		| 2	|
+| 817S (SOP-4)			| 2	|
+| **XH2.54 Headers + Plugs:**	|	|
+| XH2.54-6P header + 6P plug	| 4	|
+| XH2.54-3P header + 3P plugs	| 2	|
+| XH2.54-2P header + 2P Plugs	| 1	|
+| XH2.54 Crimp terminal		| 40	|
+| **Power terminals:**		|	|
+| 6.35 Blade terminal (726386-2 or same)		| 16	|
+| 6.35 Quick disconnect crimp terminal insulated	| 16	|
+| **Others:**	|				|	
+| 10nF HV-9.0x3.0 (blue disc 2kV HV cap)	| 1	|
+| 22uf_16v D5.0xF2.0 (electrolytic cap)		| 1	|
+| Resistor Network\*4 DIP-1X5P-2.54 (3..5K)	| 3	|
+| MMBT2222A (SOT-23-3)				| 1	|
+| LM7805 (TO-220)				| 1	|
+| SMIH-12VDC-SL-C				| 4	|
+| BUZZER-R9.0-2P-4.0				| 1	|
+| ARDUINO PRO MINI				| 1	|
+| Power supply, 12v1.25A 70x30x40 (or any 0.5A+)| 1	|
+| DS18B20					| 12	|
+| usb→uart (to upload firmware)			| 1	|
+| Current sensor sct-013-000			| 1	|
 
 ## Author
 <br>
