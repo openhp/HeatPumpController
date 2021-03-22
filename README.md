@@ -129,8 +129,9 @@ qwer
 
 ## Diagnostic and status messages
 **LastStopCause messages. Why system was stopped**<br><br>
-**Normal_stop** normal stop, i.e. setpoint sensor temperature > setpoint, so no need to heat anymore<br>
-**P.WtMax:_WATTS_** 	Protective stop, overcurrent, double check your system, **MAX_WATTS** and **POWERON_HIGHTIME** options<br>
+
+| **Normal_stop** | normal stop, i.e. setpoint sensor temperature > setpoint, so no need to heat anymore<br>
+| **P.WtMax:_WATTS_**| 	Protective stop, overcurrent, double check your system, **MAX_WATTS** and **POWERON_HIGHTIME** options<br>
 **E.Tci, E.Tco, E.Tbe, E.Tae, E.Ts1, E.Ts2, E.Tcrc, E.Treg, E.Tac, E.Tbc, E.Tho, E.Thi** 	Sensor lost, check wiring. Refer to "T sensors abbreviations"<br>
 **E.PresCold**	Cold side pressure too low, check refrigerant charge and pressure sensors<br>
 **E.PresHot**	Hot side pressure too high, check refrigerant charge and pressure sensors<br>
