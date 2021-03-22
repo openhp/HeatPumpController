@@ -128,50 +128,38 @@ qwer
 qwer
 
 ## Diagnostic and status messages
-<br>
 **LastStopCause messages. Why system was stopped**<br>
 **P.WtMax:_WATTS_** 	Protective stop, overcurrent, double check your system, **MAX_WATTS** and **POWERON_HIGHTIME** options<br>
-**E.Tci, E.Tco, E.Tbe, E.Tae, E.Ts1, E.Ts2, E.Tcrc, E.Treg, E.Tac, E.Tbc, E.Tho, E.Thi** 	Sensor lost, check wiring. Refer to "T sensors abbreviations"
-
+**E.Tci, E.Tco, E.Tbe, E.Tae, E.Ts1, E.Ts2, E.Tcrc, E.Treg, E.Tac, E.Tbc, E.Tho, E.Thi** 	Sensor lost, check wiring. Refer to "T sensors abbreviations"<br>
+**E.PresCold**	Cold side pressure too low, check refrigerant charge and pressure sensors<br>
+**E.PresHot**	Hot side pressure too high, check refrigerant charge and pressure sensors<br>
+<br>
 
 **LastStartMessage messages. what event system is waiting for starting work**<br>
-
-"StCntd:" + outString; //start countdown, max 5 numerical places (1st start)
-"E.PresCold");
-"E.PresHot");
-//waiting for T stabilisation
-						lastStartMsgTxt = "#HotPrp:" + String( (HOTCIRCLE_CHECK_PREPARE -(unsigned long)(millis_now - millis_last_hotWP_off))/1000 );
-					} else if (hotside_circle_state  == 0) {	//sleeping, hot CP off, waiting for next check cycle
-						lastStartMsgTxt = "#HotSlp:" + String( (HOTCIRCLE_START_EVERY -(unsigned long)(millis_now - millis_last_hotWP_on))/1000 );
+**StCntd:_seconds_**	startup countdown, short-term power loss protection
+**#HotPrp:_seconds_**	hot side pump is on, waiting for T stabilisation countdown see **HOTCIRCLE_CHECK_PREPARE** option
+**#HotSlp:_seconds_** 	sleepeng, last cycle temperature was > setpoint, waiting for next startup, see **HOTCIRCLE_START_EVERY** option
+**#HPSlp:_seconds_**" + String( (mincycle_poweroff -(unsigned long)(millis_now - millis_last_heatpump_on))/1000 );
 						
-if (millis_last_heatpump_on != 0){
-						lastStartMsgTxt = "#HPSlp:" + String( (mincycle_poweroff -(unsigned long)(millis_now - millis_last_heatpump_on))/1000 );
-						
-#Tho>Max"); }	
-#Thi>Max"); }	
-#CaseCold"); }	
-#CaseHot"); }	
+**#Tho>Max**<br>
+**#Thi>Max**<br>
+**#CaseCold**<br>
+**#CaseHot**<br>
+**#Thi>Setp.**<br>
+**#Ts1>Setp.**<br>
+**#Tae<RefMin**<br>
+**#Tbe<RefMin**<br>
+**#Tbc>Max**<br>
+**#Tci<ColdMin**<br>
+**#Tco<ColdMin**<br>
 
+**#CWPpStart** coldside start, preparing system to start compressor<br>
+**#CWPp:"** + String( (COLDCIRCLE_PREPARE  <br>
+**HP_Started**<br>
 
-#Thi>Setp."); }	
+**Normal_stop**<br>
 
-
-xt = F("#Ts1>Setp.")
-
-#Tae<RefMin"); }	
-#Tbe<RefMin"); }	
-#Tbc>Max"); }	
-#Tci<ColdMin"); }	
-#Tco<ColdMin"); }	
-
-
-#CWPpStart" - coldside start, preparing system to start compressor
-"#CWPp:" + String( (COLDCIRCLE_PREPARE -(unsigned long)(millis_now - millis_last_coldWP_off))/1000 );
-"HP_Started");
-
-"Normal_stop");
-
-HWP_ON")
+**HWP_ON**<br>
 
 ((heatpump_state == 1)   &&  (hotside_circle_state  == 0) ) 	|| 	((_1st_start_sleeped == 0 ) 
 
@@ -238,10 +226,10 @@ _LO) {
 "Err: ");
 				PrintSS_SaI(errorcode);
 
-**Additional messages**
-**OK:E.T.Sens.**	Sensor restored
-**OK:Pr.Cold**		Cold side pressure restored
-**OK:Pr.Hot**		Hot side pressure restored
+**Additional messages**<br>
+**OK:E.T.Sens.**	Sensor restored<br>
+**OK:Pr.Cold**		Cold side pressure restored<br>
+**OK:Pr.Hot**		Hot side pressure restored<br><br>
 
 
 ## Firmware options and fine tunings
