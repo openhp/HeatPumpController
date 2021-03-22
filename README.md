@@ -141,57 +141,27 @@ qwer
 **#HotSlp:_seconds_** 	sleepeng, last cycle temperature was > setpoint, waiting for next startup, see **HOTCIRCLE_START_EVERY** option<br>
 **#HPSlp:_seconds_**" + String( (mincycle_poweroff -(unsigned long)(millis_now - millis_last_heatpump_on))/1000 );<br>
 						
-**#Tho>Max**<br>
-**#Thi>Max**<br>
-**#CaseCold**<br>
-**#CaseHot**<br>
-**#Thi>Setp.**<br>
-**#Ts1>Setp.**<br>
-**#Tae<RefMin**<br>
-**#Tbe<RefMin**<br>
-**#Tbc>Max**<br>
-**#Tci<ColdMin**<br>
-**#Tco<ColdMin**<br>
+**#Tho>Max** T_HOT_MAX <br>
+**#Thi>Max** T_HOT_MAX <br>
+**#CaseCold** T_CRANKCASE_MIN <br>
+**#CaseHot** T_CRANKCASE_MAX <br>
+**#Thi>Setp.** hot in temperature > setpoint, so no reason to start<br>
+**#Ts1>Setp.** s1 temperature > setpoint, so no reason to start, see SETPOINT_TS1 option to switch betwees Thi and Ts1 as setpoint sensor <br>
+**#Tae<RefMin** After Evaporator temperature is too low, check system, see **T_COLDREF_MIN** option<br>
+**#Tbe<RefMin** Before Evaporator temperature is too low, check system, see **T_COLDREF_MIN** option<br>
+**#Tbc>Max** Before Condenser temperature is too high, check system, see **T_BEFORE_CONDENSER_MAX** option<br>
+**#Tci<ColdMin** Cold In temperature is too low, see **T_COLD_MIN** option <br>
+**#Tco<ColdMin** Cold In temperature is too high, see **T_COLD_MIN** option <br>
+**#CWPpStart** coldside pump started, preparing system to start compressor<br>
+**#CWPp:_seconds_** coldside pumping, preparing countdown**COLDCIRCLE_PREPARE** option<br>
+**HP_Started** normal start<br>
 
-**#CWPpStart** coldside start, preparing system to start compressor<br>
-**#CWPp:"** + String( (COLDCIRCLE_PREPARE  <br>
-**HP_Started**<br>
+**Normal_stop** normal stop, i.e. setpoint sensor temperature > setpoint, so no need to heat anymore<br>
 
-**Normal_stop**<br>
 
-**HWP_ON**<br>
+**HWP_ON_by_ev** hot side pump started after power saving, see **HOTCIRCLE_START_EVERY** option <br>
+**HWP_OFF**	setpoint sensor temperature > setpoint, so hot side pump powered off and going to power saving mode, see **HOTCIRCLE_STOP_AFTER** <br>
 
-((heatpump_state == 1)   &&  (hotside_circle_state  == 0) ) 	|| 	((_1st_start_sleeped == 0 ) 
-
-(millis_now - millis_last_hotWP_on) > HOTCIRCLE_START_EVERY)	) {    //process START_EVERY for hot side
-					millis_last_hotWP_off = millis_now;
-					hotside_circle_state  = 1;
-					//PrintSS(F("HWP ON by startevery"));
-					lastStartMsgTxt = F("HWP_ON_by_ev");
-					
-deffered_stop_hotcircle) 	|| 	millis_last_heatpump_on == 0) 	{ //deffered stop aftret heat pump stop and correct processing of 1st start, 1st_start sleeped flag not used - there's another logic
-					/*
-					//useful for tank heater with Ts1 as setpont control and large intermediate water reservoir
-					if ( 	(ThoE == 1 && Tho < (Ts1 + cT_hotcircle_delta_min))	||
-						(ThiE == 1 && Thi < (Ts1 + cT_hotcircle_delta_min))	) {
-						PrintSS(F("Hot CP OFF 1"));
-						millis_last_hotWP_on = millis_now;
-						hotside_circle_state  = 0;
-					} else {
-						PrintSS(F("Hot CP OFF 2"));
-						millis_last_hotWP_on = millis_now;
-						hotside_circle_state  = 0;
-					}
-					*/
-					if ( (unsigned long)(millis_now - millis_last_hotWP_off) > HOTCIRCLE_STOP_AFTER) {	//and START_EVERY processing
-						#ifdef SETPOINT_THI
-						if ( Thi > T_setpoint ) 	{
-						#endif
-						#ifdef SETPOINT_TS1
-						if ( Ts1 > T_setpoint )  	{
-						#endif
-							//PrintSS(F("HWP OFF"));
-							lastStartMsgTxt = F("HWP_OFF");
 Tci < cT_cold_min) 	&& 	(coldside_circle_state  == 0)	) {
 				//PrintSS(F("CWP ON by ColdMin"));
 				lastStartMsgTxt = F("CWP_ON_CoMin");
@@ -230,7 +200,7 @@ _LO) {
 **OK:E.T.Sens.**	Sensor restored<br>
 **OK:Pr.Cold**		Cold side pressure restored<br>
 **OK:Pr.Hot**		Hot side pressure restored<br><br>
-
+**HWP_ON** 		hot side pump powered on<br>
 
 ## Firmware options and fine tunings
 
