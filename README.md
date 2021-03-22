@@ -146,7 +146,7 @@ qwer
 | **E.Tci, E.Tco, E.Tbe, E.Tae, E.Ts1, E.Ts2, E.Tcrc, E.Treg, E.Tac, E.Tbc, E.Tho, E.Thi** |	Sensor lost, check wiring. Refer to "T sensors abbreviations"|
 | **E.PresCold**	| Cold side pressure too low, check refrigerant charge and pressure sensors |
 | **E.PresHot**		| Hot side pressure too high, check refrigerant charge and pressure sensors |
-<br><br>
+
 **LastStartMessage messages. What event system is waiting for starting work and some additional events**
 | Message | description |
 | ------------- | ------------- |
