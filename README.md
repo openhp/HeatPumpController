@@ -154,8 +154,7 @@ This product is distributed in the hope that it will be useful,	but WITHOUT ANY 
 gonzho АТ web.de (c) 2018-2021<br>
 
 ## Appendix A: T sensors abbreviations
-Abbreviations used in the documentation and firmware <br><br> 
-
+Abbreviations used in the documentation and firmware.<br>
 Main sensors:
 | Abbr. | Full name             |
 | ----- | --------------------  |
