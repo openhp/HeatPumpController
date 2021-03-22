@@ -101,8 +101,11 @@ You may prefer to solder the wires over using connectors. But in this case, it w
 {-Photo: all together-}<br>
 
 ## Control and usage: serial console
-{-desc 2-}
-qwer
+This is a first interface to Heat Pump controller you'll see after uploading firmware (Tools->Serial Monitor).<br>
+The console itself is very simple, several commands are available. Help and hotkeys:
+<screen>
+Every **HUMAN_AUTOINFO** times you'll see statistic dump:
+<screen>
 
 ## Control and usage: remote control display
 {-There are 2 ways to control heat pump-}
@@ -128,7 +131,8 @@ Let's say you don't know how to calculate the amount of refrigerant in a newly b
 - stop if you are sure that the heating process is now proceeding very slowly
 - carry out the final charge when the system is stable and the heat pump stops normally (setpoint is reached), this may take 12 hours or more, and now the target difference between the suction pressure temperature and the temperature from the T sensor should be 3 ... 6 ° C,
 
-This algo is good and safe both the first time and as a starting point. As you gain experience, you will get yours much easier and faster. Also use "manual EEV mode" during charging process.
+This algo is good and safe both the first time and as a starting point. As you gain experience, you will get yours much easier and faster.<br>
+Also use "manual EEV mode" during charging process.<br>
 {-?manifold photos with comments?-}
 
 ## Hints 
