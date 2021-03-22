@@ -3,8 +3,6 @@
 pumps. Controller can be easily used for newly designed heat pumps (HPs), including series, as repair controller or as control system for experiments with refrigeration equipment.</b>
 <br><br>
 
-!!!GENERATE TOC HERE!!!
-
 ## Specs
 - 12V 0.5A DC power supply, 
 - 230V output,
@@ -37,7 +35,7 @@ pumps. Controller can be easily used for newly designed heat pumps (HPs), includ
 - 06 Feb 2021: product is technically complete and ready for customers to use. Documentation and release stage.
 
 ## Get your own copy and PCB assembly
-- download the PCB gerber file, *Gerber.zip*
+- download the PCB gerber file, [Valden_HeatPumpController_Gerber](./Valden_HeatPumpController_Gerber.zip)
 - find in Google, [where to order a printed circuit board](https://www.google.com/search?q=order+pcb+gerber) (keywords: order pcb gerber), place an order,
 - order electronic components, see BOM (Bill Of Materials) list, *PCB_BOM.html* ,
 - solder electronic components. {- assembly instructions here-}
