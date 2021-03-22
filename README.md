@@ -104,8 +104,11 @@ You may prefer to solder the wires over using connectors. But in this case, it w
 This is a first interface to Heat Pump controller you'll see after uploading firmware (Tools->Serial Monitor).<br>
 The console itself is very simple, several commands are available. Type in command, press "Send". Help and hotkeys:<br>
  ![console help screenshot](./m_console_help.png)<br>
-Every **HUMAN_AUTOINFO** times you'll see statistic dump:<br>
+Every **HUMAN_AUTOINFO** times you'll see stats. For example soon after comressor starts you'll see something like this:<br>
 ![console statistics screenshot](./m_console_stats.png)<br>
+At this example: "hot in" ~30 °C, compressor ~80 °C and so on. Heat Pump (HP, compressor) ON, Hot water pump ON, Cold water pump ON. Power consumption 980 watts.
+Abbreviations: refer to Appendix A.
+Also you'll see diagnostic messages here.
 
 ## Control and usage: remote control display
 {-There are 2 ways to control heat pump-}
