@@ -36,9 +36,9 @@ pumps. Controller can be easily used for newly designed heat pumps (HPs), includ
 - 06 Feb 2021: product is technically complete and ready for customers to use. Documentation and release stage.
 
 ## Get your own copy and PCB assembly
-- download the PCB gerber file, {-_Gerber.zip-}
-- find in Google, where to order a printed circuit board (keywords: order pcb gerber), place an order,
-- order electronic components, see BOM (Bill Of Materials) list, {- _PCB_BOM.html-}
+- download the PCB gerber file, *Gerber.zip*
+- find in Google, [where to order a printed circuit board](https://www.google.com/search?q=order+pcb+gerber) where to order a printed circuit board (keywords: order pcb gerber), place an order,
+- order electronic components, see BOM (Bill Of Materials) list, *PCB_BOM.html*
 - solder electronic components {- assembly instructions here-}
 
 ## Firmware upload
@@ -46,7 +46,7 @@ The process is the same as for others Arduinos
 - connect USB-> UART converter 
 - start Arduino IDE
 - open the firmware file
-- select board and MCU in the Tools menu (hint: we are using 328p, 16Mhz, 5V)
+- select board and MCU in the Tools menu (hint: we are using "mini" board with 328p MCU)
 - press the "Upload" button in the interface and "Reset" on the Arduino
 
 For arduinos with old bootloader you need to update it. (Tools-> Burn Bootloader).<br>
@@ -103,8 +103,9 @@ You may prefer to solder the wires over using connectors. But in this case, it w
 ## Control and usage: serial console
 This is a first interface to Heat Pump controller you'll see after uploading firmware (Tools->Serial Monitor).<br>
 The console itself is very simple, several commands are available. Help and hotkeys:
-<screen>
+ ![console help screenshot](./m_console_help.jpg)
 Every **HUMAN_AUTOINFO** times you'll see statistic dump:
+![console statistics screenshot](./m_console_stats.jpg)
 <screen>
 
 ## Control and usage: remote control display
