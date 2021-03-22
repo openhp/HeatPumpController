@@ -128,18 +128,18 @@ qwer
 qwer
 
 ## Diagnostic and status messages
-**LastStopCause messages. Why system was stopped**<br>
+**LastStopCause messages. Why system was stopped**<br><br>
 **P.WtMax:_WATTS_** 	Protective stop, overcurrent, double check your system, **MAX_WATTS** and **POWERON_HIGHTIME** options<br>
 **E.Tci, E.Tco, E.Tbe, E.Tae, E.Ts1, E.Ts2, E.Tcrc, E.Treg, E.Tac, E.Tbc, E.Tho, E.Thi** 	Sensor lost, check wiring. Refer to "T sensors abbreviations"<br>
 **E.PresCold**	Cold side pressure too low, check refrigerant charge and pressure sensors<br>
 **E.PresHot**	Hot side pressure too high, check refrigerant charge and pressure sensors<br>
 <br>
-
-**LastStartMessage messages. what event system is waiting for starting work**<br>
-**StCntd:_seconds_**	startup countdown, short-term power loss protection
-**#HotPrp:_seconds_**	hot side pump is on, waiting for T stabilisation countdown see **HOTCIRCLE_CHECK_PREPARE** option
-**#HotSlp:_seconds_** 	sleepeng, last cycle temperature was > setpoint, waiting for next startup, see **HOTCIRCLE_START_EVERY** option
-**#HPSlp:_seconds_**" + String( (mincycle_poweroff -(unsigned long)(millis_now - millis_last_heatpump_on))/1000 );
+<br>
+**LastStartMessage messages. what event system is waiting for starting work**<br><br>
+**StCntd:_seconds_**	startup countdown, short-term power loss protection<br>
+**#HotPrp:_seconds_**	hot side pump is on, waiting for T stabilisation countdown see **HOTCIRCLE_CHECK_PREPARE** option<br>
+**#HotSlp:_seconds_** 	sleepeng, last cycle temperature was > setpoint, waiting for next startup, see **HOTCIRCLE_START_EVERY** option<br>
+**#HPSlp:_seconds_**" + String( (mincycle_poweroff -(unsigned long)(millis_now - millis_last_heatpump_on))/1000 );<br>
 						
 **#Tho>Max**<br>
 **#Thi>Max**<br>
