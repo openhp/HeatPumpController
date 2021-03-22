@@ -128,8 +128,7 @@ qwer
 qwer
 
 ## Diagnostic and status messages
-**LastStopCause messages. Why system was stopped**<br><br>
-
+**LastStopCause messages. Why system was stopped**
 | Message | description |
 | ------------- | ------------- |
 | **Normal_stop** 	| Normal stop, i.e. setpoint sensor temperature > setpoint, so no need to heat anymore	|
@@ -147,8 +146,8 @@ qwer
 | **E.Tci, E.Tco, E.Tbe, E.Tae, E.Ts1, E.Ts2, E.Tcrc, E.Treg, E.Tac, E.Tbc, E.Tho, E.Thi** |	Sensor lost, check wiring. Refer to "T sensors abbreviations"|
 | **E.PresCold**	| Cold side pressure too low, check refrigerant charge and pressure sensors |
 | **E.PresHot**		| Hot side pressure too high, check refrigerant charge and pressure sensors |
-
-**LastStartMessage messages. What event system is waiting for starting work and some additional events**<br><br>
+<br><br>
+**LastStartMessage messages. What event system is waiting for starting work and some additional events**
 | Message | description |
 | ------------- | ------------- |
 | **StCntd:_seconds_**	| startup countdown, short-term power loss protection |
