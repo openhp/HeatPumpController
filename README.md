@@ -129,22 +129,28 @@ qwer
 
 ## Diagnostic and status messages
 **LastStopCause messages. Why system was stopped**<br><br>
+**Normal_stop** normal stop, i.e. setpoint sensor temperature > setpoint, so no need to heat anymore<br>
 **P.WtMax:_WATTS_** 	Protective stop, overcurrent, double check your system, **MAX_WATTS** and **POWERON_HIGHTIME** options<br>
 **E.Tci, E.Tco, E.Tbe, E.Tae, E.Ts1, E.Ts2, E.Tcrc, E.Treg, E.Tac, E.Tbc, E.Tho, E.Thi** 	Sensor lost, check wiring. Refer to "T sensors abbreviations"<br>
 **E.PresCold**	Cold side pressure too low, check refrigerant charge and pressure sensors<br>
 **E.PresHot**	Hot side pressure too high, check refrigerant charge and pressure sensors<br>
 <br>
 <br>
+
 **LastStartMessage messages. what event system is waiting for starting work**<br><br>
 **StCntd:_seconds_**	startup countdown, short-term power loss protection<br>
+**HP_Started** normal start<br>
+**HWP_OFF**	setpoint sensor temperature > setpoint, so hot side pump powered off and going to power saving mode, see **HOTCIRCLE_STOP_AFTER** <br>
+**HWP_ON_by_ev** hot side pump started after power saving, see **HOTCIRCLE_START_EVERY** option <br>
+**#CWPpStart** coldside pump started, preparing system to start compressor<br>
 **#HotPrp:_seconds_**	hot side pump is on, waiting for T stabilisation countdown see **HOTCIRCLE_CHECK_PREPARE** option<br>
 **#HotSlp:_seconds_** 	sleepeng, last cycle temperature was > setpoint, waiting for next startup, see **HOTCIRCLE_START_EVERY** option<br>
-**#HPSlp:_seconds_**" + String( (mincycle_poweroff -(unsigned long)(millis_now - millis_last_heatpump_on))/1000 );<br>
-						
-**#Tho>Max** T_HOT_MAX <br>
-**#Thi>Max** T_HOT_MAX <br>
-**#CaseCold** T_CRANKCASE_MIN <br>
-**#CaseHot** T_CRANKCASE_MAX <br>
+**#HPSlp:_seconds_**" + String( (mincycle_poweroff -(unsigned long)(millis_now - millis_last_heatpump_on))/1000 );<br>						
+**#CWPp:_seconds_** coldside pumping, preparing countdown**COLDCIRCLE_PREPARE** option<br>
+**#Tho>Max** , see **T_HOT_MAX** option <br>
+**#Thi>Max** , see **T_HOT_MAX** option <br>
+**#CaseCold** , see **T_CRANKCASE_MIN** option <br>
+**#CaseHot** , see **T_CRANKCASE_MAX** option <br>
 **#Thi>Setp.** hot in temperature > setpoint, so no reason to start<br>
 **#Ts1>Setp.** s1 temperature > setpoint, so no reason to start, see SETPOINT_TS1 option to switch betwees Thi and Ts1 as setpoint sensor <br>
 **#Tae<RefMin** After Evaporator temperature is too low, check system, see **T_COLDREF_MIN** option<br>
@@ -152,19 +158,8 @@ qwer
 **#Tbc>Max** Before Condenser temperature is too high, check system, see **T_BEFORE_CONDENSER_MAX** option<br>
 **#Tci<ColdMin** Cold In temperature is too low, see **T_COLD_MIN** option <br>
 **#Tco<ColdMin** Cold In temperature is too high, see **T_COLD_MIN** option <br>
-**#CWPpStart** coldside pump started, preparing system to start compressor<br>
-**#CWPp:_seconds_** coldside pumping, preparing countdown**COLDCIRCLE_PREPARE** option<br>
-**HP_Started** normal start<br>
+**CWP_ON_CoMin** coldside pump started, cold side temperature is too low, so preventing cold loop freeze, see **T_COLD_MIN** option <br>
 
-**Normal_stop** normal stop, i.e. setpoint sensor temperature > setpoint, so no need to heat anymore<br>
-
-
-**HWP_ON_by_ev** hot side pump started after power saving, see **HOTCIRCLE_START_EVERY** option <br>
-**HWP_OFF**	setpoint sensor temperature > setpoint, so hot side pump powered off and going to power saving mode, see **HOTCIRCLE_STOP_AFTER** <br>
-
-Tci < cT_cold_min) 	&& 	(coldside_circle_state  == 0)	) {
-				//PrintSS(F("CWP ON by ColdMin"));
-				lastStartMsgTxt = F("CWP_ON_CoMin");
 				
 cT_hot_max)			{heatpump_state = 0; 	lastStopCauseTxt = F("P.Tho");
 cT_hot_max)			{heatpump_state = 0; 	lastStopCauseTxt = F("P.Thi");
