@@ -205,8 +205,8 @@ Additional sensors, disabled and not used by default:
 | **StCntd:_seconds_**	| Startup countdown, short-term power loss protection. |
 | **HP_Started**	| Normal start. |
 | **#Thi>Setp.**	| "Hot in" temperature > setpoint, so no reason to start |
-| **#Ts1>Setp.**	| "Ts1" temperature > setpoint, so no reason to start, see SETPOINT_TS1 option to switch betwees Thi and Ts1 as setpoint sensor |
-| **HWP_OFF**		| Setpoint sensor temperature > setpoint, so hot side pump powered off and gone to power saving mode. See **HOTCIRCLE_STOP_AFTER**. |
+| **#Ts1>Setp.**	| "Ts1" temperature > setpoint, so no reason to start, see **SETPOINT_TS1** option to switch betwees Thi and Ts1 as setpoint sensor |
+| **HWP_OFF**		| Setpoint sensor temperature > setpoint, so after some time (**HOTCIRCLE_STOP_AFTER** option) hot side pump powered off and gone to power saving mode. |
 | **HWP_ON_by_ev**	| Hot side pump started after power saving. See **HOTCIRCLE_START_EVERY** option. |
 | **#HotPrp:_seconds_**	| Hot side pump is on, waiting for T stabilisation. Countdown, seconds. See **HOTCIRCLE_CHECK_PREPARE** option. |
 | **#HotSlp:_seconds_**	| Hot side pump in power save mode (sleeping). Waiting for next startup. Countdown, seconds. See **HOTCIRCLE_START_EVERY** option. |
