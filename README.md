@@ -102,11 +102,10 @@ You may prefer to solder the wires over using connectors. But in this case, it w
 
 ## Control and usage: serial console
 This is a first interface to Heat Pump controller you'll see after uploading firmware (Tools->Serial Monitor).<br>
-The console itself is very simple, several commands are available. Help and hotkeys:
- ![console help screenshot](./m_console_help.jpg)
-Every **HUMAN_AUTOINFO** times you'll see statistic dump:
-![console statistics screenshot](./m_console_stats.jpg)
-<screen>
+The console itself is very simple, several commands are available. Type command, press "send". Help and hotkeys:<br>
+ ![console help screenshot](./m_console_help.png)<br>
+Every **HUMAN_AUTOINFO** times you'll see statistic dump:<br>
+![console statistics screenshot](./m_console_stats.jpg)<br>
 
 ## Control and usage: remote control display
 {-There are 2 ways to control heat pump-}
