@@ -99,7 +99,6 @@ You may prefer to solder the wires over using connectors. But in this case, it w
 {-Photo: T sensors with abbreviations and full names-}<br>
 {-Photo: RS485 and 12V power for display-}<br>
 {-Photo: all together-}<br>
-{-Photo: ? a crankcase heater looks like ? -}<br>
 
 ## Starting up the heat pump system for the first time and charging refrigerant
 This is not a hard part, but if you don't have experience it will take time. <br>
@@ -119,13 +118,18 @@ Let's say you don't know how to calculate the amount of refrigerant in a newly b
 This algo is good and safe both the first time and as a starting point. As you gain experience, you will get yours much easier and faster. {-Also try "manual EEV mode" during charging process.-}
 {-?manifold photos with comments?-}
 
-## Control and usage: remote control unit
+## Control and usage: remote control display
 {-There are 2 ways to control heat pump-}
+{-connection-}
 qwer
 
 ## Control and usage: serial console
 {-desc 2-}
 qwer
+
+## Control and usage: diagnostic display
+{-desc 2-}
+link
 
 ## Diagnostic and status messages
 **LastStopCause messages. Why system was stopped**
@@ -317,10 +321,6 @@ Last option
 #define MAX_SEQUENTIAL_ERRORS 	15 		//max cycles to wait auto-clean error, ex: T sensor appears, stop compressor after counter exceeded (millis_cycle * MAX_SEQUENTIAL_ERRORS)
 ```
 
-## Diagnostic and troubleshooting
-{-describe messages-}
-qwer
-
 ## T sensors abbreviations
 Abbreviations used in the documentation and firmware <br><br> 
 
@@ -349,13 +349,12 @@ Additional sensors, disabled and not used by default:
 | Ts2   | additional sensor2    |
 
 ## Hints 
-
-
+<br>
 For more information about Heat Pumps look at [Wikipedia about HP](https://en.wikipedia.org/wiki/Heat_pump).<br>
 If you are interested in questions like "how refrigeration systems works" read Patrick Kotzaoglanian books.<br>
 If you want more technical details, sophisticated scmemes, "how EEV can be driven by temperature" diagrams, etc. refer to vendors manuals (you can find a lot in Alfa Laval brochures, Danfoss guides, and so on).<br>
 For refrigerants and oils types comparison see wiki.<br>
-
+<br>
 ## Personal experience
 Note that the SCT013 sensor and the current monitoring scheme cannot be used for accurate measurements and accurate COP calculations. Use wattmeter for accurate power measurements.<br>
 Measuring the temperature of a warm floor with sensor at one point is a bad idea - it's better to deal with temperature of the "hot in" water coming from all over the floor, as implemented in firmware.<br>
@@ -364,12 +363,13 @@ I tried the scheme with a flooded evaporator in 2019 and found it extremely prob
 Deep regeneration schemes are useful only for some refrigerants and only in certain temperature ranges. I also tried deep regeneration, I was convinced that the theory coincides with the practice and then also refused this idea.<br>
 In general, it is possible by complicating the refrigeration scheme to win somewhere 1%, somewhere 3%, but all this leads to significant time and money costs, compared to not very much profit.<br>
 Summary: If you want experiments - Experiment. Want reliably and quickly - make system simple.<br>
-
+<br>
 ## License
 
 GPLv3. <br><br>
 
-This product is distributed in the hope that it will be useful,	but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.
-
+This product is distributed in the hope that it will be useful,	but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.<br>
+<br>
 ## Author
+<br>
 gonzho АТ web.de (c) 2018-2021<br><br>
