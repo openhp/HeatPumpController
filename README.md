@@ -137,6 +137,78 @@ OK:Pr.Cold
 OK:Pr.Hot
 
 
+"StCntd:" + outString; //start countdown, max 5 numerical places (1st start)
+"E.PresCold");
+"E.PresHot");
+//waiting for T stabilisation
+						lastStartMsgTxt = "#HotPrp:" + String( (HOTCIRCLE_CHECK_PREPARE -(unsigned long)(millis_now - millis_last_hotWP_off))/1000 );
+					} else if (hotside_circle_state  == 0) {	//sleeping, hot CP off, waiting for next check cycle
+						lastStartMsgTxt = "#HotSlp:" + String( (HOTCIRCLE_START_EVERY -(unsigned long)(millis_now - millis_last_hotWP_on))/1000 );
+						
+if (millis_last_heatpump_on != 0){
+						lastStartMsgTxt = "#HPSlp:" + String( (mincycle_poweroff -(unsigned long)(millis_now - millis_last_heatpump_on))/1000 );
+						
+#Tho>Max"); }	
+#Thi>Max"); }	
+#CaseCold"); }	
+#CaseHot"); }	
+
+
+#Thi>Setp."); }	
+
+
+xt = F("#Ts1>Setp.")
+
+#Tae<RefMin"); }	
+#Tbe<RefMin"); }	
+#Tbc>Max"); }	
+#Tci<ColdMin"); }	
+#Tco<ColdMin"); }	
+
+
+#CWPpStart" - coldside start, preparing system to start compressor
+"#CWPp:" + String( (COLDCIRCLE_PREPARE -(unsigned long)(millis_now - millis_last_coldWP_off))/1000 );
+"HP_Started");
+
+"Normal_stop");
+
+HWP_ON")
+
+((heatpump_state == 1)   &&  (hotside_circle_state  == 0) ) 	|| 	((_1st_start_sleeped == 0 ) 
+
+(millis_now - millis_last_hotWP_on) > HOTCIRCLE_START_EVERY)	) {    //process START_EVERY for hot side
+					millis_last_hotWP_off = millis_now;
+					hotside_circle_state  = 1;
+					//PrintSS(F("HWP ON by startevery"));
+					lastStartMsgTxt = F("HWP_ON_by_ev");
+					
+deffered_stop_hotcircle) 	|| 	millis_last_heatpump_on == 0) 	{ //deffered stop aftret heat pump stop and correct processing of 1st start, 1st_start sleeped flag not used - there's another logic
+					/*
+					//useful for tank heater with Ts1 as setpont control and large intermediate water reservoir
+					if ( 	(ThoE == 1 && Tho < (Ts1 + cT_hotcircle_delta_min))	||
+						(ThiE == 1 && Thi < (Ts1 + cT_hotcircle_delta_min))	) {
+						PrintSS(F("Hot CP OFF 1"));
+						millis_last_hotWP_on = millis_now;
+						hotside_circle_state  = 0;
+					} else {
+						PrintSS(F("Hot CP OFF 2"));
+						millis_last_hotWP_on = millis_now;
+						hotside_circle_state  = 0;
+					}
+					*/
+					if ( (unsigned long)(millis_now - millis_last_hotWP_off) > HOTCIRCLE_STOP_AFTER) {	//and START_EVERY processing
+						#ifdef SETPOINT_THI
+						if ( Thi > T_setpoint ) 	{
+						#endif
+						#ifdef SETPOINT_TS1
+						if ( Ts1 > T_setpoint )  	{
+						#endif
+							//PrintSS(F("HWP OFF"));
+							lastStartMsgTxt = F("HWP_OFF");
+
+
+
+
 ## Firmware options and fine tunings
 
 QA tests, uncomment to enable
