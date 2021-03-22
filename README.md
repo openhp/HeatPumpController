@@ -131,33 +131,6 @@ qwer
 {-desc 2-}
 link
 
-## T sensors abbreviations
-Abbreviations used in the documentation and firmware <br><br> 
-
-Main sensors:
-| Abbr. | Full name             |
-| ----- | --------------------  |
-| Tae   | after evaporator      | 
-| Tbe   | before evaporator     |
-| Tci   | cold side "input"     |
-| Tco   | cold side "output"    |
-| Tbc   | before condenser      |
-| Tac   | after condenser       |
-| Thi   | hot side "input"      |
-| Tho   | hot  side "output"    |
-| Tcrc  | crankcase (compressor itself)|
-
-Additional sensor used in "swiming pool heater" or "water tank heater" schemes:
-| Abbr. | Full name             |
-| ----- | --------------------  |
-| Ts1   | additional sensor1    |
-
-Additional sensors, disabled and not used by default:
-| Abbr. | Full name             |
-| ----- | --------------------  |
-| Treg  | regenerator temperature|
-| Ts2   | additional sensor2    |
-
 ## Hints 
 For more information about Heat Pumps look at [Wikipedia about HP](https://en.wikipedia.org/wiki/Heat_pump).<br>
 If you are interested in questions like "how refrigeration systems works" read Patrick Kotzaoglanian books.<br>
@@ -179,6 +152,33 @@ This product is distributed in the hope that it will be useful,	but WITHOUT ANY 
 ## Author
 <br>
 gonzho АТ web.de (c) 2018-2021<br>
+
+## T sensors abbreviations
+Abbreviations used in the documentation and firmware <br><br> 
+
+Main sensors:
+| Abbr. | Full name             |
+| ----- | --------------------  |
+| Tae   | after evaporator      | 
+| Tbe   | before evaporator     |
+| Tci   | cold side "input"     |
+| Tco   | cold side "output"    |
+| Tbc   | before condenser      |
+| Tac   | after condenser       |
+| Thi   | hot side "input"      |
+| Tho   | hot  side "output"    |
+| Tcrc  | crankcase (compressor itself)|
+
+Additional sensor used in "swiming pool heater" or "water tank heater" schemes, check **SETPOINT_TS1** option:
+| Abbr. | Full name             |
+| ----- | --------------------  |
+| Ts1   | additional sensor1    |
+
+Additional sensors, disabled and not used by default:
+| Abbr. | Full name             |
+| ----- | --------------------  |
+| Treg  | regenerator temperature|
+| Ts2   | additional sensor2    |
 
 ## Diagnostic and status messages
 **LastStopCause messages. Why system was stopped**
