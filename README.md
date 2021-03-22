@@ -128,38 +128,44 @@ qwer
 qwer
 
 ## Firmware options and fine tunings
+
+QA tests, uncomment to enable
 ```c
 //#define SELFTEST_RELAYS_LEDS_SPEAKER    //speaker and relays QA test, uncomment to enable
 //#define SELFTEST_EEV                    //EEV QA test, uncomment to enable
 //#define SELFTEST_T_SENSORS              //temperature sensors QA test, uncomment to enable
+```
 
-//communication protocol with external world
+Communication protocol with external world, choose one
+
+```c
 //#define RS485_JSON		1  		//json, external systems integration
 //#define RS485_HUMAN   	2		//RS485 is used in the same way as the local console, warning: Use only if 2 devices (server and this controller) are connected to the same RS485 line
 #define RS485_MODBUS 		3 		//default, Modbus via RS485, connection to the display (both sensor or 1602, see https://gitlab.com/valden/) or connection to any other MODBUS application or device 
+```
 
-//system type, comment both if HP with EEV
+System type, comment both if HP with EEV
+```c
 //#define	EEV_ONLY			//Valden controller as EEV controller: NO target T sensor. No relays. Oly EEV. Sensors required: Tae, Tbe, current sensor. Additional T sensors can be used but not required.
 //#define	NO_EEV				//capillary tube or TXV, EEV not used
+```
 
-//which sensor is used to check setpoint, uncomment one of options
+Which sensor is used to check setpoint, uncomment one of options
+```c
 #define SETPOINT_THI				//"warm floor" scheme: "hot in" (Thi) temperature used as setpoint
 //#define SETPOINT_TS1				//"swimming pool" or "water tank heater" scheme: "sensor 1" (Ts1) is used as setpoint and located somewhere in water tank
+```
 
+Some more options
+```c
 #define HUMAN_AUTOINFO	30000			//print stats to console, every milliseconds
-
 #define WATCHDOG          			//disable for older bootloaders
-//-----------------------USER OPTIONS END-----------------------
+```
 
+Next sections: advanced options
+Temperature sensors used in a system, comment to disable 
 
-
-//-----------------------Fine Tuning OPTIONS-----------------------
-//next sections: advanced options
-
-
-
-//-----------------------T Sensors -----------------------
-//temperature sensors used in a system, comment to disable 
+```c
 #define T_cold_in;			//cold side (heat source) inlet sensor
 #define T_cold_out;			//cold side outlet sensor
 #define T_before_evaporator;		//"before" and "after evaporator" sensors are required to control EEV, both "EEV_ONLY" and "full" schemes 
@@ -180,8 +186,10 @@ qwer
 #define T_hot_out;			//hot side outlet
 //in full scheme Hot IN required! optional in "EEV_ONLY" scheme (see "EEV_ONLY" option), 
 #define T_hot_in;			//hot side inlet
+```
 
-//-----------------------TEMPERATURES-----------------------
+Temperature limits
+```c
 #define MAGIC     		0x66;  		//change this value if you want to rewrite the T setpoint in EEPROM 
 #define	T_SETPOINT		26.0;		//This is a predefind target temperature value (start temperature). EEPROM-saved. The value can be changed using 1. Console 2. Changing the "setpoint" on a display 3. Changing this value AND changing "magic number"
 #define T_SETPOINT_MAX 		48.0;  		//maximum "setpoint" temperature that an ordinary user can set
@@ -198,9 +206,10 @@ qwer
 
 //#define T_REG_HEAT_THRESHOLD	17.0;		//no longer used (PCB 1.3 MI +) artifact from experimental scheme with separator 
 //#define T_HOTCIRCLE_DELTA_MIN 	2.0;	//not used since ~FW v1.6, "water heater with intermediate heat exchanger" scheme, where Ts1 == "sensor in water"; hot side CP will be switched on if "Ts1 - hot_out > T_HOTCIRCLE_DELTA_MIN"
+```
 
-//-----------------------WATTS AND CYCLES TIMES-----------------------
-//time: milliseconds, power: watts
+Watts, cycles times (milliseconds)
+```c
 #define MAX_WATTS	1000.0 + 70.0 + 80.0	//power limit, watt, HP stops in case of exceeding, examples: 	installation1: compressor 165: 920 Watts, + 35 watts 25/4 circ. pump at 1st speed + 53 watts 25/4 circ. pump at 2nd speed
 													//	installation2: compressor unk: ~1000 + hot CP 70 + cold CP 80 = 1150 watts
 													//	installation3: and so on
@@ -213,13 +222,13 @@ qwer
 #define HOTCIRCLE_START_EVERY	2400000		//while pauses:				pump on "hot side"  starts every 40 minutes (by default) (max 9999 seconds) to circulate water and get exact temperature reading , option used if "warm floor" installation (Thi as setpoint)...
 #define HOTCIRCLE_CHECK_PREPARE	300000		//while pauses:				...and wait temperature stabilisation 5 minutes (by default), after that do setpoint checks...
 #define HOTCIRCLE_STOP_AFTER	(HOTCIRCLE_CHECK_PREPARE + COLDCIRCLE_PREPARE + 30000)		//...and then stop after few minutes of circulating, if temperature is high and no need to start compressor; value must be check_prepare + coldcircle_prepare + 30 seconds (or more)
+```
 
-
-//-----------------------EEV-----------------------
-//If you are using capillary tube or TXV: simply skip next section
-//Depending on how many milliseconds are allocated per step, the speed of automatic tuning will change.
-//Remember that you'll see refrigeration system reaction on every step not immediately, but after few minutes, sometimes after tens of minutes.
-
+EEV options
+If you are using capillary tube or TXV: simply skip next section
+Depending on how many milliseconds are allocated per step, the speed of automatic tuning will change.
+Remember that you'll see refrigeration system reaction on every step not immediately, but after few minutes, sometimes after tens of minutes.
+```c
 #define EEV_MAXPULSES		250		//max steps, 250 is tested for sanhua 1.3
 
 //steps tuning: mulliseconds per fast and slow (precise) steps
@@ -251,13 +260,15 @@ qwer
 
 //do not use next option untill you're not really need it
 //#define EEV_DEBUG				//debug, usefull during system fine tuning, works both with local serial and RS485_HUMAN
-//-----------------------ADDRESSES-----------------------
+```
+
+```c
 const char devID  = 0x45;	//used only if JSON communication, does not matter for modbus and Valden display https://github.com/OpenHP/
 const char hostID = 0x30;	//used only if JSON communication, not used for modbus
-
-//-----------------------OTHER-----------------------
+```
+And last option
+```c
 #define MAX_SEQUENTIAL_ERRORS 	15 		//max cycles to wait auto-clean error, ex: T sensor appears, stop compressor after counter exceeded (millis_cycle * MAX_SEQUENTIAL_ERRORS)
-//-----------------------Fine Tuning OPTIONS END -----------------------
 ```
 
 ## Diagnostic and troubleshooting
