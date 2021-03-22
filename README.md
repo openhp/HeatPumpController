@@ -127,6 +127,16 @@ qwer
 {-desc 2-}
 qwer
 
+## Diagnostic and status messages
+P.WtMax:<WATTS> Protective stop, overcurrent, check system, MAX_WATTS and POWERON_HIGHTIME options
+
+E.Tci, E.Tco, E.Tbe, E.Tae, E.Ts1, E.Ts2, E.Tcrc, E.Treg, E.Tac, E.Tbc, E.Tho, E.Thi - error, sensor lost, check wiring. Refer to "T sensors abbreviations"
+OK:E.T.Sens. - sensor connection restored
+
+OK:Pr.Cold
+OK:Pr.Hot
+
+
 ## Firmware options and fine tunings
 
 QA tests, uncomment to enable
