@@ -131,96 +131,86 @@ qwer
 
 QA tests, uncomment to enable
 ```c
-//#define SELFTEST_RELAYS_LEDS_SPEAKER    //speaker and relays QA test, uncomment to enable
-//#define SELFTEST_EEV                    //EEV QA test, uncomment to enable
-//#define SELFTEST_T_SENSORS              //temperature sensors QA test, uncomment to enable
+//#define SELFTEST_RELAYS_LEDS_SPEAKER	//speaker and relays QA test, uncomment to enable
+//#define SELFTEST_EEV			//EEV QA test, uncomment to enable
+//#define SELFTEST_T_SENSORS		//temperature sensors QA test, uncomment to enable
 ```
 
 Communication protocol with external world, choose one
 
 ```c
-//#define RS485_JSON		1  		//json, external systems integration
-//#define RS485_HUMAN   	2		//RS485 is used in the same way as the local console, warning: Use only if 2 devices (server and this controller) are connected to the same RS485 line
-#define RS485_MODBUS 		3 		//default, Modbus via RS485, connection to the display (both sensor or 1602, see https://gitlab.com/valden/) or connection to any other MODBUS application or device 
+//#define RS485_JSON	1	//json, external systems integration
+//#define RS485_HUMAN	2	//RS485 is used in the same way as the local console, warning: Use only if 2 devices (server and this controller) are connected to the same RS485 line
+#define RS485_MODBUS	3	//default, Modbus via RS485, connection to the display (both sensor or 1602, see https://gitlab.com/valden/) or connection to any other MODBUS application or device 
 ```
 
 System type, comment both if HP with EEV
 ```c
-//#define	EEV_ONLY			//Valden controller as EEV controller: NO target T sensor. No relays. Oly EEV. Sensors required: Tae, Tbe, current sensor. Additional T sensors can be used but not required.
-//#define	NO_EEV				//capillary tube or TXV, EEV not used
+//#define	EEV_ONLY	//Valden controller as EEV controller: NO target T sensor. No relays. Oly EEV. Sensors required: Tae, Tbe, current sensor. Additional T sensors can be used but not required.
+//#define	NO_EEV		//capillary tube or TXV, EEV not used
 ```
 
 Which sensor is used to check setpoint, uncomment one of options
 ```c
-#define SETPOINT_THI				//"warm floor" scheme: "hot in" (Thi) temperature used as setpoint
-//#define SETPOINT_TS1				//"swimming pool" or "water tank heater" scheme: "sensor 1" (Ts1) is used as setpoint and located somewhere in water tank
+#define SETPOINT_THI	//"warm floor" scheme: "hot in" (Thi) temperature used as setpoint
+//#define SETPOINT_TS1	//"swimming pool" or "water tank heater" scheme: "sensor 1" (Ts1) is used as setpoint and located somewhere in water tank
 ```
 
 Some more options
 ```c
-#define HUMAN_AUTOINFO	30000			//print stats to console, every milliseconds
-#define WATCHDOG          			//disable for older bootloaders
+#define HUMAN_AUTOINFO	30000	//print stats to console, every milliseconds
+#define WATCHDOG		//disable for older bootloaders
 ```
 
 Next sections: advanced options
 Temperature sensors used in a system, comment to disable 
 
 ```c
-#define T_cold_in;			//cold side (heat source) inlet sensor
-#define T_cold_out;			//cold side outlet sensor
-#define T_before_evaporator;		//"before" and "after evaporator" sensors are required to control EEV, both "EEV_ONLY" and "full" schemes 
-#define T_after_evaporator;		//"before" and "after evaporator" sensors are required to control EEV, both "EEV_ONLY" and "full" schemes 
-//#define T_separator_gas;		//no longer used (PCB 1.3 MI +) artifact from experimental scheme with separator 
-//#define T_separator_liquid;		//no longer used (PCB 1.3 MI +) artifact from experimental scheme with separator 
-//#define T_before_valve;		//no longer used (PCB 1.3 MI +) artifact from experimental scheme with separator 
-//#define T_suction;			//no longer used (PCB 1.3 MI +) artifact from experimental scheme with separator 
+#define T_cold_in;		//cold side (heat source) inlet sensor
+#define T_cold_out;		//cold side outlet sensor
+#define T_before_evaporator;	//"before" and "after evaporator" sensors are required to control EEV, both "EEV_ONLY" and "full" schemes 
+#define T_after_evaporator;	//"before" and "after evaporator" sensors are required to control EEV, both "EEV_ONLY" and "full" schemes 
 #ifdef SETPOINT_TS1
-	#define T_sensor_1;		//T values from the additional sensor S1 are used as a "setpoint" in "pool" or "water tank heater" schemes 
+	#define T_sensor_1;	//T values from the additional sensor S1 are used as a "setpoint" in "pool" or "water tank heater" schemes 
 #endif
-//!!!
-#define T_sensor_2;			//additional sensor, any source, for example: outdoor temperature, in-case temperature, and so on
-#define T_crc;				//if defined: enables crankcase T sensor and crankcase heater on relay 4
-//#define T_regenerator;		//an additional sensor, the regenerator temperature sensor (inlet or outlet or housing) is used only to obtain a temperature data if necessary 
-#define T_afrer_condenser;		//after condenser (and before valve)
-//!!!#define T_before_condenser;	//before condenser (discharge)
-#define T_hot_out;			//hot side outlet
+//#define T_sensor_2;		//additional sensor, any source, for example: outdoor temperature, in-case temperature, and so on
+#define T_crc;			//if defined: enables crankcase T sensor and crankcase heater on relay 4
+//#define T_regenerator;	//an additional sensor, the regenerator temperature sensor (inlet or outlet or housing) is used only to obtain a temperature data if necessary 
+#define T_afrer_condenser;	//after condenser (and before valve)
+#define T_before_condenser;	//before condenser (discharge)
+#define T_hot_out;		//hot side outlet
 //in full scheme Hot IN required! optional in "EEV_ONLY" scheme (see "EEV_ONLY" option), 
-#define T_hot_in;			//hot side inlet
+#define T_hot_in;		//hot side inlet
 ```
 
 Temperature limits
 ```c
-#define MAGIC     		0x66;  		//change this value if you want to rewrite the T setpoint in EEPROM 
-#define	T_SETPOINT		26.0;		//This is a predefind target temperature value (start temperature). EEPROM-saved. The value can be changed using 1. Console 2. Changing the "setpoint" on a display 3. Changing this value AND changing "magic number"
-#define T_SETPOINT_MAX 		48.0;  		//maximum "setpoint" temperature that an ordinary user can set
-#define T_SETPOINT_MIN		10.0;		//min. "setpoint" temperature that an ordinary user can set, lower values are not recommended until antifreeze fluids at hot side are used.
-#define T_CRANKCASE_MIN 		8.0;	//compressor (crankcase) min. temperature, HP will not start if T lower
-#define T_CRANKCASE_MAX 		110.0;	//compressor (crankcase) max. temperature, overheating protection, HP will stop if T higher
-#define T_CRANKCASE_HEAT_THRESHOLD 	16.0;	//crankcase heater threshold: heater will be powered on if T lower
-#define T_WORKINGOK_CRANKCASE_MIN 	25.0;	//compressor temperature: additional check. HP will stop if T is lower than this value after 5 minutes of work. Do not set the value too large to ensure normal operation after long pauses. 
-#define T_BEFORE_CONDENSER_MAX 	108.0;      	//discharge MAX, system stops if discharge higher
-#define T_COLDREF_MIN 		-14.0;		//suction min., HP stops if T lower, cold side (glycol) loop freeze protection and compressor protection against liquid 
-#define T_BEFORE_EVAP_WORK_MIN 	-25.5;		//!!!before evaporator (after valve) min. T; can be very low for a few minutes after startup, ex: capillary tube in some conditions; and for all systems: after long shut-off, lack of reagent, 1st starts, and many others
-#define T_COLD_MIN 		-15.5;		//cold side (glycol) loop freeze protection: HP stops if inlet or outlet temperature lower
-#define T_HOT_MAX 		50.0;		//hot loop: HP stops if hot side inlet or outlet temperature higher than this threshold
-
-//#define T_REG_HEAT_THRESHOLD	17.0;		//no longer used (PCB 1.3 MI +) artifact from experimental scheme with separator 
-//#define T_HOTCIRCLE_DELTA_MIN 	2.0;	//not used since ~FW v1.6, "water heater with intermediate heat exchanger" scheme, where Ts1 == "sensor in water"; hot side CP will be switched on if "Ts1 - hot_out > T_HOTCIRCLE_DELTA_MIN"
+#define MAGIC		0x66;	//change this value if you want to rewrite the T setpoint in EEPROM 
+#define	T_SETPOINT	26.0;	//This is a predefind target temperature value (start temperature). EEPROM-saved. The value can be changed using 1. Console 2. Changing the "setpoint" on a display 3. Changing this value AND changing "magic number"
+#define T_SETPOINT_MAX	48.0;	//maximum "setpoint" temperature that an ordinary user can set
+#define T_SETPOINT_MIN	10.0;	//min. "setpoint" temperature that an ordinary user can set, lower values are not recommended until antifreeze fluids at hot side are used.
+#define T_CRANKCASE_MIN		8.0;	//compressor (crankcase) min. temperature, HP will not start if T lower
+#define T_CRANKCASE_MAX		110.0;	//compressor (crankcase) max. temperature, overheating protection, HP will stop if T higher
+#define T_CRANKCASE_HEAT_THRESHOLD 16.0;//crankcase heater threshold: heater will be powered on if T lower
+#define T_WORKINGOK_CRANKCASE_MIN  25.0;//compressor temperature: additional check. HP will stop if T is lower than this value after 5 minutes of work. Do not set the value too large to ensure normal operation after long pauses. 
+#define T_BEFORE_CONDENSER_MAX	108.0;	//discharge MAX, system stops if discharge higher
+#define T_COLDREF_MIN 		-14.0;	//suction min., HP stops if T lower, cold side (glycol) loop freeze protection and compressor protection against liquid 
+#define T_BEFORE_EVAP_WORK_MIN 	-25.5;	//!!!before evaporator (after valve) min. T; can be very low for a few minutes after startup, ex: capillary tube in some conditions; and for all systems: after long shut-off, lack of reagent, 1st starts, and many others
+#define T_COLD_MIN 		-15.5;	//cold side (glycol) loop freeze protection: HP stops if inlet or outlet temperature lower
+#define T_HOT_MAX 		50.0;	//hot loop: HP stops if hot side inlet or outlet temperature higher than this threshold
 ```
 
 Watts, cycles times (milliseconds)
 ```c
-#define MAX_WATTS	1000.0 + 70.0 + 80.0	//power limit, watt, HP stops in case of exceeding, examples: 	installation1: compressor 165: 920 Watts, + 35 watts 25/4 circ. pump at 1st speed + 53 watts 25/4 circ. pump at 2nd speed
-													//	installation2: compressor unk: ~1000 + hot CP 70 + cold CP 80 = 1150 watts
-													//	installation3: and so on
-#define POWERON_PAUSE     	300000    	//after power on: 			wait 5 minutes  before the start of HP (protected from power faults) 
-#define MINCYCLE_POWEROFF 	600000    	//after a normal compressor stop: 	10 minutes pause 	(max 99999 seconds) 
-#define MINCYCLE_POWERON  	3600000  	//after compressor start: 		minimum compressor operation time, i.e. work time is not less than this value (or more, depending on the setpoint temperature) 60 minutes = 3.6 KK 120mins = 5.4 kK.
-#define POWERON_HIGHTIME	7000		//after compressor start: 		defines time when power consumption can be 3 times greater than normal, 7 sec. by default
-#define COLDCIRCLE_PREPARE	90000		//before compressor start:		power on cold CP and wait 90 sec; if false start: CP will off twise this time; and (hotcircle_stop_after - this_value) must be > hotcircle_check_prepare or HP will go sleep cycle instead of start
-#define DEFFERED_STOP_HOTCIRCLE	1200000		//after compressor stop:		wait 20 minutes, if no need to start compressor: stop hot WP; value must be > 0
-#define HOTCIRCLE_START_EVERY	2400000		//while pauses:				pump on "hot side"  starts every 40 minutes (by default) (max 9999 seconds) to circulate water and get exact temperature reading , option used if "warm floor" installation (Thi as setpoint)...
-#define HOTCIRCLE_CHECK_PREPARE	300000		//while pauses:				...and wait temperature stabilisation 5 minutes (by default), after that do setpoint checks...
+#define MAX_WATTS	1000.0 + 70.0 + 80.0	//power limit, watt, HP stops in case of exceeding, example: compressor: ~1000 + hot CP 70 + cold CP 80
+#define POWERON_PAUSE     	300000    //after power on: 			wait 5 minutes  before the start of HP (protected from power faults) 
+#define MINCYCLE_POWEROFF 	600000    //after a normal compressor stop: 	10 minutes pause 	(max 99999 seconds) 
+#define MINCYCLE_POWERON  	3600000  //after compressor start: 		minimum compressor operation time, i.e. work time is not less than this value (or more, depending on the setpoint temperature) 60 minutes = 3.6 KK 120mins = 5.4 kK.
+#define POWERON_HIGHTIME	7000	//after compressor start: 		defines time when power consumption can be 3 times greater than normal, 7 sec. by default
+#define COLDCIRCLE_PREPARE	90000	//before compressor start:		power on cold CP and wait 90 sec; if false start: CP will off twise this time; and (hotcircle_stop_after - this_value) must be > hotcircle_check_prepare or HP will go sleep cycle instead of start
+#define DEFFERED_STOP_HOTCIRCLE	1200000	//after compressor stop:		wait 20 minutes, if no need to start compressor: stop hot WP; value must be > 0
+#define HOTCIRCLE_START_EVERY	2400000	//while pauses:				pump on "hot side"  starts every 40 minutes (by default) (max 9999 seconds) to circulate water and get exact temperature reading , option used if "warm floor" installation (Thi as setpoint)...
+#define HOTCIRCLE_CHECK_PREPARE	300000	//while pauses:				...and wait temperature stabilisation 5 minutes (by default), after that do setpoint checks...
 #define HOTCIRCLE_STOP_AFTER	(HOTCIRCLE_CHECK_PREPARE + COLDCIRCLE_PREPARE + 30000)		//...and then stop after few minutes of circulating, if temperature is high and no need to start compressor; value must be check_prepare + coldcircle_prepare + 30 seconds (or more)
 ```
 
@@ -229,44 +219,46 @@ If you are using capillary tube or TXV: simply skip next section
 Depending on how many milliseconds are allocated per step, the speed of automatic tuning will change.
 Remember that you'll see refrigeration system reaction on every step not immediately, but after few minutes, sometimes after tens of minutes.
 ```c
-#define EEV_MAXPULSES		250		//max steps, 250 is tested for sanhua 1.3
+#define EEV_MAXPULSES		250	//max steps, 250 is tested for sanhua 1.3
 
 //steps tuning: mulliseconds per fast and slow (precise) steps
-#define EEV_PULSE_FCLOSE_MILLIS	20		//(20 tube evaporator)		fast closing, closing on danger				(milliseconds per step)
-#define EEV_PULSE_CLOSE_MILLIS	60000		//(50000 tube evaporator)	accurate closing while the compressor works 		(milliseconds per step)
-#define EEV_PULSE_WOPEN_MILLIS	20		//(20 tube evaporator)		standby (waiting) pos. set				(milliseconds per step)
-#define EEV_PULSE_FOPEN_MILLIS	1400		//(1300 tube evaporator)	fast opening, fast search 				(milliseconds per step)
-#define EEV_PULSE_OPEN_MILLIS	70000		//(60000 tube evaporator)	accurate opening while the compressor works		(milliseconds per step)
-#define EEV_STOP_HOLD		500		//0.1..1sec for Sanhua		hold time						(milliseconds per step)
+#define EEV_PULSE_FCLOSE_MILLIS	20	//(20 tube evaporator)		fast closing, closing on danger				(milliseconds per step)
+#define EEV_PULSE_CLOSE_MILLIS	60000	//(50000 tube evaporator)	accurate closing while the compressor works 		(milliseconds per step)
+#define EEV_PULSE_WOPEN_MILLIS	20	//(20 tube evaporator)		standby (waiting) pos. set				(milliseconds per step)
+#define EEV_PULSE_FOPEN_MILLIS	1400	//(1300 tube evaporator)	fast opening, fast search 				(milliseconds per step)
+#define EEV_PULSE_OPEN_MILLIS	70000	//(60000 tube evaporator)	accurate opening while the compressor works		(milliseconds per step)
+#define EEV_STOP_HOLD		500	//0.1..1sec for Sanhua		hold time						(milliseconds per step)
 #define EEV_CLOSEEVERY		86400000	//86400000: EEV will be closed (zero calibration) every 24 hours, executed while HP is NOT working	(milliseconds per cycle)
 
 //positions
-#define EEV_CLOSE_ADD_PULSES	8		//read below, additional steps after zero position while full closing 
-#define EEV_OPEN_AFTER_CLOSE	45		//0 - set the zero position, then add EEV_CLOSE_ADD_PULSES (zero insurance, read EEV guides for this value) and stop, EEV will be in zero position. 
-						//N - set the zero position, than add EEV_CLOSE_ADD_PULSES, than open EEV on EEV_OPEN_AFTER_CLOSE pulses
-						//i.e. it's a "waiting position" while HP not working, value must be <= MINWORKPOS
-#define EEV_MINWORKPOS		50		//position will be not less during normal work, open EEV to this position after compressor start
+#define EEV_CLOSE_ADD_PULSES	8	//read below, additional steps after zero position while full closing 
+#define EEV_OPEN_AFTER_CLOSE	45	//0 - set the zero position, then add EEV_CLOSE_ADD_PULSES (zero insurance, read EEV guides for this value) and stop, EEV will be in zero position. 
+					//N - set the zero position, than add EEV_CLOSE_ADD_PULSES, than open EEV on EEV_OPEN_AFTER_CLOSE pulses
+					//i.e. it's a "waiting position" while HP not working, value must be <= MINWORKPOS
+#define EEV_MINWORKPOS		50	//position will be not less during normal work, open EEV to this position after compressor start
 
 //temperatures
-#define EEV_PRECISE_START	7.0		//(8.6 tube evaporator) 	precise tuning threshold: 		make slower pulses if (real_diff-target_diff) less than this value. Used for fine auto-tuning
-#define EEV_EMERG_DIFF		1.7		//(2.5 tube evaporator) 	liquid at suction threshold:		if dangerous condition occured:  real_diff =< (target_diff - EEV_EMERG_DIFF)  then EEV will be closed to min. work position //Ex: EEV_EMERG_DIFF = 2.0, target diff 5.0, if real_diff =< (5.0 - 2.0) then EEV will be closed to EEV_MINWORKPOS
-#define EEV_HYSTERESIS		0.5		//(0.6 tube evaporator) 	hysteresis, to stop fine tuning:	must be less than EEV_PRECISE_START, ex: target difference = 4.0, hysteresis = 0.3, no EEV pulses will be done while real difference in range 4.0..4.3 
-#define EEV_TARGET_TEMP_DIFF	3.6		//(3.6 tube evaporator) 	target difference between Before Evaporator and After Evaporator, the head of whole algorithm
+#define EEV_PRECISE_START	7.0	//(8.6 tube evaporator) 	precise tuning threshold: 		make slower pulses if (real_diff-target_diff) less than this value. Used for fine auto-tuning
+#define EEV_EMERG_DIFF		1.7	//(2.5 tube evaporator) 	liquid at suction threshold:		if dangerous condition occured:  real_diff =< (target_diff - EEV_EMERG_DIFF)  then EEV will be closed to min. work position //Ex: EEV_EMERG_DIFF = 2.0, target diff 5.0, if real_diff =< (5.0 - 2.0) then EEV will be closed to EEV_MINWORKPOS
+#define EEV_HYSTERESIS		0.5	//(0.6 tube evaporator) 	hysteresis, to stop fine tuning:	must be less than EEV_PRECISE_START, ex: target difference = 4.0, hysteresis = 0.3, no EEV pulses will be done while real difference in range 4.0..4.3 
+#define EEV_TARGET_TEMP_DIFF	3.6	//(3.6 tube evaporator) 	target difference between Before Evaporator and After Evaporator, the head of whole algorithm
 
 //additional options
-#define EEV_REOPENLAST		1		//1 = reopen to last position on compressor start, useful for ordinary schemes with everyday working cycles, 0 = not
-#define EEV_REOPENMINTIME	40000		//after system start: min. delay between "min. work pos." (must be > 0 in this case and > waiting position) set and reopening start
-//#define EEV_MANUAL				//comment to disable, manual set of EEV position via console; warning: this option will stop all EEV auto-activities, including zero position find procedure; so this option not recommended: switching auto/manual mode from console after startup is a better way
+#define EEV_REOPENLAST		1	//1 = reopen to last position on compressor start, useful for ordinary schemes with everyday working cycles, 0 = not
+#define EEV_REOPENMINTIME	40000	//after system start: min. delay between "min. work pos." (must be > 0 in this case and > waiting position) set and reopening start
+//#define EEV_MANUAL			//comment to disable, manual set of EEV position via console; warning: this option will stop all EEV auto-activities, including zero position find procedure; so this option not recommended: switching auto/manual mode from console after startup is a better way
 
 //do not use next option untill you're not really need it
 //#define EEV_DEBUG				//debug, usefull during system fine tuning, works both with local serial and RS485_HUMAN
 ```
 
+Communication addresses
 ```c
 const char devID  = 0x45;	//used only if JSON communication, does not matter for modbus and Valden display https://github.com/OpenHP/
 const char hostID = 0x30;	//used only if JSON communication, not used for modbus
 ```
-And last option
+
+Last option
 ```c
 #define MAX_SEQUENTIAL_ERRORS 	15 		//max cycles to wait auto-clean error, ex: T sensor appears, stop compressor after counter exceeded (millis_cycle * MAX_SEQUENTIAL_ERRORS)
 ```
