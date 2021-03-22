@@ -144,7 +144,7 @@ qwer
 | **P.Tbc**		| Protective stop. "Before condenser" temperatire is too high. Overheat protection. This is an ordinary situation during long runs. See **T_BEFORE_CONDENSER_MAX** option |
 | **P.Tci**		| Protective stop. "Cold in" temperature is too low. Preventing cold loop from freezing. See **T_COLD_MIN** option |
 | **P.Tco**		| Protective stop. "Cold out" temperature is too low. Preventing cold loop from freezing. see **T_COLD_MIN** option |
-| **E.Tci, E.Tco, E.Tbe, <br> E.Tae, E.Ts1, E.Ts2, <br> E.Tcrc, E.Treg, E.Tac, <br> E.Tbc, E.Tho, E.Thi** |	Sensor lost, check wiring. Refer to "T sensors abbreviations"|
+| **E.Tci, E.Tco, E.Tbe, E.Tae, E.Ts1, E.Ts2, E.Tcrc, E.Treg, E.Tac, E.Tbc, E.Tho, E.Thi** |	Sensor lost, check wiring. Refer to "T sensors abbreviations"|
 | **E.PresCold**	| Cold side pressure too low, check refrigerant charge and pressure sensors |
 | **E.PresHot**		| Hot side pressure too high, check refrigerant charge and pressure sensors |
 
