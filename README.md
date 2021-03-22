@@ -375,6 +375,7 @@ Last option
 #define MAX_SEQUENTIAL_ERRORS 	15 		//max cycles to wait auto-clean error, ex: T sensor appears, stop compressor after counter exceeded (millis_cycle * MAX_SEQUENTIAL_ERRORS)
 ```
 ## Appendix D: bill of materials
+<sub>
 | Part | Quantity |
 | ------------- | ------------- |
 | **1206 Resistors:**	||
@@ -424,7 +425,7 @@ Last option
 | DS18B20					| 12	|
 | usb→uart (to upload firmware)			| 1	|
 | Current sensor sct-013-000			| 1	|
-
+</sub>
 ## Author
 <br>
 gonzho АТ web.de (c) 2018-2021<br>
