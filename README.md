@@ -131,55 +131,55 @@ qwer
 **LastStopCause messages. Why system was stopped**
 | Message | description |
 | ------------- | ------------- |
-| **Normal_stop** 	| Normal stop, i.e. setpoint sensor temperature > setpoint, so no need to heat anymore	|
-| **P.WtMax:_WATTS_**	| Protective stop. Overcurrent, double check your system, then **MAX_WATTS** and **POWERON_HIGHTIME** options |
-| **P.W.wattMIN**	| Protective stop. Power consumtion abnormally low (<max watts/5). Check your system, see **MAX_WATTS** option |
-| **P.W.TcrcMIN**	| Protective stop. "Comressor" temperature abnormally low. Check your system, see **T_WORKINGOK_CRANKCASE_MIN** option |
-| **P.Tho** 		| Protective stop. "Hot out" temperature is too high. Check your system, see **T_HOT_MAX** option |
-| **P.Thi** 		| Protective stop. "Hot in" temperature is too high. Check system, see **T_HOT_MAX** option |
+| **Normal_stop** 	| Normal stop, i.e. setpoint sensor temperature > setpoint, so no need to heat anymore.	|
+| **P.WtMax:_WATTS_**	| Protective stop. Overcurrent, double check your system, then **MAX_WATTS** and **POWERON_HIGHTIME** options. |
+| **P.W.wattMIN**	| Protective stop. Power consumtion abnormally low (<max watts/5). Check your system, see **MAX_WATTS** option. |
+| **P.W.TcrcMIN**	| Protective stop. "Comressor" temperature abnormally low. Check your system, see **T_WORKINGOK_CRANKCASE_MIN** option. |
+| **P.Tho** 		| Protective stop. "Hot out" temperature is too high. Check your system, see **T_HOT_MAX** option. |
+| **P.Thi** 		| Protective stop. "Hot in" temperature is too high. Check system, see **T_HOT_MAX** option. |
 | **P.Tcrc**		| Protective stop. "Compressor" temperature is too high. Overheat protection. This is an ordinary situation during long runs. See **T_CRANKCASE_MAX** option and compressor manual if you want to tune it (~115 °C for wide-available compressors). |
-| **P.Tae**		| Protective stop. "After evaporator" temperature too low. Preventing cold loop from freezing and protecting suction line from liquid. See **T_COLDREF_MIN** option |
-| **P.Tbe**		| Protective stop. "Before evaporator" temperature too low. Preventing cold loop from freezing. See **T_BEFORE_EVAP_WORK_MIN** option |
-| **P.Tbc**		| Protective stop. "Before condenser" temperatire is too high. Overheat protection. This is an ordinary situation during long runs. See **T_BEFORE_CONDENSER_MAX** option |
-| **P.Tci**		| Protective stop. "Cold in" temperature is too low. Preventing cold loop from freezing. See **T_COLD_MIN** option |
-| **P.Tco**		| Protective stop. "Cold out" temperature is too low. Preventing cold loop from freezing. see **T_COLD_MIN** option |
-| **E.Tci, E.Tco, E.Tbe, E.Tae, E.Ts1, E.Ts2, E.Tcrc, E.Treg, E.Tac, E.Tbc, E.Tho, E.Thi** |	Sensor lost, check wiring. Refer to "T sensors abbreviations"|
-| **E.PresCold**	| Cold side pressure too low, check refrigerant charge and pressure sensors |
-| **E.PresHot**		| Hot side pressure too high, check refrigerant charge and pressure sensors |
+| **P.Tae**		| Protective stop. "After evaporator" temperature too low. Preventing cold loop from freezing and protecting suction line from liquid. See **T_COLDREF_MIN** option. |
+| **P.Tbe**		| Protective stop. "Before evaporator" temperature too low. Preventing cold loop from freezing. See **T_BEFORE_EVAP_WORK_MIN** option. |
+| **P.Tbc**		| Protective stop. "Before condenser" temperatire is too high. Overheat protection. This is an ordinary situation during long runs. See **T_BEFORE_CONDENSER_MAX** option. |
+| **P.Tci**		| Protective stop. "Cold in" temperature is too low. Preventing cold loop from freezing. See **T_COLD_MIN** option. |
+| **P.Tco**		| Protective stop. "Cold out" temperature is too low. Preventing cold loop from freezing. see **T_COLD_MIN** option. |
+| **E.Tci, E.Tco, E.Tbe, E.Tae, E.Ts1, E.Ts2, E.Tcrc, E.Treg, E.Tac, E.Tbc, E.Tho, E.Thi** |	Sensor lost, check wiring. Refer to "T sensors abbreviations". |
+| **E.PresCold**	| Cold side pressure too low, check refrigerant charge and pressure sensors. |
+| **E.PresHot**		| Hot side pressure too high, check refrigerant charge and pressure sensors. |
 
-**LastStartMessage messages. What event system is waiting for starting work and some additional events**
+**LastStartMessage messages. What event system is waiting for. Some informational messages.**
 | Message | description |
 | ------------- | ------------- |
-| **StCntd:_seconds_**	| startup countdown, short-term power loss protection |
-| **HP_Started**	| normal start |
-| **HWP_OFF**		| setpoint sensor temperature > setpoint, so hot side pump powered off and going to power saving mode, see **HOTCIRCLE_STOP_AFTER** |
-| **HWP_ON_by_ev**	| hot side pump started after power saving, see **HOTCIRCLE_START_EVERY** option |
-| **#CWPpStart**	| coldside pump started, preparing system to start compressor |
-| **#HotPrp:_seconds_**	| hot side pump is on, waiting for T stabilisation countdown see **HOTCIRCLE_CHECK_PREPARE** option |
-| **#HotSlp:_seconds_**	| sleepeng, last cycle temperature was > setpoint, waiting for next startup, see **HOTCIRCLE_START_EVERY** option |
-| **#HPSlp:_seconds_**"	| + String( (mincycle_poweroff -(unsigned long)(millis_now - millis_last_heatpump_on))/1000 ); |			
-| **#CWPp:_seconds_**	| coldside pumping, preparing countdown**COLDCIRCLE_PREPARE** option |
-| **#Tho>Max**		| , see **T_HOT_MAX** option |
-| **#Thi>Max**		| , see **T_HOT_MAX** option |
-| **#CaseCold**		| , see **T_CRANKCASE_MIN** option |
-| **#CaseHot**		| , see **T_CRANKCASE_MAX** option |
-| **#Thi>Setp.**	| hot in temperature > setpoint, so no reason to start |
-| **#Ts1>Setp.**	| Ts1 temperature > setpoint, so no reason to start, see SETPOINT_TS1 option to switch betwees Thi and Ts1 as setpoint sensor |
-| **#Tae<RefMin**	| After Evaporator temperature is too low, check system, see **T_COLDREF_MIN** option |
-| **#Tbe<RefMin**	| Before Evaporator temperature is too low, check system, see **T_COLDREF_MIN** option |
-| **#Tbc>Max**		| Before Condenser temperature is too high, check system, see **T_BEFORE_CONDENSER_MAX** option |
-| **#Tci<ColdMin**	| Cold In temperature is too low, see **T_COLD_MIN** option |
-| **#Tco<ColdMin**	| Cold In temperature is too high, see **T_COLD_MIN** option |
-| **CWP_ON_CoMin**	| coldside pump started, cold side temperature is too low, so preventing cold loop freeze, see **T_COLD_MIN** option |
+| **StCntd:_seconds_**	| Startup countdown, short-term power loss protection. |
+| **HP_Started**	| Normal start. |
+| **#Thi>Setp.**	| "Hot in" temperature > setpoint, so no reason to start |
+| **#Ts1>Setp.**	| "Ts1" temperature > setpoint, so no reason to start, see SETPOINT_TS1 option to switch betwees Thi and Ts1 as setpoint sensor |
+| **HWP_OFF**		| Setpoint sensor temperature > setpoint, so hot side pump powered off and gone to power saving mode. See **HOTCIRCLE_STOP_AFTER**. |
+| **HWP_ON_by_ev**	| Hot side pump started after power saving. See **HOTCIRCLE_START_EVERY** option. |
+| **#HotPrp:_seconds_**	| Hot side pump is on, waiting for T stabilisation. Countdown, seconds. See **HOTCIRCLE_CHECK_PREPARE** option. |
+| **#HotSlp:_seconds_**	| Hot side pump in power save mode (sleeping). Waiting for next startup. Countdown, seconds. See **HOTCIRCLE_START_EVERY** option. |
+| **#HPSlp:_seconds_**"	| Compressor: pause between starts. Countdown, seconds. **MINCYCLE_POWEROFF** option.|			
+| **#CPpStart**		| Cold side pump started. |
+| **#CPp:_seconds_**	| Cold side pumping. Preparing system to start compressor. Countdown, seconds. **COLDCIRCLE_PREPARE** option |
+| **#Tho>Max**		| "Hot out" temperature is too high. See **T_HOT_MAX** option |
+| **#Thi>Max**		| "Hot in" temperature is too high. , see **T_HOT_MAX** option |
+| **#CaseCold**		| Compressor crankcase temperature is too low. Can't start. This situation occurs if the outdoor installation when AC power was lost for a few hours. Wait, while the crankcase heater stabilizing your compressor temperature. See **T_CRANKCASE_MIN** option |
+| **#CaseHot**		| Compressor is still overheated, waiting. See **T_CRANKCASE_MAX** option |
+| **#Tae<RefMin**	| "After evaporator" temperature too low. Preventing cold loop from freezing and protecting suction line from liquid. See **T_COLDREF_MIN** option |
+| **#Tbe<RefMin**	| "Before evaporator" temperature too low. Preventing cold loop from freezing. See **T_COLDREF_MIN** option |
+| **#Tbc>Max**		| "Before condenser" temperatire is too high. Overheat protection. See **T_BEFORE_CONDENSER_MAX** option |
+| **#Tci<ColdMin**	| "Cold in" temperature is too low. Preventing cold loop from freezing. See **T_COLD_MIN** option |
+| **#Tco<ColdMin**	| "Cold out" temperature is too low. Preventing cold loop from freezing. See **T_COLD_MIN** option |
+| **CWP_ON_CoMin**	| Cold side pump started beause cold side temperature is too low, so preventing cold loop freeze, see **T_COLD_MIN** option |
 
-**Additional messages**<br><br>
+**Additional messages**
 | Message | description |
 | ------------- | ------------- |
-| **OK:E.T.Sens.**	| Sensor restored<br>
-| **OK:Pr.Cold**	| Cold side pressure restored<br>
-| **OK:Pr.Hot**		| Hot side pressure restored<br>
-| **HWP_ON** 		| hot side pump powered on<br>
-| **Err:_errorcode_**	| Error code: 1 = temperature sensor error, 2 = Hot side pressure too high  3 = cold side pressure too low<br>
+| **OK:Pr.Cold**	| Cold side pressure restored|
+| **OK:Pr.Hot**		| Hot side pressure restored|
+| **OK:E.T.Sens.**	| Temperature sensors restored|
+| **HWP_ON** 		| Hot side pump powered on|
+| **Err:_errorcode_**	| Error code: 1 = temperature sensor error, 2 = Hot side pressure too high  3 = cold side pressure too low|
 
 ## Firmware options and fine tunings
 
