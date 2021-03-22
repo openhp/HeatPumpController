@@ -37,7 +37,7 @@ pumps. Controller can be easily used for newly designed heat pumps (HPs), includ
 
 ## Get your own copy and PCB assembly
 - download the PCB gerber file, *Gerber.zip*
-- find in Google, [where to order a printed circuit board](https://www.google.com/search?q=order+pcb+gerber) where to order a printed circuit board (keywords: order pcb gerber), place an order,
+- find in Google, [where to order a printed circuit board](https://www.google.com/search?q=order+pcb+gerber) (keywords: order pcb gerber), place an order,
 - order electronic components, see BOM (Bill Of Materials) list, *PCB_BOM.html*
 - solder electronic components {- assembly instructions here-}
 
