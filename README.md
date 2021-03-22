@@ -123,12 +123,12 @@ Let's say you don't know how to calculate the amount of refrigerant in a newly b
 - for single-component refrigerants: slightly open the valve of the HVAC gauge manifold to start adding refrigerant through the gas phase on the cold side,
 - for multi-component refrigerants: turn over the refrigerant cylinder, VERY SLIGHTLY open the HVAC manifold valve to start adding a VERY LITTLE amount of refrigerant through the liquid phase
 - carry out charging until the suction temperature (according to the suction pressure on the manometer) is ~ 10 ... 15 ° C lower than the temperature of the heat source (example: the temperature at the inlet of the mixture of water and antifreeze from the closed ground loop is + 8 ° C, so the suction temperature should be -2 ..- 7), then close the manifold valve,
+- at every step check the discharge pressure: it should not be too high compared to the temperature from the discharge sensor (Tbc) of the hot side.
 - wait for the system to heat the target to a more or less stable temperature, add refrigerant while temperature increases (and suction decreases)
 - stop if you are sure that the heating process is now proceeding very slowly
-- check the discharge pressure: it should not be too high compared to the temperature from the discharge sensor (Tbc) of the hot side.
-- Carry out the final charge when the system is stable and the heat pump stops when the set point is reached (normal stop), this may take 12 hours or more, and now the target difference between the suction pressure temperature and the temperature from the T sensor should be 3 ... 6 ° C,
+- carry out the final charge when the system is stable and the heat pump stops normally (setpoint is reached), this may take 12 hours or more, and now the target difference between the suction pressure temperature and the temperature from the T sensor should be 3 ... 6 ° C,
 
-This algo is good and safe both the first time and as a starting point. As you gain experience, you will get yours much easier and faster. {-Also try "manual EEV mode" during charging process.-}
+This algo is good and safe both the first time and as a starting point. As you gain experience, you will get yours much easier and faster. Also use "manual EEV mode" during charging process.
 {-?manifold photos with comments?-}
 
 ## Hints 
