@@ -100,6 +100,19 @@ You may prefer to solder the wires over using connectors. But in this case, it w
 {-Photo: RS485 and 12V power for display-}<br>
 {-Photo: all together-}<br>
 
+## Control and usage: serial console
+{-desc 2-}
+qwer
+
+## Control and usage: remote control display
+{-There are 2 ways to control heat pump-}
+{-connection-}
+qwer
+
+## Control and usage: diagnostic display
+{-desc 2-}
+link
+
 ## Starting up the heat pump system for the first time and charging refrigerant
 This is not a hard part, but if you don't have experience it will take time. <br>
 You have performed a pressure test and vacuumated your system. It's time to charge.<br>
@@ -117,19 +130,6 @@ Let's say you don't know how to calculate the amount of refrigerant in a newly b
 
 This algo is good and safe both the first time and as a starting point. As you gain experience, you will get yours much easier and faster. {-Also try "manual EEV mode" during charging process.-}
 {-?manifold photos with comments?-}
-
-## Control and usage: remote control display
-{-There are 2 ways to control heat pump-}
-{-connection-}
-qwer
-
-## Control and usage: serial console
-{-desc 2-}
-qwer
-
-## Control and usage: diagnostic display
-{-desc 2-}
-link
 
 ## Hints 
 For more information about Heat Pumps look at [Wikipedia about HP](https://en.wikipedia.org/wiki/Heat_pump).<br>
