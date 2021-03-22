@@ -128,7 +128,8 @@ qwer
 qwer
 
 ## Diagnostic and status messages
-P.WtMax:<WATTS> Protective stop, overcurrent, check system, MAX_WATTS and POWERON_HIGHTIME options
+
+P.WtMax:<WATTS> Protective stop, overcurrent, double check your system, MAX_WATTS and POWERON_HIGHTIME options
 
 E.Tci, E.Tco, E.Tbe, E.Tae, E.Ts1, E.Ts2, E.Tcrc, E.Treg, E.Tac, E.Tbc, E.Tho, E.Thi - error, sensor lost, check wiring. Refer to "T sensors abbreviations"
 OK:E.T.Sens. - sensor connection restored
@@ -205,8 +206,39 @@ deffered_stop_hotcircle) 	|| 	millis_last_heatpump_on == 0) 	{ //deffered stop a
 						#endif
 							//PrintSS(F("HWP OFF"));
 							lastStartMsgTxt = F("HWP_OFF");
+Tci < cT_cold_min) 	&& 	(coldside_circle_state  == 0)	) {
+				//PrintSS(F("CWP ON by ColdMin"));
+				lastStartMsgTxt = F("CWP_ON_CoMin");
+				
+cT_hot_max)			{heatpump_state = 0; 	lastStopCauseTxt = F("P.Tho");
+cT_hot_max)			{heatpump_state = 0; 	lastStopCauseTxt = F("P.Thi");
+cT_crc_max)   		{heatpump_state = 0; 	lastStopCauseTxt = F("P.Tcrc")
+cT_coldref_min)		{heatpump_state = 0; 	lastStopCauseTxt = F("P.Tae");
+cT_before_evap_work_min) 	{heatpump_state = 0; 	lastStopCauseTxt = F("P.Tbe");
+cT_coldref_min)		{heatpump_state = 0; 	lastStopCauseTxt = F("P.Tsuc")
+cT_before_condenser_max)	{heatpump_state = 0; 	lastStopCauseTxt = F("P.Tbc");
+cT_cold_min)       		{heatpump_state = 0; 	lastStopCauseTxt = F("P.Tci");
+cT_cold_min)			{heatpump_state = 0; 	lastStopCauseTxt = F("P.Tco");
 
 
+cT_workingOK_crc_min )  ) {
+					//errorcode = ERR_HEATPUMP;
+					millis_last_heatpump_on = millis_now;
+					heatpump_state = 0;
+					LSCint = LSCint_protective;
+					lastStopCauseTxt = F("P.W.TcrcMIN");
+c_workingOK_wattage_min )  ) {
+					//errorcode = ERR_WATTAGE;
+					millis_last_heatpump_on = millis_now;
+					heatpump_state = 0;
+					LSCint = LSCint_protective;
+					lastStopCauseTxt = F("P.W.wattMIN");
+"E.PressHot");
+_LO) {
+"E.PressCold");
+
+"Err: ");
+				PrintSS_SaI(errorcode);
 
 
 ## Firmware options and fine tunings
