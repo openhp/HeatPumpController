@@ -275,7 +275,7 @@ Water(glycole)<->refrigerant heat exchangers. You can use plated heat exchangers
 {-picture here-}<br>
 You can build your own "tube-in-tube" heat exchangers. It's not hard. Little cheaper. Worse heat exchange. Soldering is very easy.
 {-pictures here-}<br>
-And do not think "I'll get old AC unit parts... Housing... Slightly change...  A hour or two, day of work maximum, and i'll got a refrigerant<->water heat exchanger for a penny!" That was first thing I've tried. The idea is obvious but it's a huge waste of time with horrible look and very average or poor result.
+And do not think "I'll get old AC unit parts... Housing... Slightly change...  A hour or two, day of work maximum, and i'll got a refrigerant<->water heat exchanger for a penny!" That was first thing I've tried. The idea is obvious but it's a huge waste of time with horrible look and very average or poor result. If you are building ground loop to floor loop (or -to water tank) system you can take only comressor and refrigerant charge from old AC.
 
 ##  Appendix D: Firmware options and fine tunings
 
