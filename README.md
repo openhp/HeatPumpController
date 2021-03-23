@@ -14,7 +14,7 @@ pumps. Controller can be easily used for newly designed heat pumps (HPs), includ
 - automatical power saving mode,
 - built-in protections: cold start, overheat, short-term power loss, power overload, ground loop freeze and compressor protection against liquid.
 - LED indication,
-- control via [remote dusplay](https://github.com/openhp/Display/) or local Serial (UART 5V),
+- control via [remote display](https://github.com/openhp/Display/) or local Serial (UART 5V),
 <br><br>
 
 ## Refrigeration schemes supported
