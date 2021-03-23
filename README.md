@@ -190,8 +190,23 @@ Additional sensors, disabled and not used by default:
 | Treg  | regenerator temperature|
 | Ts2   | additional sensor2    |
 
+Relays:
+| Abbr. | Full name             |
+| ----- | --------------------  |
+| RCRCH  | regenerator temperature|
+| RC   | additional sensor2    |
+| RH   | additional sensor2    |
+| RP   | additional sensor2    |
+
+Other:
+| Abbr. | Full name             |
+| ----- | --------------------  |
+| LSM	| LastStopCause		|
+| LSC	| LastStartMessage	|
+
+
 ## Appendix B: Diagnostic and status messages
-**LastStopCause messages. Why system was stopped**
+**LastStopCause (LSC) messages. Why system was stopped**
 | Message | description |
 | ------------- | ------------- |
 | **Normal_stop** 	| Normal stop, i.e. setpoint sensor temperature > setpoint, so no need to heat anymore.	|
@@ -210,7 +225,7 @@ Additional sensors, disabled and not used by default:
 | **E.PresCold**	| Cold side pressure too low, check refrigerant charge and pressure sensors. |
 | **E.PresHot**		| Hot side pressure too high, check refrigerant charge and pressure sensors. |
 
-**LastStartMessage messages. What event system is waiting for. Some informational messages.**
+**LastStartMessage (LSM) messages. What event system is waiting for. Some informational messages.**
 | Message | description |
 | ------------- | ------------- |
 | **StCntd:_seconds_**	| Startup countdown, short-term power loss protection. |
