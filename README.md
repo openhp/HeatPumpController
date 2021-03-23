@@ -133,11 +133,11 @@ Let's say you don't know how to calculate the amount of refrigerant in a newly b
 - at this moment the suction temperature (according to the suction pressure on the pressure gauge) will be about -20 ...- 40 ° C,
 - for single-component refrigerants: slightly open the valve of the HVAC gauge manifold to start adding refrigerant through the gas phase on the cold side,
 - for multi-component refrigerants: turn over the refrigerant cylinder, VERY SLIGHTLY open the HVAC manifold valve to start adding a VERY LITTLE amount of refrigerant through the liquid phase,
-- carry out charging until the suction temperature (according to the suction pressure on the manometer) is ~ 10 ... 15 ° C lower than the temperature of the heat source (example: the temperature at the inlet of the mixture of water and antifreeze from the closed ground loop is + 8 ° C, so the suction temperature should be -2 ..- 7), then close the manifold valve,
+- carry out charging until the suction temperature (according to the suction pressure on the manometer) is ~ 10 ... 15 °C lower than the temperature of the heat source (example: the temperature at the inlet of the mixture of water and antifreeze from the closed ground loop is + 8 °C, so the suction temperature should be -2 ..- 7), then close the manifold valve,
 - at every step check the discharge pressure: it should not be too high compared to the temperature from the discharge sensor (Tbc) of the hot side,
 - wait for the system to heat the target to a more or less stable temperature, add refrigerant while temperature increases (and suction decreases),
 - stop if you are sure that the heating process is now proceeding very slowly,
-- carry out the final charge when the system is stable and the heat pump stops normally (setpoint is reached), this may take 12 hours or more, and now the target difference between the suction pressure temperature and the temperature from the T sensor should be 3 ... 6 ° C.
+- carry out the final charge when the system is stable and the heat pump stops normally (setpoint is reached), this may take 12 hours or more, and now the target difference between the suction pressure temperature and the temperature from the T sensor should be 3 ... 6 °C.
 
 This algo is good and safe both the first time and as a starting point. As you gain experience, you will get yours much easier and faster.<br>
 Also use "manual EEV mode" during charging process.<br>
@@ -262,7 +262,22 @@ Other:
 | **HWP_ON** 		| Hot side pump powered on.    |
 | **Err:_errorcode_**	| Error code: 1 = temperature sensor error, 2 = Hot side pressure too high  3 = cold side pressure too low. |
 
-##  Appendix C: Firmware options and fine tunings
+##  Appendix C: secret appendix
+Are you still reading? If yes, your are interested in. And this appendix is for you.<br>
+About sensors: do not use cheap "waterproof epoxy covered" sensors. Waterproof lasts for a short time.<br>
+Buy raw DS18B20s, cheap or not cheap doesn't matter - I've never seen "bad" DSes. Solder sensors and cover them with two layers of 2-component epoxy resin as pictured below.<br>
+{-picture here-}<br>
+For sensors at compressor and discharge (+100°C and higher) add heat resistant sleeves for each wire.<br>
+{-picture here-}<br>
+To get precise temperature sensors must be covered from ambient air temperature influence with additional thermal insulation. Temperature readings from most of sensors are interesting, but +/- few degrees does not matter. So most of sensors can be covered with insulation as you wish. But 2 sensors "Before evaporator" and "After evaporator" are critical to EEV those needs extra attention. This sensors temperatures must be as close to copper tube temperature as it possible. So make wiring as pictured below. You can use thermal paste, but there is no significant difference with much more available silicone.<br>
+{-picture here-}<br>
+Heat exchangers. You can use plated heat exchangers, they works good
+{-picture here-}<br>
+You can build your own "tube-in-tube" heat exchangers, it's not hard, little cheaper, little worse heat exchange, and oxygen brazing with silver(20%+)-copper solder does not requered.
+{-pictures here-}<br>
+And do not think "I'll get old AC unit parts... Housing... Slightly change...  A hour or two, day of work maximum, and i'll got a refrigerant<->water heat exchanger for a penny!" That was first thing I've tried. This idea is a huge waste of time with horrible look and very average or poor result.
+
+##  Appendix D: Firmware options and fine tunings
 
 QA tests, uncomment to enable
 ```c
