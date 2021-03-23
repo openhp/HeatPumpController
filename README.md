@@ -164,7 +164,7 @@ This product is distributed in the hope that it will be useful,	but WITHOUT ANY 
 <br>
 gonzho АТ web.de (c) 2018-2021<br>
 
-## Appendix A: T sensors abbreviations
+## Appendix A: Abbreviations
 Abbreviations used in the documentation and firmware.<br>
 Main sensors:
 | Abbr. | Full name             |
@@ -193,17 +193,19 @@ Additional sensors, disabled and not used by default:
 Relays:
 | Abbr. | Full name             |
 | ----- | --------------------  |
-| RCRCH  | regenerator temperature|
-| RC   | additional sensor2    |
-| RH   | additional sensor2    |
-| RP   | additional sensor2    |
+| RCRCH  | crankcase heater relay	|
+| RC   | cold side water pump relay	|
+| RH   | cold side water pump relay    	|
+| RP   | heat pump (compressor) relay	|
 
 Other:
-| Abbr. | Full name             |
-| ----- | --------------------  |
-| LSM	| LastStopCause		|
-| LSC	| LastStartMessage	|
-
+| Abbr. | Full name             		|
+| ----- | --------------------  		|
+| LSM	| LastStopCause				|
+| LSC	| LastStartMessage			|
+| CWP/CCP | cold side water (circulating) pump	|
+| HWP/HCP | cold side water (circulating) pump	|
+| HP	| heat pump				|
 
 ## Appendix B: Diagnostic and status messages
 **LastStopCause (LSC) messages. Why system was stopped**
