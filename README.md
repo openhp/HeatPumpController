@@ -72,7 +72,7 @@ To check temperature sensors connectors prepare one array of sensors. Connect it
 {-Photo: PCB with connected arrays of sensors (I have enough sensors, so all 3 arrays are connected except Ts2 and Treg) -}<br>
 {-Screenshot: serial console with temperature readings: -}<br>
 
-## Wiring and installation
+## Wiring
 Wiring is very simple despite the many connections: <br>
 Phases (1st wire in electrical cables):
 - connect the "power inlet" wire to one of the "phase" connectors,
@@ -95,11 +95,15 @@ Crimp and connect low-voltage connectors:
 - connect the outputs of the pressure sensors: 1st wires together to the right pin, 2nd cold side wire to the left terminal, 2nd hot side wire to the middle terminal; use the dummy when pressure sensors are not in use.
 
 You may prefer to solder the wires over using connectors. But in this case, it will be more difficult to disassemble the system if you want to change something. The choice is yours.<br>
-{-Photo: power wire + SCT013-}<br>
 {-Photo: T sensors with abbreviations and full names-}<br>
 {-Photo: RS485 and 12V power for display-}<br>
 {-Photo: all together-}<br>
-{-Photo: DS18B20 sensor installed -}<br>
+
+## Sensors installation
+{-Photo: power wire + SCT013-}<br>
+{-Few photos: DS18B20 sensor installed -}<br>
+{-Photo: pressure sensors installed -}<br>
+{-Photo: pressure sensor dummy -}<br>
 
 ## Control and usage: serial console
 This is a first interface to Heat Pump controller you'll see after uploading firmware (Tools->Serial Monitor).<br>
