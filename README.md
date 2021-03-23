@@ -205,6 +205,7 @@ Other:
 | LSC	| LastStartMessage			|
 | CWP/CCP | cold side water (circulating) pump	|
 | HWP/HCP | cold side water (circulating) pump	|
+| EEVP	| EEV position				|
 | HP	| heat pump				|
 
 ## Appendix B: Diagnostic and status messages
