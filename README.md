@@ -271,11 +271,11 @@ For sensors at compressor and discharge (+100°C and higher) add heat resistant 
 {-picture here-}<br>
 To get precise temperature sensors must be covered from ambient air temperature influence with additional thermal insulation. Temperature readings from most of sensors are interesting, but +/- few degrees does not matter. So most of sensors can be covered with insulation as you wish. But 2 sensors "Before evaporator" and "After evaporator" are critical to EEV those needs extra attention. This sensors temperatures must be as close to copper tube temperature as it possible. So make wiring as pictured below. You can use thermal paste, but there is no significant difference with much more available silicone.<br>
 {-picture here-}<br>
-Heat exchangers. You can use plated heat exchangers, they works good
+Water(glycole)<->refrigerant heat exchangers. You can use plated heat exchangers. Works good. Costs money. Oxygen brazing with silver(20%+)-copper solder required.
 {-picture here-}<br>
-You can build your own "tube-in-tube" heat exchangers, it's not hard, little cheaper, little worse heat exchange, and oxygen brazing with silver(20%+)-copper solder does not requered.
+You can build your own "tube-in-tube" heat exchangers. It's not hard. Little cheaper. Worse heat exchange. Soldering is very easy.
 {-pictures here-}<br>
-And do not think "I'll get old AC unit parts... Housing... Slightly change...  A hour or two, day of work maximum, and i'll got a refrigerant<->water heat exchanger for a penny!" That was first thing I've tried. This idea is a huge waste of time with horrible look and very average or poor result.
+And do not think "I'll get old AC unit parts... Housing... Slightly change...  A hour or two, day of work maximum, and i'll got a refrigerant<->water heat exchanger for a penny!" That was first thing I've tried. The idea is obvious but it's a huge waste of time with horrible look and very average or poor result.
 
 ##  Appendix D: Firmware options and fine tunings
 
