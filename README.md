@@ -98,6 +98,10 @@ You may prefer to solder the wires over using connectors. But in this case, it w
 {-Photo: T sensors with abbreviations and full names-}<br>
 {-Photo: RS485 and 12V power for display-}<br>
 {-Photo: all together-}<br>
+And one more: **remember about 230V inside!** Do not turn on the phase without need.<br>
+Have you ever recieved 230V with your hands? If yes - you know. If no - do not try.<br>
+Also, remember about animals and children, before installing permanently.<br><br>
+
 
 ## Sensors installation
 {-Photo: power wire + SCT013-}<br>
