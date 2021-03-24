@@ -279,7 +279,7 @@ Water(glycol)<->refrigerant heat exchangers. You can use plate heat exchangers. 
 {-picture here-}<br>
 You can build your own "tube-in-tube" heat exchangers. It's not hard. Cheaper. The heat exchange efficiency is worse. Very easy soldering.
 {-pictures here-}<br>
-And also you can think "I'll take old AC parts... Housing... Slightly change...  A hour or two, day of work maximum, and i'll got a refrigerant<->water heat exchanger in for a penny!" This idea is obvious. That was a first thing I've tried and do not want to try it anymore. You can also try this, but remember: it'll take much more than a day and much more than few $$, even if you have unlimited access to older ACs.
+And also you can think "I'll take old AC parts... Housing... Slightly change...  A hour or two, day of work maximum, and i'll got a refrigerant<->water heat exchanger in for a penny!" This idea is obvious. That was a first thing I've tried and do not want to try it anymore. You can also try this, but remember: to achieve "not very bad" performance it'll take much more than a day and much more than few $$, even if you have unlimited access to older ACs.
 
 ##  Appendix D: Firmware options and fine tunings
 
