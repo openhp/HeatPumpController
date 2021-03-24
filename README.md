@@ -280,7 +280,7 @@ Overall, your system with sensors positions will look like at drawing below.  Re
 <img src="./m_HeatPump_scheme2.png" width="500"><br><br>
 About water(glycol)<->refrigerant heat exchangers. You can use plate heat exchangers. Pros: best efficiency. Cons: costs money.<br>
 <img src="./m_plate_heat_exchangers.jpg" width="500"><br><br>
-And oxygen brazing with (20%+)silver+copper solder required here:
+And oxygen brazing with (20%+)silver+copper solder required here:<br>
 <img src="./m_plate_echangers_oxygen_brazing.jpg" width="500"><br><br>
 You can build your own "tube-in-tube" heat exchangers. It's not hard. Cheaper. The heat exchange efficiency is worse. Very easy soldering.<br>
 <img src="./m_tube-in-tube_diy1.jpg" width="400"> <img src="./m_tube-in-tube_diy2.jpg" width="400"><br><br>
