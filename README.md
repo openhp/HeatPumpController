@@ -119,7 +119,7 @@ Also you'll see diagnostic messages here.<br><br>
 
 This is a way to control Heat Pump for the end user.<br>
 <img src="./m_display_main.jpg" width="300"><br><br>
-End user do not wat to know much about refrigerants, evaporation, cycles and so on, so this display designed as simple as possible. See [display page](https://github.com/openhp/Display/) for datails.<br><br>
+End user do not wat to know much about refrigerants, evaporation, cycles and so on, so this display designed as simple as possible. See [display page](https://github.com/openhp/Display/) for datails. And yes, this display is also DIY non-commercial product with opened gerber and source code.<br><br>
 
 
 ## Control and usage: diagnostic display
