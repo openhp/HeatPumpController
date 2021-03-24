@@ -276,13 +276,16 @@ For sensors at compressor and discharge (+100°C and higher) use heat resistant 
 To get precise temperature readings sensors must be insulated from ambient air temperature influence with additional thermal insulation. Temperature readings from most of sensors are interesting, but +/- few degree does not matter. So most of sensors can be covered with insulation as you wish.<br>
 But 2 sensors "Before evaporator" and "After evaporator" are critical to EEV and needs an extra attention. Temperature of this sensors must be as close to the temperature of copper tube  as it possible. So install Tae and Tbe sensors as pictured below. You can use thermal paste, but there is no significant difference with much more available silicone. Tape isn't shown below, for clarity, but must be used with every insulation layer.<br>
 <img src="./m_ds18b20_evaporator_mount.jpg" height="700"><br><br>
+Overall, your system with sensors positions will look like at scheme below.  Refrigerators (heat pumps) are very simple inside. The only part is not shown below is an oil filter.<br>
+<img src="./m_ds18b20_ref_scheme.png" height="700"><br><br>
 About water(glycol)<->refrigerant heat exchangers. You can use plate heat exchangers. Pros: best efficiency. Cons: costs money.<br>
 <img src="./m_plate_heat_exchangers.jpg" width="500"><br><br>
 And oxygen brazing with (20%+)silver+copper solder required here:
 <img src="./m_plate_echangers_oxygen_brazing.jpg" width="500"><br><br>
 You can build your own "tube-in-tube" heat exchangers. It's not hard. Cheaper. The heat exchange efficiency is worse. Very easy soldering.<br>
 <img src="./m_tube-in-tube_diy1.jpg" width="400"> <img src="./m_tube-in-tube_diy2.jpg" width="400"><br><br>
-And also you can think "I'll take old AC parts... Housing... Slightly change...  A hour or two, day of work maximum, and i'll got a refrigerant<->water heat exchanger in for a penny!" This idea is obvious. That was a first thing I've tried and do not want to try it anymore. You can also try this, but remember: to achieve "not very bad" performance it'll take much more than a day and much more than few $$, even if you have unlimited access to older ACs.
+And also you can think "I'll take old AC parts... Housing... Slightly change...  A hour or two, day of work maximum, and i'll got a refrigerant<->water heat exchanger in for a penny!" This idea is obvious. That was a first thing I've tried and do not want to try it anymore. You can also try this, but remember: to achieve "not very bad" performance it'll take much more than a day and much more than few $$, even if you have unlimited access to older ACs.<br>
+OK, i think that's enough for this appendix, this is a controller page, and not how-to-build-refrigeration-systems page.<br>
 
 ##  Appendix D: Firmware options and fine tunings
 
