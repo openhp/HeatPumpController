@@ -124,7 +124,7 @@ End user do not wat to know much about refrigerants, evaporation, cycles and so 
 
 ## Control and usage: diagnostic display
 
-One day i'v realised that notebook with a serial console is very good diagnostic tool, but i want more compact tool to get maximum available information from heat pump. So this "fast diagnostic display" appeared. It fits everywhere and with a good power bank it can work 2-3 days long, without any additional power source. The diagnostic display is build from scratch, no PCB and housing here, because i do not see this device as a permanent-mounted display for the end user.
+One day i'v realised that notebook with a serial console is very good diagnostic tool, but i want more compact tool to get maximum available information from heat pump. So this "fast diagnostic display" appeared. It fits everywhere and with a good power bank it can work 2-3 days long, without any additional power source. The diagnostic display is build from scratch, no PCB and housing here (and no plans to create it), because i do not see this device as a permanent-mounted display for the end user.
 {-picture here-}<br>
 It you want a compact and visual tool - this device is for you.<br><br>
 
