@@ -269,7 +269,7 @@ Other:
 ##  Appendix C: secret appendix
 Are you still reading? If yes, your are interested in and this appendix is for you.<br>
 About sensors: do not use cheap "waterproof epoxy-covered" sensors. "Waterproof" lasts for a short time.<br>
-Buy DS18B20s chips. Cheap or not cheap doesn't matter - I've never seen "bad" DSes. Solder sensors to the wires and cover the sensors with a two layers of 2-component epoxy resin as pictured below.<br>
+Buy DS18B20s chips. Cheap or not cheap doesn't matter - I've never seen "bad" DSes. Solder sensors to the wires and cover the sensors with a two layers of 2-component epoxy resin as pictured below. This will work for a years.<br>
 <img src="./m_ds18b20_epoxy.jpg" width="500"><br><br>
 For sensors at compressor and discharge (+100°C and higher) use heat resistant sleeves at every wire.<br>
 <img src="./m_ds18b20_wires_protection.jpg" width="500"><br><br>
