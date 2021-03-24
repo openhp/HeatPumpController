@@ -122,11 +122,11 @@ This is a way to control Heat Pump for the end user.<br>
 End user do not wat to know much about refrigerants, evaporation, cycles and so on, so this display designed as simple as possible. See [display page](https://github.com/openhp/Display/) for datails. And yes, this display is also DIY non-commercial product with opened gerber and source code.<br><br>
 
 
-## Control and usage: diagnostic display
+## Control and usage: [service display](https://github.com/openhp/ServiceDisplay/)
 
 One day i'v realised that notebook with a serial console is very good diagnostic tool, but i want more compact tool to get maximum available information from heat pump. So this "fast diagnostic display" appeared. It fits everywhere and with a good power bank it can work 2-3 days long, without any additional power source. The diagnostic display is build from scratch, no PCB and housing here (and no plans to create it), because i do not see this device as a permanent-mounted display for the end user.
 {-picture here-}<br>
-It you want a compact and visual tool - this device is for you.<br><br>
+It you want a compact and visual tool - this device is for you, so check [service display page](https://github.com/openhp/ServiceDisplay/) .<br><br>
 
 ## Starting up the heat pump system for the first time and charging refrigerant
 This is not a hard part, but if you don't have experience it will take time. <br>
