@@ -288,7 +288,7 @@ And oxygen brazing with (20%+)silver+copper solder required here:<br>
 <img src="./m_plate_echangers_oxygen_brazing.jpg" width="500"><br><br>
 You can build your own "tube-in-tube" heat exchangers. It's not hard. Cheaper. The heat exchange efficiency is worse. Very easy soldering.<br>
 <img src="./m_tube-in-tube_diy1.jpg" width="400"> <img src="./m_tube-in-tube_diy2.jpg" width="400"><br><br>
-And also you can think "I'll take old AC parts... Housing... Slightly change...  A hour or two, day of work maximum, and i'll got a refrigerant<->water heat exchanger in for a penny!" This idea is obvious. That was a first thing I've tried and do not want to try it anymore. You can also try this, but remember: to achieve "not very bad" performance it'll take much more than a day and much more than few $$, even if you have unlimited access to older ACs.<br>
+And also you can think "I'll take old AC parts... Housing... Slightly change...  A hour or two, day of work maximum, and i'll got a refrigerant<->water heat exchanger in for a penny!" This idea is obvious. That was a first thing I've tried and do not want to try it anymore. You can also go this way, but to achieve "not very bad" performance it'll take much more than a day and much more than few $$, even if you have unlimited access to older ACs.<br>
 OK, i think that's enough for this appendix, this is a controller page, and not how-to-build-refrigeration-systems page.<br>
 
 ##  Appendix D: Firmware options and fine tunings
