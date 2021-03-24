@@ -277,7 +277,7 @@ To get precise temperature readings sensors must be insulated from ambient air t
 <img src="./m_ds18b20_evaporator_mount.jpg" height="700"><br><br>
 About water(glycol)<->refrigerant heat exchangers. You can use plate heat exchangers. Pros: best efficiency. Cons: costs money.<br>
 <img src="./m_plate_heat_exchangers.jpg" width="500"><br><br>
-And requires oxygen brazing with "(20%+)silver-copper" solder here.
+And oxygen brazing with (20%+)silver+copper solder required here:
 <img src="./m_plate_echangers_oxygen_brazing.jpg" width="500"><br><br>
 You can build your own "tube-in-tube" heat exchangers. It's not hard. Cheaper. The heat exchange efficiency is worse. Very easy soldering.<br>
 {-pictures here-}<br>
