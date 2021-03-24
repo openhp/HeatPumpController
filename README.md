@@ -113,16 +113,20 @@ Every **HUMAN_AUTOINFO** times you'll see stats. For example soon after comresso
 ![console statistics screenshot](./m_console_stats.png)<br>
 At this example: "hot in" ~30 °C, compressor ~80 °C and so on. Heat Pump (HP, compressor) ON, Hot water pump ON, Cold water pump ON. Power consumption 980 watts.
 Abbreviations: refer to Appendix A below.<br>
-Also you'll see diagnostic messages here.<br>
+Also you'll see diagnostic messages here.<br><br>
 
-## Control and usage: remote control display
-{-There are 2 ways to control heat pump-}
-{-connection-}
-qwer
+## Control and usage: (remote control display)[https://github.com/openhp/Display/]
+
+This is a way to control Heat Pump for end user.<br>
+<img src="./m_display_main.jpg" width="400"><br><br>
+End user do not wat to know much about refrigerants, evaporation, cycles and so on, so this display designed as simple as possible. See (display page)[https://github.com/openhp/Display/] for datails.<br><br>
+
 
 ## Control and usage: diagnostic display
-{-desc 2-}
-link
+
+One day i'v realised that notebook with a serial console is very good diagnostic tool, but i want more compact tool to get maximum available information from heat pump. So this "fast diagnostic display" appeared. It fits everywhere and with a good power bank it can work 2-3 days long, without any additional power source. The diagnostic display is build from scratch, no PCB and housing here, because i do not see this device as a permanent-mounted display for the end user.
+{-picture here-}<br>
+It you want a compact and visual tool - this device is for you.<br><br>
 
 ## Starting up the heat pump system for the first time and charging refrigerant
 This is not a hard part, but if you don't have experience it will take time. <br>
