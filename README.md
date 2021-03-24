@@ -270,13 +270,15 @@ Other:
 Are you still reading? If yes, your are interested in and this appendix is for you.<br>
 About sensors: do not use cheap "waterproof epoxy-covered" sensors. "Waterproof" lasts for a short time.<br>
 Buy DS18B20s chips. Cheap or not cheap doesn't matter - I've never seen "bad" DSes. Solder sensors to the wires and cover the sensors with a two layers of 2-component epoxy resin as pictured below.<br>
-{-picture here-}<br>
+<img src="./m_ds18b20_epoxy.jpg" width="500"><br><br>
 For sensors at compressor and discharge (+100°C and higher) add heat resistant sleeves for each wire.<br>
-{-picture here-}<br>
+<img src="./m_ds18b20_wires_protection.jpg" width="500"><br><br>
 To get precise temperature readings sensors must be insulated from ambient air temperature influence with additional thermal insulation. Temperature readings from most of sensors are interesting, but +/- few degree does not matter. So most of sensors can be covered with insulation as you wish. But 2 sensors "Before evaporator" and "After evaporator" are critical to EEV and needs extra attention. Temperature of this sensors must be as close to the temperature of copper tube  as it possible. So install Tae and Tbe sensors as pictured below. You can use thermal paste, but there is no significant difference with much more available silicone.<br>
-{-picture here-}<br>
-Water(glycol)<->refrigerant heat exchangers. You can use plate heat exchangers. Pros: best efficiency. Cons: costs money. And requires oxygen brazing with "(20%+)silver-copper" solder.
-{-picture here-}<br>
+<img src="./m_ds18b20_evaporator_mount.jpg" height="700"><br><br>
+About water(glycol)<->refrigerant heat exchangers. You can use plate heat exchangers. Pros: best efficiency. Cons: costs money. 
+<img src="./m_plate_heat_exchangers.jpg" width="500"><br><br>
+And requires oxygen brazing with "(20%+)silver-copper" solder here.
+<img src="./m_plate_echangers_oxygen_brazing.jpg" width="500"><br><br>
 You can build your own "tube-in-tube" heat exchangers. It's not hard. Cheaper. The heat exchange efficiency is worse. Very easy soldering.
 {-pictures here-}<br>
 And also you can think "I'll take old AC parts... Housing... Slightly change...  A hour or two, day of work maximum, and i'll got a refrigerant<->water heat exchanger in for a penny!" This idea is obvious. That was a first thing I've tried and do not want to try it anymore. You can also try this, but remember: to achieve "not very bad" performance it'll take much more than a day and much more than few $$, even if you have unlimited access to older ACs.
