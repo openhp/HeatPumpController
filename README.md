@@ -115,11 +115,11 @@ At this example: "hot in" ~30 °C, compressor ~80 °C and so on. Heat Pump (HP, 
 Abbreviations: refer to Appendix A below.<br>
 Also you'll see diagnostic messages here.<br><br>
 
-## Control and usage: (remote control display)[https://github.com/openhp/Display/]
+## Control and usage: [remote control display](https://github.com/openhp/Display/)
 
-This is a way to control Heat Pump for end user.<br>
+This is a way to control Heat Pump for the end user.<br>
 <img src="./m_display_main.jpg" width="400"><br><br>
-End user do not wat to know much about refrigerants, evaporation, cycles and so on, so this display designed as simple as possible. See (display page)[https://github.com/openhp/Display/] for datails.<br><br>
+End user do not wat to know much about refrigerants, evaporation, cycles and so on, so this display designed as simple as possible. See [display page](https://github.com/openhp/Display/) for datails.<br><br>
 
 
 ## Control and usage: diagnostic display
