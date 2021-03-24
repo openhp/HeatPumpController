@@ -267,19 +267,19 @@ Other:
 | **Err:_errorcode_**	| Error code: 1 = temperature sensor error, 2 = Hot side pressure too high  3 = cold side pressure too low. |
 
 ##  Appendix C: secret appendix
-Are you still reading? If yes, your are interested in. And this appendix is for you.<br>
-About sensors: do not use cheap "waterproof epoxy covered" sensors. Waterproof lasts for a short time.<br>
-Buy raw DS18B20s, cheap or not cheap doesn't matter - I've never seen "bad" DSes. Solder sensors and cover them with two layers of 2-component epoxy resin as pictured below.<br>
+Are you still reading? If yes, your are interested in and this appendix is for you.<br>
+About sensors: do not use cheap "waterproof epoxy-covered" sensors. "Waterproof" lasts for a short time.<br>
+Buy DS18B20s chips. Cheap or not cheap doesn't matter - I've never seen "bad" DSes. Solder sensors to the wires and cover the sensors with a two layers of 2-component epoxy resin as pictured below.<br>
 {-picture here-}<br>
 For sensors at compressor and discharge (+100°C and higher) add heat resistant sleeves for each wire.<br>
 {-picture here-}<br>
-To get precise temperature sensors must be covered from ambient air temperature influence with additional thermal insulation. Temperature readings from most of sensors are interesting, but +/- few degrees does not matter. So most of sensors can be covered with insulation as you wish. But 2 sensors "Before evaporator" and "After evaporator" are critical to EEV those needs extra attention. This sensors temperatures must be as close to copper tube temperature as it possible. So make wiring as pictured below. You can use thermal paste, but there is no significant difference with much more available silicone.<br>
+To get precise temperature readings sensors must be insulated from ambient air temperature influence with additional thermal insulation. Temperature readings from most of sensors are interesting, but +/- few degree does not matter. So most of sensors can be covered with insulation as you wish. But 2 sensors "Before evaporator" and "After evaporator" are critical to EEV and needs extra attention. Temperature of this sensors must be as close to the temperature of copper tube  as it possible. So install Tae and Tbe sensors as pictured below. You can use thermal paste, but there is no significant difference with much more available silicone.<br>
 {-picture here-}<br>
-Water(glycole)<->refrigerant heat exchangers. You can use plated heat exchangers. Works good. Costs money. Oxygen brazing with silver(20%+)-copper solder required.
+Water(glycol)<->refrigerant heat exchangers. You can use plate heat exchangers. Pros: best efficiency. Cons: costs money. And requires oxygen brazing with "(20%+)silver-copper" solder.
 {-picture here-}<br>
-You can build your own "tube-in-tube" heat exchangers. It's not hard. Little cheaper. Worse heat exchange. Soldering is very easy.
+You can build your own "tube-in-tube" heat exchangers. It's not hard. Cheaper. The heat exchange efficiency is worse. Very easy soldering.
 {-pictures here-}<br>
-And do not think "I'll get old AC unit parts... Housing... Slightly change...  A hour or two, day of work maximum, and i'll got a refrigerant<->water heat exchanger for a penny!" That was first thing I've tried. The idea is obvious but it's a huge waste of time with horrible look and very average or poor result. If you are building ground loop to floor loop (or -to water tank) system you can take only comressor and refrigerant charge from old AC.
+And also you can think "I'll take old AC parts... Housing... Slightly change...  A hour or two, day of work maximum, and i'll got a refrigerant<->water heat exchanger in for a penny!" This idea is obvious. That was a first thing I've tried and do not want to try it anymore. You can also try this, but remember: it'll take much more than a day and much more than few $$, even if you have unlimited access to older ACs.
 
 ##  Appendix D: Firmware options and fine tunings
 
