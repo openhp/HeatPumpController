@@ -113,7 +113,7 @@ Every **HUMAN_AUTOINFO** times you'll see stats. For example soon after comresso
 ![console statistics screenshot](./m_console_stats.png)<br>
 At this example: "hot in" ~30 °C, compressor ~80 °C and so on. Heat Pump (HP, compressor) ON, Hot water pump ON, Cold water pump ON. Power consumption 980 watts.
 Abbreviations: refer to Appendix A below.<br>
-Also you'll see diagnostic messages here.<br><br>
+Also you'll see diagnostic messages in the serial console.<br><br>
 
 ## Control and usage: [remote control display](https://github.com/openhp/Display/)
 
