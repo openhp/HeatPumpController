@@ -280,7 +280,7 @@ For sensors at compressor and discharge (+100°C and higher) use heat resistant 
 To get precise temperature readings sensors must be insulated from ambient air temperature influence with additional thermal insulation. Temperature readings from most of sensors are interesting, but +/- few degree does not matter. So most of sensors can be covered with insulation as you wish.<br>
 But 2 sensors "Before evaporator" and "After evaporator" are critical to EEV and needs an extra attention. Temperature of this sensors must be as close to the temperature of copper tube  as it possible. So install Tae and Tbe sensors as pictured below. You can use thermal paste, but there is no significant difference with much more available silicone. Tape isn't shown below, for clarity, but must be used with every insulation layer.<br>
 <img src="./m_ds18b20_evaporator_mount.jpg" height="700"><br><br>
-Overall, your system with sensors positions will look like at drawing below.  Refrigerators (heat pumps) are very simple inside. The only part is not shown below is an oil filter.<br>
+Overall, your system scheme with sensors positions will look like at drawing below.  Refrigerators (heat pumps) are very simple inside. The only part is not shown below is an oil filter.<br>
 <img src="./m_HeatPump_scheme2.png" width="500"><br><br>
 About water(glycol)<->refrigerant heat exchangers. You can use plate heat exchangers. Pros: best efficiency. Cons: costs money.<br>
 <img src="./m_plate_heat_exchangers.jpg" width="500"><br><br>
