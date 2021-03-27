@@ -122,14 +122,14 @@ Also you'll see diagnostic messages in the serial console.<br><br>
 ## Control and usage: [remote control display](https://github.com/openhp/Display/)
 
 This is a way for the end user to control Heat Pump.<br>
-<img src="https://github.com/openhp/Display/m_display_main.jpg" width="300"><br><br>
+<img src="./m_display_main.jpg" width="300"><br><br>
 End user do not wat to know much about refrigerants, evaporation, discharge temperature and so on, so this display designed as simple as possible. See [display page](https://github.com/openhp/Display/) for datails. And yes, this display is also open product with available gerber and source code.<br><br>
 
 
 ## Control and usage: [service display](https://github.com/openhp/ServiceDisplay/)
 
 One day i'v realised that netbook with a serial console is very good diagnostic tool, but i want more compact tool to get maximum available information from heat pump. So this "Quickly Assembled Service Display" appeared. It fits everywhere and with a good power bank it can works 2-3 days long, without any additional power source. The diagnostic display is build from scratch, no PCB and housing here (and no plans to create it), because i do not see this device as a permanent-mounted display for the end user.<br>
-<img src="https://github.com/openhp/ServiceDisplay/m_tft_mainscreen.jpg" width="300"><br><br>
+<img src="./m_tft_mainscreen.jpg" width="300"><br><br>
 It you want a compact and visual tool - this device is for you, so check [service display page](https://github.com/openhp/ServiceDisplay/) .<br><br>
 
 ## Starting up the heat pump system for the first time and charging refrigerant
