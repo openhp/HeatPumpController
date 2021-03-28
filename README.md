@@ -38,8 +38,10 @@
 - order electronic components, see BOM (Bill Of Materials) appendix below,
 - solder electronic components. {- assembly instructions here-}
 
+
+
 ## Firmware upload
-This process is same as for other Arduinos:
+This process is the same as for other Arduinos:
 - connect USB-> UART converter,
 - start Arduino IDE,
 - open the firmware {-link here-} file,
@@ -48,7 +50,7 @@ This process is same as for other Arduinos:
 
 For arduinos with an old bootloader you need to update it. (Tools-> Burn Bootloader).<br>
 For successful compilation, you must have "SoftwareSerial", "OneWire" and "DallasTemperature" libraries installed (see Tools -> Manage Libraries).<br>
-As a first try it's enough to upload firmware without any tunings. Think of it as of commercial closed-source controller, where you cannot fine-tune internal options. And any other manual configuration is not required too, just upload firmware.<br><br>
+For the first time it's enough to upload firmware without any tuning. Think of it as of a commercial closed-source controller, where you cannot fine-tune internal options. And any other manual configuration do not required too, just upload firmware.<br><br>
 
 ## Self-tests
 QA tests are available to test the assembled board.<br>
