@@ -99,28 +99,28 @@ And one more: **remember! 230V inside!** Do not turn on the phase without need.<
 Have you ever received 230V with your own hands? If yes - you know. If no - do not try.<br>
 Also remember about animals and children during the installation at a permanent place.<br><br>
 
-## Sensors installation
+## Sensors mount
+{-Sensors scheme-}
 {-Photo: power wire + SCT013-}<br>
 {-Few photos: DS18B20 sensor installed -}<br>
 {-Photo: pressure sensors installed -}<br>
-{-Photo: pressure sensor dummy -}<br>
+{-Photo: pressure sensor dummy -}<br><br>
 
 ## Control and usage: serial console
 This is a first interface to Heat Pump controller you'll see after uploading firmware (Tools->Serial Monitor).<br>
-The console itself is very simple, several commands are available. Type in command, press "Send". Help and hotkeys:<br>
- ![console help screenshot](./m_console_help.png)<br>
-Every **HUMAN_AUTOINFO** times you'll see stats. For example soon after comressor starts you'll see something like this:<br>
-![console statistics screenshot](./m_console_stats.png)<br>
-At this example: "hot in" ~30 °C, compressor ~80 °C and so on. Heat Pump (HP, compressor) ON, Hot water pump ON, Cold water pump ON. Power consumption 980 watts.
+The console itself is simple to use, several commands are available. Type in command, press "Send". Help and hotkeys:<br>
+![console help screenshot](./m_console_help.png)<br>
+Every **HUMAN_AUTOINFO** times you'll see stats. For example, after a startup of your compressor, you'll see something like this:<br>
+![console statistics screenshot](./m_console_stats.png)
+At this example, "hot in" ~30 °C, compressor ~80 °C and so on. Heat Pump (HP, compressor) ON, Hot water pump ON, Cold water pump ON. Power consumption 980 watts.
 Abbreviations: refer to Appendix A below.<br>
-Also you'll see diagnostic messages in the serial console.<br><br>
+And you'll see diagnostic messages in the serial console.<br><br>
 
 ## Control and usage: [remote control display](https://github.com/openhp/Display/)
 
 This is a way for the end user to control Heat Pump.<br>
 <img src="./m_display_main.jpg" width="300"><br><br>
-End user do not wat to know much about refrigerants, evaporation, discharge temperature and so on, so this display designed as simple as possible. See [display page](https://github.com/openhp/Display/) for datails. And yes, this display is also open product with available gerber and source code.<br><br>
-
+End user do not wat to know much about refrigerants, evaporation, discharge temperature and so on, so this display designed as simple as it possible. See [display page](https://github.com/openhp/Display/) for datails. And yes, this display is also open product with available gerber, PCB and source code.<br><br>
 
 ## Control and usage: [service display](https://github.com/openhp/ServiceDisplay/)
 
