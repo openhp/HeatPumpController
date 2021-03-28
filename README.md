@@ -127,19 +127,21 @@ One day I've realized that a netbook with a serial console is a good diagnostic 
 If you want a compact and visual tool - this device is for you, so check [the Service Display Page](https://github.com/openhp/ServiceDisplay/) .<br><br>
 
 ## Starting up the heat pump system for the first time and charging refrigerant
-This is not a hard part, but if you don't have experience it will take time. <br>
-You have performed a pressure test and vacuumated your system. It's time to charge.<br>
-Let's say you don't know how to calculate the amount of refrigerant in a newly built system:
+This is an easy part, but if you don't have experience it will take time. <br>
+You have performed a pressure test and vacuuming. It's time to charge your system.
+Let's say you don't know how to calculate the amount of refrigerant in a recently built system, so follow next steps:
 - charge a small amount (for example 300 g) of refrigerant,
-- start the heat pump,
-- at this moment the suction temperature (according to the suction pressure on the pressure gauge) will be about -20 ...- 40 ° C,
-- for single-component refrigerants: slightly open the valve of the HVAC gauge manifold to start adding refrigerant through the gas phase on the cold side,
-- for multi-component refrigerants: turn over the refrigerant cylinder, VERY SLIGHTLY open the HVAC manifold valve to start adding a VERY LITTLE amount of refrigerant through the liquid phase,
-- carry out charging until the suction temperature (according to the suction pressure on the manometer) is ~ 10 ... 15 °C lower than the temperature of the heat source (example: the temperature at the inlet of the mixture of water and antifreeze from the closed ground loop is + 8 °C, so the suction temperature should be -2 ..- 7), then close the manifold valve,
-- at every step check the discharge pressure: it should not be too high compared to the temperature from the discharge sensor (Tbc) of the hot side,
-- wait for the system to heat the target to a more or less stable temperature, add refrigerant while temperature increases (and suction decreases),
+- get ready for a system protective stops by Tae or Tbe temperature, this is a normal system behavior while refilling refrigerant,
+- power on your heat pump,
+- after compressor startup suction temperature will be about -20 ...- 40 ° C (according to the suction pressure on the pressure gauge),
+- for single-component refrigerants: slightly open the valve of the HVAC gauge manifold and start adding refrigerant through the gas phase on the cold side,
+- for multi-component refrigerants: turn over the refrigerant cylinder, VERY SLIGHTLY open the HVAC manifold valve and start adding a VERY LITTLE amounts through the liquid phase,
+- continue, until the suction temperature (according to the suction pressure on the manometer) is ~ 10 ... 15 °C lower than the temperature of the heat source (example: the temperature at the inlet of the mixture of water and antifreeze from the closed ground loop is + 8 °C, so the suction temperature should be -2 ..- 7), 
+- close the manifold valve,
+- at every step check the discharge pressure: it should not be ba above the discharge sensor temperature (Tbc),
+- wait for the system to heat the target to a almost stable temperature, add little amounts of refrigerant while temperature increases (and suction decreases),
 - stop if you are sure that the heating process is now proceeding very slowly,
-- carry out the final charge when the system is stable and the heat pump stops normally (setpoint is reached), this may take 12 hours or more, and now the target difference between the suction pressure temperature and the temperature from the T sensor should be 3 ... 6 °C.
+- take a final look and charge when the system is stable and the heat pump stops normally (setpoint is reached), this may take 12 hours or more, and now the target difference between the suction pressure temperature and the temperature from the T sensor should be 3 ... 6 °C.
 
 This algo is good and safe both the first time and as a starting point. As you gain experience, you will get yours much easier and faster.<br>
 Also use "manual EEV mode" during charging process.<br>
