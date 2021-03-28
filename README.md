@@ -36,9 +36,7 @@
 ## Get your own PCB copy. Assembly.
 - download PCB Gerber file or get your own copy {-link here-}
 - order electronic components, see BOM (Bill Of Materials) appendix below,
-- solder electronic components. {- assembly instructions here-}
-
-
+- solder electronic components. {- assembly instructions here-}<br><br>
 
 ## Firmware upload
 This process is the same as for other Arduinos:
@@ -75,32 +73,31 @@ To check temperature sensors connectors prepare one array of sensors. Plug it to
 Wiring is very simple despite the many connections: <br>
 Phases (1st wire in electrical cables):
 - connect the "power inlet" wire to one of the "phase" terminals,
-- and connect the second "phase" connector to the AC input of the 12V power supply,
+- and connect the second "phase" terminal to the AC input of the 12V power supply,
 - connect the "Compressor" relay output to the Compressor input,
-- connect the relay output "Hot CP" to the input of the Hot Circulation Pump (either pump of the water floor heating system or the fan input of the indoor unit if you are using an air system),
-- connect the relay output "Cold CP" to the input of the Cold Circulation Pump (either ground loop pump for geothermal systems or the inlet of the outdoor unit air fan if you are using an air system),
-- when using a compressor heater: connect the "Crankcase heater" output to the heater cable input (highly recommended for outdoor installation and year-round use).
+- connect the "Hot CP" relay output to the Hot Circulation Pump input (or to the fan power input of the indoor unit if you are using an air system),
+- connect the "Cold CP" relay output to the Cold Circulation Pump input (or to the fan power input of the outdoor unit air fan),
+- when using a compressor heater: connect the "Crankcase heater" relay output to the heater cable (highly recommended for outdoor installation and year-round use).
 Neutral (2nd cable in electrical cables),
-- connect all the secondary wires to the "neutral" connectors on the board.
+- connect all the second wires of power cords to the "neutral" terminals on the board.
 
 {-Photo of HV connections-}<br>
 
 Crimp and plug low-voltage connectors:
-- SCT013 sensor (the only low-voltage device in the circuit with interchangeable contacts), connect and install it on the phase inlet wire,
-- RS485 through a wire of the desired length to the remote control display (if used, another control method is a local computer with a USB-UART converter, you may like it for the first time). Note that A is connected to A of the display, B to B and GND to GND,
-- you can power the display from a 12V controller, the board has 12V and GND secondary terminals,
+- SCT013 sensor (the only one low-voltage device in the circuit with interchangeable contacts), connect and install it on the inlet phase wire,
+- RS485 to the Remote Display, using a wire of desired length (note that A is connected to A, B to B and GND to GND),
+- 12V and GND secondary terminals to the remote display,
 - EEV to EEV terminal,
-- T sensors arrays to terminals,
-- connect the outputs of the pressure sensors: 1st wires together to the right pin, 2nd cold side wire to the left terminal, 2nd hot side wire to the middle terminal; use the dummy if no pressure sensors used in your system.
+- insert T sensors arrays appropriate terminals,
+- crimp and plug pressure sensors outputs: crimp 1st wires together to the right terminal, 2nd cold side wire to the left terminal, 2nd hot side wire to the middle terminal; use the dummy if no pressure sensors used in your system.
 
-You may prefer to solder the wires over using connectors. But in this case, it will be more difficult to disassemble the system if you want to change something. The choice is yours.<br>
+You may prefer to solder the wires over using connectors. But in this case, it will be difficult to disassemble the system if you want to change something. The choice is yours.<br>
 {-Photo: T sensors with abbreviations and full names-}<br>
 {-Photo: RS485 and 12V power for display-}<br>
 {-Photo: all together-}<br>
-And one more: **remember about 230V inside!** Do not turn on the phase without need.<br>
+And one more: **remember! 230V inside!** Do not turn on the phase without need.<br>
 Have you ever received 230V with your own hands? If yes - you know. If no - do not try.<br>
-Also, remember about animals and children, before installing permanently.<br><br>
-
+Also remember about animals and children during the installation at a permanent place.<br><br>
 
 ## Sensors installation
 {-Photo: power wire + SCT013-}<br>
