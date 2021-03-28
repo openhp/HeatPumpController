@@ -6,9 +6,9 @@
 ## Specs
 - 12V 0.5A DC power supply,
 - 230V output,
-- up to 12 temperature (T) sensors, -55..+125 °C range,
-- 4 relays: Compressor, Hot Circulating Pump (CP) or Air Fan, Cold CP or Air Fan, Crankcase Heater,
+- 4 16A relays: Compressor, Hot Circulating Pump (CP) or Air Fan, Cold CP or Air Fan, Crankcase Heater,
 - 2 inputs: Hot and cold side refrigerant over/under pressure NC sensors,
+- up to 12 temperature (T) sensors, -55..+125 °C range,
 - Electronic Expansion Valve (EEV) supported, 6 pin EEV connection: 4 * coils + 2 * 12V,
 - automatically turns on/of system when heating required,
 - automatic power saving mode,
