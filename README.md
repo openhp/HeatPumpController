@@ -33,23 +33,22 @@
 - 2019-2021: installations, development, tests, revisions, redesigns,
 - 06 Feb 2021: product is technically completed and ready for public access. Documentation and release stage.<br><br>
 
-## Get your own copy and PCB assembly
-- download the PCB gerber file, [Valden_HeatPumpController_Gerber](./Valden_HeatPumpController_Gerber.zip)
-- find in Google, [where to order a printed circuit board](https://www.google.com/search?q=order+pcb+gerber) (keywords: order pcb gerber), place an order,
+## Get your own PCB copy. Assembly.
+- download PCB Gerber file or get your own copy {-link here-}
 - order electronic components, see BOM (Bill Of Materials) appendix below,
 - solder electronic components. {- assembly instructions here-}
 
 ## Firmware upload
-The process is the same as for others Arduinos:
+This process is same as for other Arduinos:
 - connect USB-> UART converter,
 - start Arduino IDE,
-- open the firmware file,
+- open the firmware {-link here-} file,
 - select board and MCU in the Tools menu (hint: we are using "mini" board with 328p MCU),
 - press the "Upload" button in the interface and "Reset" on the Arduino.
 
-For arduinos with old bootloader you need to update it. (Tools-> Burn Bootloader).<br>
-For successful compilation, you must have "SoftwareSerial", "OneWire" and "DallasTemperature" installed (see Tools -> Manage Libraries).<br>
-As a first try it's enough to simply upload firmware without any tunings. Think of it as of commercial closed-source controller, where you cannot change internal options.
+For arduinos with an old bootloader you need to update it. (Tools-> Burn Bootloader).<br>
+For successful compilation, you must have "SoftwareSerial", "OneWire" and "DallasTemperature" libraries installed (see Tools -> Manage Libraries).<br>
+As a first try it's enough to upload firmware without any tunings. Think of it as of commercial closed-source controller, where you cannot fine-tune internal options. And any other manual configuration is not required too, just upload firmware.<br><br>
 
 ## Self-tests
 QA tests are available to test the assembled board.<br>
