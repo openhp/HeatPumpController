@@ -20,20 +20,18 @@
 ## Refrigeration schemes supported
 - Heat Pump (HP) with Electronic Expansion Valve (EEV),
 - HP with capillary tube or TXV,
-- EEV only controller.
-<br><br>
+- EEV-only controller.<br><br>
 
 ## Installations supported
-- Indoor: a house or technical building with a more or less stable temperature,
-- Outdoor: harsh climatic conditions taken into account and tested down to minus 32°C.
-<br><br>
+- Indoor: a house or technical building with an almost stable temperature,
+- Outdoor: harsh climatic conditions taken into account. Outdoor HP installations tested down to a minus 32 °C.<br><br>
 
 ## Changelog and history
-- 2018: PCB prototype, first real installation, 
+- 2018: PCB prototype, first real installation,
 - 2019: 2-layer PCB, through-hole components, integrated buttons and display,
-- 2019: controller redesigned taking into account development and operating experience,2-layer PCB, SMD
-- 2019-2021: installations, development, tests, revisions, redisigns
-- 06 Feb 2021: product is technically complete and ready for customers to use. Documentation and release stage.
+- 2019: controller redesigned taking into account development and operating experience, 2-layer PCB, SMD,
+- 2019-2021: installations, development, tests, revisions, redesigns,
+- 06 Feb 2021: product is technically completed and ready for public access. Documentation and release stage.<br><br>
 
 ## Get your own copy and PCB assembly
 - download the PCB gerber file, [Valden_HeatPumpController_Gerber](./Valden_HeatPumpController_Gerber.zip)
