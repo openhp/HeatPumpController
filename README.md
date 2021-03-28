@@ -1,17 +1,18 @@
-## Valden: Heat Pump Controller v1.x
-<b>  The Valden Heat Pump controller is a platform to precisely control heat pumps. Controller can be easily used for newly designed heat pumps (HPs), as a repair controller or as control system for experiments with refrigeration equipment.</b>
+
+## Valden Heat Pump Controller v1.x
+<b>The Valden Heat Pump controller is a platform to precisely control heat pumps. This controller can be used for the automation of newly created Heat Pumps (HPs), as a repair controller for old systems or as control system for performing experiments on refrigeration equipment.</b>
 <br><br>
 
 ## Specs
-- 12V 0.5A DC power supply, 
+- 12V 0.5A DC power supply,
 - 230V output,
-- up to 12 T sensors, -55..+125 °C range,
-- 4 relays: Compressor, Hot CP or Air Fan, Cold CP or Air Fan, Crankcase Heater,
+- up to 12 temperature (T) sensors, -55..+125 °C range,
+- 4 relays: Compressor, Hot Circulating Pump (CP) or Air Fan, Cold CP or Air Fan, Crankcase Heater,
 - 2 inputs: Hot and cold side refrigerant over/under pressure NC sensors,
-- EEV supported, 6 pin EEV connection: 4 * coils + 2 * 12V,
+- Electronic Expansion Valve (EEV) supported, 6 pin EEV connection: 4 * coils + 2 * 12V,
 - automatically turns on/of system when heating required,
-- automatical power saving mode,
-- built-in protections: cold start, overheat, short-term power loss, power overload, ground loop freeze and compressor protection against liquid.
+- automatic power saving mode,
+- built-in protections: cold start, overheat, short-term power loss, power overload, ground loop freeze, compressor protection against liquid and other,
 - LED indication,
 - control via [remote display](https://github.com/openhp/Display/) or local Serial (UART 5V),
 <br><br>
