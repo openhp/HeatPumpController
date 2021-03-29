@@ -30,7 +30,7 @@
 - 2018: PCB prototype, first real installation,
 - 2019: 2-layer PCB, through-hole components, integrated buttons and display,
 - 2019: controller redesigned taking into account development and operating experience, 2-layer PCB, SMD,
-- 2019-2021: installations, development, tests, revisions, redesigns,
+- 2019-2021: installations, development, tests, revisions, redesigns, 
 - 06 Feb 2021: product is technically completed and ready for public access. Documentation and release stage.<br><br>
 
 ## Get your own PCB copy. Assembly.
