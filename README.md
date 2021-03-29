@@ -214,24 +214,24 @@ Other:
 | HP	| heat pump				|
 
 ## Appendix B: Diagnostic and status messages
-**LastStopCause (LSC) messages. Why system was stopped**
+**LastStopCause (LSC) messages. Why the compressor has stopped working.**
 | Message | description |
 | ------------- | ------------- |
-| **Normal_stop** 	| Normal stop, i.e. setpoint sensor temperature > setpoint, so no need to heat anymore.	|
-| **P.WtMax:_WATTS_**	| Protective stop. Overcurrent, double check your system, then **MAX_WATTS** and **POWERON_HIGHTIME** options. |
-| **P.W.wattMIN**	| Protective stop. Power consumtion abnormally low (<max watts/5). Check your system, see **MAX_WATTS** option. |
-| **P.W.TcrcMIN**	| Protective stop. "Comressor" temperature abnormally low. Check your system, see **T_WORKINGOK_CRANKCASE_MIN** option. |
-| **P.Tho** 		| Protective stop. "Hot out" temperature is too high. Check your system, see **T_HOT_MAX** option. |
-| **P.Thi** 		| Protective stop. "Hot in" temperature is too high. Check system, see **T_HOT_MAX** option. |
-| **P.Tcrc**		| Protective stop. "Compressor" temperature is too high. Overheat protection. This is an ordinary situation during long runs. See **T_CRANKCASE_MAX** option and compressor manual if you want to tune it (~115 °C for wide-available compressors). |
-| **P.Tae**		| Protective stop. "After evaporator" temperature too low. Preventing cold loop from freezing and protecting suction line from liquid. See **T_COLDREF_MIN** option. |
-| **P.Tbe**		| Protective stop. "Before evaporator" temperature too low. Preventing cold loop from freezing. See **T_BEFORE_EVAP_WORK_MIN** option. |
-| **P.Tbc**		| Protective stop. "Before condenser" temperatire is too high. Overheat protection. This is an ordinary situation during long runs. See **T_BEFORE_CONDENSER_MAX** option. |
-| **P.Tci**		| Protective stop. "Cold in" temperature is too low. Preventing cold loop from freezing. See **T_COLD_MIN** option. |
-| **P.Tco**		| Protective stop. "Cold out" temperature is too low. Preventing cold loop from freezing. see **T_COLD_MIN** option. |
-| **E.Tci, E.Tco, E.Tbe, E.Tae, E.Ts1, E.Ts2, E.Tcrc, E.Treg, E.Tac, E.Tbc, E.Tho, E.Thi** |	Sensor lost, check wiring. Refer to "T sensors abbreviations". |
-| **E.PresCold**	| Cold side pressure too low, check refrigerant charge and pressure sensors. |
-| **E.PresHot**		| Hot side pressure too high, check refrigerant charge and pressure sensors. |
+| **Normal_stop**     | Normal stop, i.e. setpoint sensor temperature > setpoint, so heat not needed.    |
+| **P.WtMax:_WATTS_**    | Protective stop. Overcurrent, double-check your system, then **MAX_WATTS** and **POWERON_HIGHTIME** options. |
+| **P.W.wattMIN**    | Protective stop. Abnormally low power consumption (<max watts/5). Check your system, see **MAX_WATTS** option. |
+| **P.W.TcrcMIN**    | Protective stop. Abnormally low "Compressor" temperature. Check your system, see **T_WORKINGOK_CRANKCASE_MIN** option. |
+| **P.Tho**         | Protective stop. "Hot out" temperature is too high. Check your system, see **T_HOT_MAX** option. |
+| **P.Thi**         | Protective stop. "Hot in" temperature is too high. Check system, see **T_HOT_MAX** option. |
+| **P.Tcrc**        | Protective stop. "Compressor" temperature is too high. Overheat protection. This is an ordinary situation during long runs. See **T_CRANKCASE_MAX** option and compressor manual if you want to tune it (~115 °C for wide-available compressors). |
+| **P.Tae**        | Protective stop. "After evaporator" temperature too low. Preventing cold loop from freezing and protecting suction line from liquid. See **T_COLDREF_MIN** option. |
+| **P.Tbe**        | Protective stop. "Before evaporator" temperature too low. Preventing cold loop from freezing. See **T_BEFORE_EVAP_WORK_MIN** option. |
+| **P.Tbc**        | Protective stop. "Before condenser" temperature is too high. Overheat protection. This is an ordinary situation during long runs. See **T_BEFORE_CONDENSER_MAX** option. |
+| **P.Tci**        | Protective stop. "Cold in" temperature is too low. Preventing cold loop from freezing. See **T_COLD_MIN** option. |
+| **P.Tco**        | Protective stop. "Cold out" temperature is too low. Preventing cold loop from freezing. See **T_COLD_MIN** option. |
+| **E.Tci, E.Tco, E.Tbe, E.Tae, E.Ts1, E.Ts2, E.Tcrc, E.Treg, E.Tac, E.Tbc, E.Tho, E.Thi** |    Sensor lost, check wiring. Refer to "T sensor abbreviations". |
+| **E.PresCold**    | Cold side pressure too low, check refrigerant charge and pressure sensors. |
+| **E.PresHot**     | Hot side pressure too high, check refrigerant charge and pressure sensors. |
 
 **LastStartMessage (LSM) messages. What event system is waiting for. Some informational messages.**
 | Message | description |
