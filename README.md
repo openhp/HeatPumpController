@@ -302,19 +302,19 @@ Communication protocol with an external world. Choose one.
 ```c
 //#define RS485_JSON 1 		//JSON, external systems integration
 //#define RS485_HUMAN 2 	//RS485 is used in the same way as the local console, warning: Use only if 2 devices (server and this controller) connected to the same RS485 line
-#define RS485_MODBUS 3 		//default, MODBUS via RS485, connection to the display (both sensor or 1602, see https://gitlab.com/valden/) or connection to any other MODBUS application or device
+#define RS485_MODBUS 3 		//default, MODBUS via RS485, connection to the display (both sensor or 1602, see https://GitHub.com/OpenHP/Display/) or connection to any other MODBUS application or device 
 ```
 
 System type, comment both if HP with EEV
 ```c
-//#define	EEV_ONLY	//Valden controller as EEV controller: NO target T sensor. No relays. Oly EEV. Sensors required: Tae, Tbe, current sensor. Additional T sensors can be used but not required.
-//#define	NO_EEV		//capillary tube or TXV, EEV not used
+//#define EEV_ONLY 	//Valden controller as EEV controller: NO target T sensor. No relays. Oly EEV. Sensors required: Tae, Tbe, current sensor. Additional T sensors can be used but not required.
+//#define NO_EEV 	//capillary tube or TXV, EEV not used
 ```
 
-Which sensor is used to check setpoint, uncomment one of options
+What sensor is used to check setpoint, uncomment one of those options
 ```c
-#define SETPOINT_THI	//"warm floor" scheme: "hot in" (Thi) temperature used as setpoint
-//#define SETPOINT_TS1	//"swimming pool" or "water tank heater" scheme: "sensor 1" (Ts1) is used as setpoint and located somewhere in water tank
+#define SETPOINT_THI 	//"warm floor" scheme: "hot in" (Thi) temperature used as setpoint
+//#define SETPOINT_TS1 	//"swimming pool" or "water tank heater" scheme: "sensor 1" (Ts1) is used as setpoint and located somewhere in a water tank
 ```
 
 Some more options
