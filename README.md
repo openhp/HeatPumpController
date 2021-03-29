@@ -250,7 +250,6 @@ Other:
 | **#Tho>Max** 		| "Hot out" temperature is too high. See **T_HOT_MAX** option. |
 | **#Thi>Max** 		| "Hot in" temperature is too high. See **T_HOT_MAX** option. |
 | **#CaseCold**		| Compressor crankcase temperature is too low. The system can't start. This situation occurs on outdoor installations during a winter season and if AC power lost for a few hours. Wait, while the crankcase heater stabilizing your compressor temperature. See **T_CRANKCASE_MIN** option. |
-
 | **#CaseHot**        | Compressor is still overheated, waiting. See **T_CRANKCASE_MAX** option. |
 | **#Tae<RefMin**    | "After evaporator" temperature too low. Preventing cold loop from freezing and protecting suction line from liquid. See **T_COLDREF_MIN** option. |
 | **#Tbe<RefMin**    | "Before evaporator" temperature too low. Preventing cold loop from freezing. See **T_COLDREF_MIN** option. |
