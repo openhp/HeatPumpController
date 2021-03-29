@@ -399,10 +399,10 @@ Remember that your refrigeration system reaction on every step is not immediate.
 #define EEV_MINWORKPOS		50	//position will be not less during normal work, open EEV to this position after compressor start
 
 //temperatures
-#define EEV_PRECISE_START	7.0	//(8.6 tube evaporator) 	precise tuning threshold: 		make slower pulses if (real_diff-target_diff) less than this value. Used for fine auto-tuning
-#define EEV_EMERG_DIFF		1.7	//(2.5 tube evaporator) 	liquid at suction threshold:		if dangerous condition occurred, real_diff =< (target_diff - EEV_EMERG_DIFF)  then EEV will be closed to min. work position //Ex: EEV_EMERG_DIFF = 2.0, target diff 5.0, if real_diff =< (5.0 - 2.0) then EEV will be closed to EEV_MINWORKPOS
-#define EEV_HYSTERESIS		0.5	//(0.6 tube evaporator) 	hysteresis, to stop fine-tuning:	must be less than EEV_PRECISE_START, ex: target difference = 4.0, hysteresis = 0.3, no EEV pulses will be done while real difference in range 4.0..4.3 
-#define EEV_TARGET_TEMP_DIFF	3.6	//(3.6 tube evaporator) 	target difference between Before Evaporator and After Evaporator, the head of the whole algorithm
+#define EEV_PRECISE_START	7.0	//precise tuning threshold: 		make slower pulses if (real_diff-target_diff) less than this value. Used for fine auto-tuning
+#define EEV_EMERG_DIFF		1.7	//liquid at suction threshold:		if dangerous condition occurred, real_diff =< (target_diff - EEV_EMERG_DIFF)  then EEV will be closed to min. work position //Ex: EEV_EMERG_DIFF = 2.0, target diff 5.0, if real_diff =< (5.0 - 2.0) then EEV will be closed to EEV_MINWORKPOS
+#define EEV_HYSTERESIS		0.5	//hysteresis, to stop fine-tuning:	must be less than EEV_PRECISE_START, ex: target difference = 4.0, hysteresis = 0.3, no EEV pulses will be done while real difference in range 4.0..4.3 
+#define EEV_TARGET_TEMP_DIFF	3.6	//target difference between Before Evaporator and After Evaporator, the head of the whole algorithm
 
 //additional options
 #define EEV_REOPENLAST		1	//1 = reopen to last position on compressor start, useful for ordinary schemes with everyday working cycles, 0 = not
@@ -415,8 +415,8 @@ Remember that your refrigeration system reaction on every step is not immediate.
 
 Communication addresses
 ```c
-const char devID  = 0x45;	//used only if JSON communication, does not matter for modbus and Valden display https://github.com/OpenHP/
-const char hostID = 0x30;	//used only if JSON communication, not used for modbus
+const char devID  = 0x45;	//used only if JSON communication, does not matter for MODBUS and Valden display https://github.com/OpenHP/Display/
+const char hostID = 0x30;	//used only if JSON communication, not used for MODBUS
 ```
 
 Last option
