@@ -347,16 +347,16 @@ Temperature sensors used in a system, comment to disable
 Temperature limits
 ```c
 #define MAGIC		0x66;	//change this value if you want to rewrite the T setpoint in EEPROM 
-#define	T_SETPOINT	26.0;	//This is a predefind target temperature value (start temperature). EEPROM-saved. The value can be changed using 1. Console 2. Changing the "setpoint" on a display 3. Changing this value AND changing "magic number"
+#define	T_SETPOINT	26.0;	//This is a predefined target temperature value (start temperature). EEPROM-saved. Ways to change this value: 1. Console command 2. Change the "setpoint" on a display 3. Change value here AND change "magic number" 4. JSON command
 #define T_SETPOINT_MAX	48.0;	//maximum "setpoint" temperature that an ordinary user can set
-#define T_SETPOINT_MIN	10.0;	//min. "setpoint" temperature that an ordinary user can set, lower values are not recommended until antifreeze fluids at hot side are used.
+#define T_SETPOINT_MIN	10.0;	//min. "setpoint" temperature that an ordinary user can set, lower values not recommended until antifreeze fluids at hot side used.
 #define T_CRANKCASE_MIN		8.0;	//compressor (crankcase) min. temperature, HP will not start if T lower
 #define T_CRANKCASE_MAX		110.0;	//compressor (crankcase) max. temperature, overheating protection, HP will stop if T higher
-#define T_CRANKCASE_HEAT_THRESHOLD 16.0;//crankcase heater threshold: heater will be powered on if T lower
-#define T_WORKINGOK_CRANKCASE_MIN  25.0;//compressor temperature: additional check. HP will stop if T is lower than this value after 5 minutes of work. Do not set the value too large to ensure normal operation after long pauses. 
+#define T_CRANKCASE_HEAT_THRESHOLD 16.0;//crankcase heater threshold, the compressor heater will be powered on if T lower
+#define T_WORKINGOK_CRANKCASE_MIN  25.0;//compressor temperature: additional check. HP will stop if T is lower than this value after 5 minutes of work. Do not set the value too high to ensure normal operation after long pauses. 
 #define T_BEFORE_CONDENSER_MAX	108.0;	//discharge MAX, system stops if discharge higher
 #define T_COLDREF_MIN 		-14.0;	//suction min., HP stops if T lower, cold side (glycol) loop freeze protection and compressor protection against liquid 
-#define T_BEFORE_EVAP_WORK_MIN 	-25.5;	//!!!before evaporator (after valve) min. T; can be very low for a few minutes after startup, ex: capillary tube in some conditions; and for all systems: after long shut-off, lack of reagent, 1st starts, and many others
+#define T_BEFORE_EVAP_WORK_MIN 	-25.5;	//!!!before evaporator (after valve) min. T; can be very low for a few minutes after a startup, ex: capillary tube in some conditions; and for all systems: after long shut-off, lack of refrigerant, 1st starts, and many others
 #define T_COLD_MIN 		-15.5;	//cold side (glycol) loop freeze protection: HP stops if inlet or outlet temperature lower
 #define T_HOT_MAX 		50.0;	//hot loop: HP stops if hot side inlet or outlet temperature higher than this threshold
 ```
