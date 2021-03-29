@@ -288,21 +288,21 @@ Ok, I think that's enough for this appendix, this is a controller page, and not 
 {-Overall, your system with sensors positions will look like at drawing below. Refrigerators (heat pumps) are very simple devices. -}
 <img src="./m_HeatPump_scheme2.png" width="500"><br><br>
 
-##  Appendix D: Firmware options and fine tunings
+## Appendix D: Firmware options and fine-tuning
 
-QA tests, uncomment to enable
+QA tests, uncomment to enable.
 ```c
-//#define SELFTEST_RELAYS_LEDS_SPEAKER	//speaker and relays QA test, uncomment to enable
-//#define SELFTEST_EEV			//EEV QA test, uncomment to enable
-//#define SELFTEST_T_SENSORS		//temperature sensors QA test, uncomment to enable
+//#define SELFTEST_RELAYS_LEDS_SPEAKER 	//speaker and relays QA test, uncomment to enable
+//#define SELFTEST_EEV 			//EEV QA test, uncomment to enable
+//#define SELFTEST_T_SENSORS 		//temperature sensors QA test, uncomment to enable
 ```
 
-Communication protocol with external world, choose one
+Communication protocol with an external world. Choose one.
 
 ```c
-//#define RS485_JSON	1	//json, external systems integration
-//#define RS485_HUMAN	2	//RS485 is used in the same way as the local console, warning: Use only if 2 devices (server and this controller) are connected to the same RS485 line
-#define RS485_MODBUS	3	//default, Modbus via RS485, connection to the display (both sensor or 1602, see https://gitlab.com/valden/) or connection to any other MODBUS application or device 
+//#define RS485_JSON 1 		//JSON, external systems integration
+//#define RS485_HUMAN 2 	//RS485 is used in the same way as the local console, warning: Use only if 2 devices (server and this controller) connected to the same RS485 line
+#define RS485_MODBUS 3 		//default, MODBUS via RS485, connection to the display (both sensor or 1602, see https://gitlab.com/valden/) or connection to any other MODBUS application or device
 ```
 
 System type, comment both if HP with EEV
