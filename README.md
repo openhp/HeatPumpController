@@ -283,7 +283,7 @@ And oxygen brazing with (20%+)silver+copper solder required here:<br>
 <img src="./m_plate_echangers_oxygen_brazing.jpg" width="500"><br><br>
 You can build your own "tube-in-tube" heat exchangers. It's not hard. Cheaper. The heat exchange efficiency is worse. Very easy soldering.<br>
 <img src="./m_tube-in-tube_diy1.jpg" width="400"> <img src="./m_tube-in-tube_diy2.jpg" width="400"><br><br>
-Additionally, you can think "I'll take an old AC parts... Housing... Slightly change... An hour or two, day of work maximum and I'll get a refrigerant<->water heat exchanger in for a penny!". This idea is obvious. It was the first thing I've tried. You can try, but to achieve "not very bad" performance it'll take more than a one day and much more than a few $$, even if you have unlimited access to older ACs.<br>
+Additionally, you can think "I'll take an old AC parts... Housing... Slightly change... An hour or two, day of work maximum and I'll get a refrigerant<->water heat exchanger in for a penny!". This idea is obvious. It was the first thing I've tried. You can try this, but to achieve "not very bad" performance it'll take more than a one day and much more than a few $$, even if you have unlimited access to older ACs.<br>
 Ok, I think that's enough for this appendix, this is a controller page, and not how-to-build-refrigeration-systems page.<br>
 {-Overall, your system with sensors positions will look like at drawing below. Refrigerators (heat pumps) are very simple devices. -}
 <img src="./m_HeatPump_scheme2.png" width="500"><br><br>
