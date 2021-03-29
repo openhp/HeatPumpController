@@ -147,21 +147,21 @@ Let's say you don't know how to calculate the amount of refrigerant in a recentl
 This algo is good and safe both the first time and as a starting point. As you gain experience, you will get yours much easier and faster.<br>
 Also, use "manual EEV mode" during refilling process.<br><br>
 
-## Hints 
-For more information about Heat Pumps look at [Wikipedia about HP](https://en.wikipedia.org/wiki/Heat_pump).<br>
-If you are interested in questions like "how refrigeration systems works" read Patrick Kotzaoglanian books.<br>
-If you want more technical details, sophisticated scmemes, "how EEV can be driven by temperature" diagrams, etc. refer to vendors manuals (you can find a lot in Alfa Laval brochures, Danfoss guides, and so on).<br>
+## Hints
+For more information about Heat Pumps look at [Wikipedia HP page](https://en.wikipedia.org/wiki/Heat_pump).<br>
+If you want to know "how the refrigeration systems work", read Patrick Kotzaoglanian books.<br>
+If you want more technical details, sophisticated schemes, "how EEV can be driven by temperature" diagrams, etc. refer to vendor manuals (you'll find all you need in the Alfa Laval brochures, Danfoss guides, and so on).<br>
 For refrigerants and oils types comparison see wiki.<br><br>
 
-## Personal experience
-Note that the SCT013 sensor and the current monitoring scheme cannot be used for accurate measurements and accurate COP calculations. Use wattmeter for accurate power measurements.<br>
-Measuring the temperature of a warm floor with sensor at one point is a bad idea - it's better to deal with temperature of the "hot in" water coming from all over the floor, as implemented in firmware.<br>
-The weather-dependent  (both outdoor and indoor temperature dependent) system does not work fine for 30-150 m2 buildings. The system turns out to be difficult and works bad due to unpredictable ventilation. And also due to the unpredictability of heat emitted in the house by other sources.<br>
-I tried the scheme with a flooded evaporator in 2019 and found it extremely problematic, then refused to use it.<br>
-Deep regeneration schemes are useful only for some refrigerants and only in certain temperature ranges. I also tried deep regeneration, I was convinced that the theory coincides with the practice and then also refused this idea.<br>
-In general, it is possible by complicating the refrigeration scheme to win somewhere 1%, somewhere 3%, but all this leads to significant time and money costs, compared to not very much profit.<br>
-Summary: If you want experiments - Experiment. Want reliably and quickly - make system simple.<br>
-<br>
+## Personal experience 
+Note that the SCT013 sensor and the current monitoring scheme cannot be used for accurate measurements and accurate COP calculations. Use a watt meter for accurate power measurements.<br>
+Temperature sensor installation at a warm floor surface point is a bad idea - it's better to get "hot in" water temperature coming from all over the floor, as implemented in firmware.<br>
+The weather-dependent (both outdoor and indoor temperature dependent) system does not work fine for 30-150 m2 buildings. Such a system is too complex and works unpredictable due to random ventilation. And also due to the unpredictability of heat emitted in the house by other sources.<br>
+I tried the scheme with a flooded evaporator in 2019 and found it terribly tricky, then refused to use it.<br>
+Deep regeneration schemes are useful only for some refrigerants and only in certain temperature ranges. I've tried deep regeneration too. As a result, the theory coincided with practice and I also refused this idea.<br>
+In general, it is possible by complicating the refrigeration scheme to win somewhere 1%, somewhere 3%, but all this leads to significant time and money cost getting suddenly a small profit.<br>
+Summary: If you want experiments - Experiment. Want reliably - make the system simple.<br><br>
+
 ## License
 GPLv3. <br><br>
 This product is distributed in the hope that it will be useful,	but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.<br><br>
