@@ -290,14 +290,14 @@ Ok, I think that's enough for this appendix, this is a controller page, and not 
 
 ## Appendix D: Firmware options and fine-tuning
 
-QA tests, uncomment to enable.
+QA tests, uncomment to enable
 ```c
 //#define SELFTEST_RELAYS_LEDS_SPEAKER 	//speaker and relays QA test, uncomment to enable
 //#define SELFTEST_EEV 			//EEV QA test, uncomment to enable
 //#define SELFTEST_T_SENSORS 		//temperature sensors QA test, uncomment to enable
 ```
 
-Communication protocol with an external world. Choose one.
+Communication protocol with an external world. Choose one
 
 ```c
 //#define RS485_JSON 1 		//JSON, external systems integration
@@ -329,18 +329,18 @@ Temperature sensors used in a system, comment to disable
 ```c
 #define T_cold_in;		//cold side (heat source) inlet sensor
 #define T_cold_out;		//cold side outlet sensor
-#define T_before_evaporator;	//"before" and "after evaporator" sensors are required to control EEV, both "EEV_ONLY" and "full" schemes 
-#define T_after_evaporator;	//"before" and "after evaporator" sensors are required to control EEV, both "EEV_ONLY" and "full" schemes 
+#define T_before_evaporator;	//"before" and "after evaporator" sensors required to control EEV, both "EEV_ONLY" and "full" schemes 
+#define T_after_evaporator;	//"before" and "after evaporator" sensors required to control EEV, both "EEV_ONLY" and "full" schemes 
 #ifdef SETPOINT_TS1
-	#define T_sensor_1;	//T values from the additional sensor S1 are used as a "setpoint" in "pool" or "water tank heater" schemes 
+	#define T_sensor_1;	//T values from the additional sensor S1 used as a "setpoint" in "pool" or "water tank heater" schemes 
 #endif
-//#define T_sensor_2;		//additional sensor, any source, for example: outdoor temperature, in-case temperature, and so on
-#define T_crc;			//if defined: enables crankcase T sensor and crankcase heater on relay 4
-//#define T_regenerator;	//an additional sensor, the regenerator temperature sensor (inlet or outlet or housing) is used only to obtain a temperature data if necessary 
+//#define T_sensor_2;		//additional sensor, any source; for example, outdoor temperature, in-case temperature, and so on
+#define T_crc;			//if defined, enables the crankcase T sensor and crankcase heater on the relay "Crankcase heater"
+//#define T_regenerator;	//an additional sensor, the regenerator temperature sensor (inlet or outlet or housing); used only to obtain a temperature data if necessary 
 #define T_afrer_condenser;	//after condenser (and before valve)
 #define T_before_condenser;	//before condenser (discharge)
 #define T_hot_out;		//hot side outlet
-//in full scheme Hot IN required! optional in "EEV_ONLY" scheme (see "EEV_ONLY" option), 
+//In full scheme Hot IN required! Optional in "EEV_ONLY" scheme (see "EEV_ONLY" option), 
 #define T_hot_in;		//hot side inlet
 ```
 
