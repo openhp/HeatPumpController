@@ -376,26 +376,26 @@ Watts, cycles times (milliseconds)
 ```
 
 EEV options<br>
-If you are using capillary tube or TXV: simply skip next section<br>
-Depending on how many milliseconds are allocated per step, the speed of automatic tuning will change.<br>
-Remember that you'll see refrigeration system reaction on every step not immediately, but after few minutes, sometimes after tens of minutes.<br>
+If you are using a capillary tube or TXV: simply skip next section<br>
+Depending on how many milliseconds allocated per step, the speed of automatic tuning will change.<br>
+Remember that your refrigeration system reaction on every step is not immediate. The system reacts after a few minutes, sometimes after tens of minutes.<br>
 ```c
 #define EEV_MAXPULSES		250	//max steps, 250 is tested for sanhua 1.3
 
-//steps tuning: mulliseconds per fast and slow (precise) steps
-#define EEV_PULSE_FCLOSE_MILLIS	20	//(20 tube evaporator)		fast closing, closing on danger				(milliseconds per step)
-#define EEV_PULSE_CLOSE_MILLIS	60000	//(50000 tube evaporator)	accurate closing while the compressor works 		(milliseconds per step)
-#define EEV_PULSE_WOPEN_MILLIS	20	//(20 tube evaporator)		standby (waiting) pos. set				(milliseconds per step)
-#define EEV_PULSE_FOPEN_MILLIS	1400	//(1300 tube evaporator)	fast opening, fast search 				(milliseconds per step)
-#define EEV_PULSE_OPEN_MILLIS	70000	//(60000 tube evaporator)	accurate opening while the compressor works		(milliseconds per step)
-#define EEV_STOP_HOLD		500	//0.1..1sec for Sanhua		hold time						(milliseconds per step)
-#define EEV_CLOSEEVERY		86400000	//86400000: EEV will be closed (zero calibration) every 24 hours, executed while HP is NOT working	(milliseconds per cycle)
+//steps tuning: milliseconds per fast and slow (precise) steps
+#define EEV_PULSE_FCLOSE_MILLIS	20	//fast closing, closing on danger			(milliseconds per step)
+#define EEV_PULSE_CLOSE_MILLIS	60000	//accurate closing while the compressor works 		(milliseconds per step)
+#define EEV_PULSE_WOPEN_MILLIS	20	//standby (waiting) pos. set				(milliseconds per step)
+#define EEV_PULSE_FOPEN_MILLIS	1400	//fast opening, fast search 				(milliseconds per step)
+#define EEV_PULSE_OPEN_MILLIS	70000	//accurate opening while the compressor works		(milliseconds per step)
+#define EEV_STOP_HOLD		500	//0.1..1sec for Sanhua		hold time		(milliseconds per step)
+#define EEV_CLOSEEVERY		86400000	//86400000: EEV full close (zero calibration) every 24 hours, executed while HP is NOT working	(milliseconds per cycle)
 
 //positions
 #define EEV_CLOSE_ADD_PULSES	8	//read below, additional steps after zero position while full closing 
 #define EEV_OPEN_AFTER_CLOSE	45	//0 - set the zero position, then add EEV_CLOSE_ADD_PULSES (zero insurance, read EEV guides for this value) and stop, EEV will be in zero position. 
-					//N - set the zero position, than add EEV_CLOSE_ADD_PULSES, than open EEV on EEV_OPEN_AFTER_CLOSE pulses
-					//i.e. it's a "waiting position" while HP not working, value must be <= MINWORKPOS
+					//N - set the zero position, then add EEV_CLOSE_ADD_PULSES, than open EEV on EEV_OPEN_AFTER_CLOSE pulses
+					//i.e. it's a "waiting position" while HP isn't working, value must be <= MINWORKPOS
 #define EEV_MINWORKPOS		50	//position will be not less during normal work, open EEV to this position after compressor start
 
 //temperatures
