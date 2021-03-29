@@ -88,7 +88,7 @@ Crimp and plug low-voltage connectors:
 - RS485 to the Remote Display, using a wire of desired length (note that A is connected to A, B to B and GND to GND),
 - 12V and GND secondary terminals to the remote display,
 - EEV to EEV terminal,
-- insert T sensors arrays appropriate terminals,
+- insert T sensors arrays appropriate terminals (if you do not need to control over all temperatures, disable and do not install unnecessary sensors),
 - crimp and plug pressure sensors outputs: crimp 1st wires together to the right terminal, 2nd cold side wire to the left terminal, 2nd hot side wire to the middle terminal; use the dummy if no pressure sensors used in your system.
 
 You may prefer to solder the wires over using connectors. But in this case, it will be difficult to disassemble the system if you want to change something. The choice is yours.<br>
@@ -285,7 +285,7 @@ You can build your own "tube-in-tube" heat exchangers. It's not hard. Cheaper. T
 <img src="./m_tube-in-tube_diy1.jpg" width="400"> <img src="./m_tube-in-tube_diy2.jpg" width="400"><br><br>
 Additionally, you can think "I'll take an old AC parts... Housing... Slightly change... An hour or two, day of work maximum and I'll get a refrigerant<->water heat exchanger in for a penny!". This idea is obvious. It was the first thing I've tried. You can try this, but to achieve "not very bad" performance it'll take more than a one day and much more than a few $$, even if you have unlimited access to older ACs.<br>
 Ok, I think that's enough for this appendix, this is a controller page, and not how-to-build-refrigeration-systems page.<br>
-Overall, your system with sensor locations will look like at a scheme below. Refrigerators (heat pumps) are simple devices. If you do not need to control over all temperatures, disable and do not use (install) unnecessary sensors.<br>
+Overall, your system with sensor locations will look like at a scheme below. Refrigerators (heat pumps) are simple devices.<br>
 <img src="./m_Valden_Heat_Pump_Controller_model.jpg" width="1000"><br><br>
 
 ## Appendix D: Firmware options and fine-tuning
