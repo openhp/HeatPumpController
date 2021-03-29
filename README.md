@@ -233,30 +233,31 @@ Other:
 | **E.PresCold**    | Cold side pressure too low, check refrigerant charge and pressure sensors. |
 | **E.PresHot**     | Hot side pressure too high, check refrigerant charge and pressure sensors. |
 
-**LastStartMessage (LSM) messages. What event system is waiting for. Some informational messages.**
+**LastStartMessage (LSM) messages. What condition the system expects. Some informational messages.**
 | Message | description |
 | ------------- | ------------- |
-| **StCntd:_seconds_**	| Startup countdown, short-term power loss protection. |
-| **HP_Started**	| Normal start. |
-| **#Thi>Setp.**	| "Hot in" temperature > setpoint, so no reason to start. |
-| **#Ts1>Setp.**	| "Ts1" temperature > setpoint, so no reason to start, see **SETPOINT_TS1** option to switch betwees Thi and Ts1 as setpoint sensor. |
-| **HWP_OFF**		| Setpoint sensor temperature > setpoint, so after some time (**HOTCIRCLE_STOP_AFTER** option) hot side pump powered off and gone to power saving mode. |
-| **HWP_ON_by_ev**	| Hot side pump started after power saving. See **HOTCIRCLE_START_EVERY** option. |
-| **#HotPrp:_seconds_**	| Hot side pump is on, waiting for T stabilisation. Countdown, seconds. See **HOTCIRCLE_CHECK_PREPARE** option. |
-| **#HotSlp:_seconds_**	| Hot side pump in power save mode (sleeping). Waiting for next startup. Countdown, seconds. See **HOTCIRCLE_START_EVERY** option. |
-| **#HPSlp:_seconds_**"	| Compressor: pause between starts. Countdown, seconds. **MINCYCLE_POWEROFF** option.|			
-| **#CPpStart**		| Cold side pump started. |
-| **#CPp:_seconds_**	| Cold side pumping. Preparing system to start compressor. Countdown, seconds. **COLDCIRCLE_PREPARE** option. |
-| **#Tho>Max**		| "Hot out" temperature is too high. See **T_HOT_MAX** option. |
-| **#Thi>Max**		| "Hot in" temperature is too high. , see **T_HOT_MAX** option. |
-| **#CaseCold**		| Compressor crankcase temperature is too low. Can't start. This situation occurs if the outdoor installation when AC power was lost for a few hours. Wait, while the crankcase heater stabilizing your compressor temperature. See **T_CRANKCASE_MIN** option. |
-| **#CaseHot**		| Compressor is still overheated, waiting. See **T_CRANKCASE_MAX** option. |
-| **#Tae<RefMin**	| "After evaporator" temperature too low. Preventing cold loop from freezing and protecting suction line from liquid. See **T_COLDREF_MIN** option. |
-| **#Tbe<RefMin**	| "Before evaporator" temperature too low. Preventing cold loop from freezing. See **T_COLDREF_MIN** option. |
-| **#Tbc>Max**		| "Before condenser" temperatire is too high. Overheat protection. See **T_BEFORE_CONDENSER_MAX** option. |
-| **#Tci<ColdMin**	| "Cold in" temperature is too low. Preventing cold loop from freezing. See **T_COLD_MIN** option. |
-| **#Tco<ColdMin**	| "Cold out" temperature is too low. Preventing cold loop from freezing. See **T_COLD_MIN** option. |
-| **CWP_ON_CoMin**	| Cold side pump started beause cold side temperature is too low, so preventing cold loop freeze, see **T_COLD_MIN** option. |
+| **StCntd:_seconds_** 	| Startup countdown, short-term power loss protection. |
+| **HP_Started** 	| Normal start. |
+| **#Thi>Setp.** 	| "Hot in" temperature > setpoint, so no reason to start. |
+| **#Ts1>Setp.** 	| "Ts1" temperature > setpoint, so no reason to start. See **SETPOINT_TS1** option to switch between Thi and Ts1 as setpoint sensor. |
+| **HWP_OFF** 		| Setpoint sensor temperature > setpoint, so after some time (**HOTCIRCLE_STOP_AFTER** option) hot side pump powered off and gone to power saving mode. |
+| **HWP_ON_by_ev** 	| Hot side pump started after power saving. See **HOTCIRCLE_START_EVERY** option. |
+| **#HotPrp:_seconds_** | Hot side pump is on, waiting for T stabilization. Countdown, seconds. See **HOTCIRCLE_CHECK_PREPARE** option. |
+| **#HotSlp:_seconds_** | Hot side pump in power save mode (sleeping). Waiting for next startup. Countdown, seconds. See **HOTCIRCLE_START_EVERY** option. |
+| **#HPSlp:_seconds_**	| Compressor: pause between starts. Countdown, seconds. **MINCYCLE_POWEROFF** option.|
+| **#CPpStart** 	| Cold side pump started. |
+| **#CPp:_seconds_** 	| Cold side pumping. Preparing the system to compressor start. Countdown, seconds. **COLDCIRCLE_PREPARE** option. |
+| **#Tho>Max** 		| "Hot out" temperature is too high. See **T_HOT_MAX** option. |
+| **#Thi>Max** 		| "Hot in" temperature is too high. See **T_HOT_MAX** option. |
+| **#CaseCold**		| Compressor crankcase temperature is too low. The system can't start. This situation occurs on outdoor installations during a winter season and if AC power lost for a few hours. Wait, while the crankcase heater stabilizing your compressor temperature. See **T_CRANKCASE_MIN** option. |
+
+| **#CaseHot**        | Compressor is still overheated, waiting. See **T_CRANKCASE_MAX** option. |
+| **#Tae<RefMin**    | "After evaporator" temperature too low. Preventing cold loop from freezing and protecting suction line from liquid. See **T_COLDREF_MIN** option. |
+| **#Tbe<RefMin**    | "Before evaporator" temperature too low. Preventing cold loop from freezing. See **T_COLDREF_MIN** option. |
+| **#Tbc>Max**        | "Before condenser" temperature is too high. Overheat protection. See **T_BEFORE_CONDENSER_MAX** option. |
+| **#Tci<ColdMin**    | "Cold in" temperature is too low. Preventing cold loop from freezing. See **T_COLD_MIN** option. |
+| **#Tco<ColdMin**    | "Cold out" temperature is too low. Preventing cold loop from freezing. See **T_COLD_MIN** option. |
+| **CWP_ON_CoMin**    | Cold side pump started because cold side temperature is too low, so preventing cold loop freeze, see **T_COLD_MIN** option. |
 
 **Additional messages**
 | Message | description |
@@ -265,7 +266,7 @@ Other:
 | **OK:Pr.Hot**		| Hot side pressure restored.  |
 | **OK:E.T.Sens.**	| Temperature sensors restored.|
 | **HWP_ON** 		| Hot side pump powered on.    |
-| **Err:_errorcode_**	| Error code: 1 = temperature sensor error, 2 = Hot side pressure too high  3 = cold side pressure too low. |
+| **Err:_errorcode_**	| Error code: 1 = temperature sensor error, 2 = Hot side pressure too high, 3 = cold side pressure too low. |
 
 ##  Appendix C: secret appendix
 Are you still reading? If yes, your are interested in and this appendix is for you.<br>
