@@ -184,7 +184,7 @@ Main sensors:
 | Tho   | hot  side "output"    |
 | Tcrc  | crankcase (compressor itself)|
 
-Additional sensor used in "swiming pool heater" or "water tank heater" schemes, check **SETPOINT_TS1** option:
+The additional sensor used in "swimming pool heater" or "water tank heater" schemes, check **SETPOINT_TS1** option:
 | Abbr. | Full name             |
 | ----- | --------------------  |
 | Ts1   | additional sensor1    |
