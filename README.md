@@ -375,8 +375,8 @@ Watts, cycles times (milliseconds)
 #define HOTCIRCLE_STOP_AFTER	(HOTCIRCLE_CHECK_PREPARE + COLDCIRCLE_PREPARE + 30000)		//...and then stop after few minutes of circulating, if temperature is high and no need to start compressor; value must be check_prepare + coldcircle_prepare + 30 seconds (or more)
 ```
 
-EEV options<br>
-If you are using a capillary tube or TXV: simply skip next section<br>
+EEV options.<br>
+If you are using a capillary tube or TXV: simply skip next section.<br>
 Depending on how many milliseconds allocated per step, the speed of automatic tuning will change.<br>
 Remember that your refrigeration system reaction on every step is not immediate. The system reacts after a few minutes, sometimes after tens of minutes.<br>
 ```c
@@ -400,17 +400,17 @@ Remember that your refrigeration system reaction on every step is not immediate.
 
 //temperatures
 #define EEV_PRECISE_START	7.0	//(8.6 tube evaporator) 	precise tuning threshold: 		make slower pulses if (real_diff-target_diff) less than this value. Used for fine auto-tuning
-#define EEV_EMERG_DIFF		1.7	//(2.5 tube evaporator) 	liquid at suction threshold:		if dangerous condition occured:  real_diff =< (target_diff - EEV_EMERG_DIFF)  then EEV will be closed to min. work position //Ex: EEV_EMERG_DIFF = 2.0, target diff 5.0, if real_diff =< (5.0 - 2.0) then EEV will be closed to EEV_MINWORKPOS
-#define EEV_HYSTERESIS		0.5	//(0.6 tube evaporator) 	hysteresis, to stop fine tuning:	must be less than EEV_PRECISE_START, ex: target difference = 4.0, hysteresis = 0.3, no EEV pulses will be done while real difference in range 4.0..4.3 
-#define EEV_TARGET_TEMP_DIFF	3.6	//(3.6 tube evaporator) 	target difference between Before Evaporator and After Evaporator, the head of whole algorithm
+#define EEV_EMERG_DIFF		1.7	//(2.5 tube evaporator) 	liquid at suction threshold:		if dangerous condition occurred, real_diff =< (target_diff - EEV_EMERG_DIFF)  then EEV will be closed to min. work position //Ex: EEV_EMERG_DIFF = 2.0, target diff 5.0, if real_diff =< (5.0 - 2.0) then EEV will be closed to EEV_MINWORKPOS
+#define EEV_HYSTERESIS		0.5	//(0.6 tube evaporator) 	hysteresis, to stop fine-tuning:	must be less than EEV_PRECISE_START, ex: target difference = 4.0, hysteresis = 0.3, no EEV pulses will be done while real difference in range 4.0..4.3 
+#define EEV_TARGET_TEMP_DIFF	3.6	//(3.6 tube evaporator) 	target difference between Before Evaporator and After Evaporator, the head of the whole algorithm
 
 //additional options
 #define EEV_REOPENLAST		1	//1 = reopen to last position on compressor start, useful for ordinary schemes with everyday working cycles, 0 = not
 #define EEV_REOPENMINTIME	40000	//after system start: min. delay between "min. work pos." (must be > 0 in this case and > waiting position) set and reopening start
-//#define EEV_MANUAL			//comment to disable, manual set of EEV position via console; warning: this option will stop all EEV auto-activities, including zero position find procedure; so this option not recommended: switching auto/manual mode from console after startup is a better way
+//#define EEV_MANUAL			//comment to disable, manual set of EEV position via a console; warning: this option will stop all EEV auto-activities, including zero position find procedure; so this option not recommended: switch auto/manual mode from a console
 
-//do not use next option untill you're not really need it
-//#define EEV_DEBUG				//debug, usefull during system fine tuning, works both with local serial and RS485_HUMAN
+//do not use next option if you're not sure what are you doing
+//#define EEV_DEBUG				//debug, useful during system fine-tuning, works both with local serial and RS485_HUMAN
 ```
 
 Communication addresses
