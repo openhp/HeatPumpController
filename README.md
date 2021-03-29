@@ -470,8 +470,8 @@ Last option
 | ARDUINO PRO MINI				| 1	|
 | Power supply, 12v1.25A 70x30x40 (or any 0.5A+)| 1	|
 | DS18B20					| 12	|
-| usb→uart (to upload firmware)			| 1	|
-| Current sensor sct-013-000			| 1	|
+| USB<->UART (to upload firmware)		| 1	|
+| Current sensor SCT-013-000			| 1	|
 
 ## Author
 <br>
