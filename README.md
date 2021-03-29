@@ -323,7 +323,7 @@ Some more options
 #define WATCHDOG		//disable for older bootloaders
 ```
 
-Next sections: advanced options
+<b>Next sections: advanced options</b><br><br>
 Temperature sensors used in a system, comment to disable 
 
 ```c
