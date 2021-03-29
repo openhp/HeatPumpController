@@ -268,25 +268,25 @@ Other:
 | **Err:_errorcode_**	| Error code: 1 = temperature sensor error, 2 = Hot side pressure too high, 3 = cold side pressure too low. |
 
 ##  Appendix C: secret appendix
-Are you still reading? If yes, your are interested in and this appendix is for you.<br>
-About sensors: do not use cheap "waterproof epoxy-covered" sensors. "Waterproof" lasts for a short time.<br>
-Buy DS18B20s chips. Cheap or not cheap doesn't matter - I've never seen "bad" DSes. Solder sensors to the wires and cover the sensors with a two layers of 2-component epoxy resin as pictured below. This will work for a years.<br>
+Are you still reading? It seems you are interested in Heat Pumps, so this appendix is for you.<br>
+About sensors: avoid using cheap "waterproof epoxy-covered" sensors. "Waterproof" lasts for a short time.<br>
+Buy DS18B20s chips. No matter what sensors are buying: cheap or at a high price. I've never seen "bad" DSes. Solder sensors to the wires and cover with two layers of 2-component epoxy resin as pictured below. It will work for years.<br>
 <img src="./m_ds18b20_epoxy.jpg" width="500"><br><br>
-For sensors at compressor and discharge (+100°C and higher) use heat resistant sleeves at every wire.<br>
+For sensors at your compressor and discharge (+100 °C and higher) use heat-resistant sleeves at every wire.<br>
 <img src="./m_ds18b20_wires_protection.jpg" width="500"><br><br>
-To get precise temperature readings sensors must be insulated from ambient air temperature influence with additional thermal insulation. Temperature readings from most of sensors are interesting, but +/- few degree does not matter. So most of sensors can be covered with insulation as you wish.<br>
-But 2 sensors "Before evaporator" and "After evaporator" are critical to EEV and needs an extra attention. Temperature of this sensors must be as close to the temperature of copper tube  as it possible. So install Tae and Tbe sensors as pictured below. You can use thermal paste, but there is no significant difference with much more available silicone. Tape isn't shown below, for clarity, but must be used with every insulation layer.<br>
+To get precise temperature readings protect sensors against ambient air temperature influence with additional thermal insulation. Temperature readings from most of the sensors are interesting, but +/- few degrees does not matter. So, cover most of the sensors with thermal insulation as you wish.<br>
+But two sensors "Before evaporator" and "After evaporator" are critical to EEV and needs an extra attention. The temperature of these sensors must be as close to the temperature of the copper tube as it possible. So, install Tae and Tbe sensors as pictured below. You can use thermal paste, but it is no significant difference with much more available silicone. Tape not shown at photos below, for clarity, but should be used with every insulation layer.<br>
 <img src="./m_ds18b20_evaporator_mount.jpg" height="700"><br><br>
-Overall, your system scheme with sensors positions will look like at drawing below.  Refrigerators (heat pumps) are very simple inside. The only part is not shown below is an oil filter.<br>
-<img src="./m_HeatPump_scheme2.png" width="500"><br><br>
-About water(glycol)<->refrigerant heat exchangers. You can use plate heat exchangers. Pros: best efficiency. Cons: costs money.<br>
+About water(glycol)<->refrigerant heat exchangers. You can use plate heat exchangers. Pros: the best efficiency. Cons: costs money.<br>
 <img src="./m_plate_heat_exchangers.jpg" width="500"><br><br>
 And oxygen brazing with (20%+)silver+copper solder required here:<br>
 <img src="./m_plate_echangers_oxygen_brazing.jpg" width="500"><br><br>
 You can build your own "tube-in-tube" heat exchangers. It's not hard. Cheaper. The heat exchange efficiency is worse. Very easy soldering.<br>
 <img src="./m_tube-in-tube_diy1.jpg" width="400"> <img src="./m_tube-in-tube_diy2.jpg" width="400"><br><br>
-And also you can think "I'll take old AC parts... Housing... Slightly change...  A hour or two, day of work maximum, and i'll got a refrigerant<->water heat exchanger in for a penny!" This idea is obvious. That was a first thing I've tried and do not want to try it anymore. You can also go this way, but to achieve "not very bad" performance it'll take much more than a day and much more than few $$, even if you have unlimited access to older ACs.<br>
-OK, i think that's enough for this appendix, this is a controller page, and not how-to-build-refrigeration-systems page.<br>
+Additionally, you can think "I'll take an old AC parts... Housing... Slightly change... An hour or two, day of work maximum and I'll get a refrigerant<->water heat exchanger in for a penny!". This idea is obvious. It was the first thing I've tried. You can try, but to achieve "not very bad" performance it'll take more than a one day and much more than a few $$, even if you have unlimited access to older ACs.<br>
+Ok, I think that's enough for this appendix, this is a controller page, and not how-to-build-refrigeration-systems page.<br>
+{-Overall, your system with sensors positions will look like at drawing below. Refrigerators (heat pumps) are very simple devices. -}
+<img src="./m_HeatPump_scheme2.png" width="500"><br><br>
 
 ##  Appendix D: Firmware options and fine tunings
 
