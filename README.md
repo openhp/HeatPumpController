@@ -363,15 +363,15 @@ Temperature limits
 
 Watts, cycles times (milliseconds)
 ```c
-#define MAX_WATTS	1000.0 + 70.0 + 80.0	//power limit, watt, HP stops in case of exceeding, example: compressor: ~1000 + hot CP 70 + cold CP 80
-#define POWERON_PAUSE     	300000    //after power on: 			wait 5 minutes  before the start of HP (protected from power faults) 
+#define MAX_WATTS	1000.0 + 70.0 + 80.0	//power limit, watt, HP stops if exceeded, example: compressor: ~1000 + hot CP 70 + cold CP 80
+#define POWERON_PAUSE     	300000    //after power on: 			wait 5 minutes  before starting HP (power faults protection) 
 #define MINCYCLE_POWEROFF 	600000    //after a normal compressor stop: 	10 minutes pause 	(max 99999 seconds) 
 #define MINCYCLE_POWERON  	3600000  //after compressor start: 		minimum compressor operation time, i.e. work time is not less than this value (or more, depending on the setpoint temperature) 60 minutes = 3.6 KK 120mins = 5.4 kK.
 #define POWERON_HIGHTIME	7000	//after compressor start: 		defines time when power consumption can be 3 times greater than normal, 7 sec. by default
-#define COLDCIRCLE_PREPARE	90000	//before compressor start:		power on cold CP and wait 90 sec; if false start: CP will off twise this time; and (hotcircle_stop_after - this_value) must be > hotcircle_check_prepare or HP will go sleep cycle instead of start
+#define COLDCIRCLE_PREPARE	90000	//before compressor start:		power on cold CP and wait 90 sec.; if false start: CP will off twice this time; and (hotcircle_stop_after - this_value) must be > hotcircle_check_prepare or HP will go sleep cycle instead of start
 #define DEFFERED_STOP_HOTCIRCLE	1200000	//after compressor stop:		wait 20 minutes, if no need to start compressor: stop hot WP; value must be > 0
-#define HOTCIRCLE_START_EVERY	2400000	//while pauses:				pump on "hot side"  starts every 40 minutes (by default) (max 9999 seconds) to circulate water and get exact temperature reading , option used if "warm floor" installation (Thi as setpoint)...
-#define HOTCIRCLE_CHECK_PREPARE	300000	//while pauses:				...and wait temperature stabilisation 5 minutes (by default), after that do setpoint checks...
+#define HOTCIRCLE_START_EVERY	2400000	//while pauses:				pump on "hot side"  starts every 40 minutes (by default) (max 9999 seconds) to circulate water and get exact temperature reading, option used if "warm floor" installation (Thi as setpoint)...
+#define HOTCIRCLE_CHECK_PREPARE	300000	//while pauses:				...and wait for temperature stabilization 5 minutes (by default), after that do setpoint checks...
 #define HOTCIRCLE_STOP_AFTER	(HOTCIRCLE_CHECK_PREPARE + COLDCIRCLE_PREPARE + 30000)		//...and then stop after few minutes of circulating, if temperature is high and no need to start compressor; value must be check_prepare + coldcircle_prepare + 30 seconds (or more)
 ```
 
