@@ -51,7 +51,6 @@ For arduinos with an old bootloader you need to update it. (Tools-> Burn Bootloa
 For successful compilation, you must have "SoftwareSerial", "OneWire" and "DallasTemperature" libraries installed (see Tools -> Manage Libraries).<br>
 For the first time it's enough to upload firmware without any tuning. Think of it as of a commercial closed-source controller, where you cannot fine-tune internal options. And any other manual configuration do not required too, just upload firmware.<br><br>
 <img src="./m_add_IDE.png" height="300"><br><br>
-{-IDE photo here-}
 
 ## Self-tests
 QA tests are available to test the assembled board.<br>
