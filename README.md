@@ -73,7 +73,7 @@ To check temperature sensors connectors crimp one array of sensors. Plug it to a
 After tests completed comment 3 self-test defines and re-upload firmware.<br><br>
 
 ## Wiring (permanent controller installation).
-Here are no instructions for choosing the right placement for permanent installation of the controller. It depends. You're building your system, and you know much better "where" and "how".<br>
+Here are no instructions for choosing the right placement for permanent installation of the controller. It depends. I prefer to install everything with HV inside in metal boxes of appropriate size. You're building your system, and you know much better "where" and "how".<br>
 Assuming you have installed your controller to the permanent place, the next step is wiring.<br><br>
 Wiring is very simple, despite a lot of terminals.<br>
 Phases (1st wire in electrical cables):
