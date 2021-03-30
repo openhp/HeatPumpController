@@ -326,8 +326,8 @@ Some more options
 #define WATCHDOG		//disable for older bootloaders
 ```
 
-<b>Next sections: advanced options</b><br><br>
-![console statistics screenshot](./m_add_graph.png)
+<b>Next sections: advanced options</b><br>
+<img src="./m_add_graph.png" width="900"><br>
 Temperature sensors used in a system, comment to disable 
 
 ```c
