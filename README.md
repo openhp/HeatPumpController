@@ -145,7 +145,8 @@ Let's say you don't know how to calculate the amount of refrigerant in a recentl
 - after the final refilling difference between the suction pressure temperature and the Tae sensor temperature should be 3 ... 6 °C.
 
 This algo is good and safe both the first time and as a starting point. As you gain experience, you will get yours much easier and faster.<br>
-Also, use "manual EEV mode" during refilling process.<br><br>
+Also, use "manual EEV mode" during refilling process.<br>
+Keep your eyes protected and do not freeze your fingers.<br><br>
 
 ## Hints
 For more information about Heat Pumps look at [Wikipedia HP page](https://en.wikipedia.org/wiki/Heat_pump).<br>
@@ -161,6 +162,7 @@ I tried the scheme with a flooded evaporator in 2019 and found it terribly trick
 Deep regeneration schemes are useful only for some refrigerants and only in certain temperature ranges. I've tried deep regeneration too. As a result, the theory coincided with practice and I also refused this idea.<br>
 In general, it is possible by complicating the refrigeration scheme to win somewhere 1%, somewhere 3%, but all this leads to significant time and money cost getting suddenly a small profit.<br>
 Summary: If you want experiments - Experiment. Want reliably - make the system simple.<br><br>
+<img src="./m_add_freezed1.jpg" height="400"> <img src="./m_add_freezed2.jpg" height="400"> <img src="./m_add_freezed3.jpg" height="400"><br><br>
 
 ## License
 GPLv3. <br><br>
