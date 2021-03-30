@@ -272,7 +272,7 @@ Other:
 ##  Appendix C: secret appendix
 Are you still reading? It seems you are interested in Heat Pumps, so this appendix is for you.<br>
 About sensors: avoid using cheap "waterproof epoxy-covered" sensors. "Waterproof" lasts for a short time.<br>
-Buy DS18B20s chips. No matter what sensors are buying: cheap or at a high price. I've never seen "bad" DSes. Solder sensors to the wires and cover with two layers of 2-component epoxy resin as pictured below. It will work for years.<br>
+Buy DS18B20s chips. No matter what sensors are buying: cheap or at a high price. I've never seen "bad" DSes. Solder sensors to the wires and cover with two layers of 2-component epoxy resin as pictured below. It will work for years. White/orange - GND, white/blue - signal, orange - +5V.<br>
 <img src="./m_ds18b20_epoxy.jpg" width="500"><br><br>
 For sensors at your compressor and discharge (+100 °C and higher) use heat-resistant sleeves at every wire.<br>
 <img src="./m_ds18b20_wires_protection.jpg" width="500"><br><br>
