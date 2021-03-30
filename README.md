@@ -49,7 +49,7 @@ This process is the same as for other Arduinos:
 
 For arduinos with an old bootloader you need to update it. (Tools-> Burn Bootloader).<br>
 For successful compilation, you must have "SoftwareSerial", "OneWire" and "DallasTemperature" libraries installed (see Tools -> Manage Libraries).<br>
-For the first time it's enough to upload firmware without any tuning. Think of it as of a commercial closed-source controller, where you cannot fine-tune internal options. And any other manual configuration do not required too, just upload firmware.<br><br>
+For the first time it's enough to upload firmware without any tuning. Think of it as of a commercial closed-source controller, where you cannot fine-tune internal options. And any other manual configuration do not required too, just upload firmware. You will see an error LED indication and hear a beep, since no sensors connected to your controller. Follow the next steps.<br>
 <img src="./m_add_IDE.png" height="300"><br><br>
 
 ## Self-tests
@@ -70,6 +70,7 @@ To check EEV, you can use a stepper motor as shown in the video. If you are test
 To check temperature sensors connectors prepare one array of sensors. Plug it to all sensors connectors one-by-one and check results in a serial console.<br>
 {-Photo: PCB with connected arrays of sensors (I have enough sensors, so all 3 arrays are connected except Ts2 and Treg) -}<br>
 {-Screenshot: serial console with temperature readings: -}<br>
+After tests completed comment 3 self-test defines and re-upload firmware.<br><br>
 
 ## Wiring
 Wiring is very simple despite the many connections: <br>
