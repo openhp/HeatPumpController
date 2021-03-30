@@ -72,7 +72,9 @@ To check temperature sensors connectors crimp one array of sensors. Plug it to a
 {-Screenshot: serial console with temperature readings: -}<br>
 After tests completed comment 3 self-test defines and re-upload firmware.<br><br>
 
-## Wiring
+## Wiring (permanent controller installation).
+Here are no instructions for choosing the right placement for permanent installation of the controller. It depends. You're building your system, and you know much better "where" and "how".<br>
+Assuming you have installed your controller to the permanent place, the next step is wiring.<br><br>
 Wiring is very simple, despite a lot of terminals.<br>
 Phases (1st wire in electrical cables):
 - connect the "power inlet" wire to one of the "phase" terminals,
