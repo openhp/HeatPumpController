@@ -87,7 +87,7 @@ Neutral (2nd cable in electrical cables),
 {-Photo of HV connections-}<br>
 
 Crimp and plug low-voltage connectors:
-- SCT013 sensor (the only one low-voltage device in the circuit with interchangeable contacts), connect and install it on the inlet phase wire,
+- SCT013 sensor (the only one low-voltage device in this circuit with interchangeable wires), connect and install it on the inlet phase wire,
 - RS485 to the Remote Display, using a wire of desired length (note that A is connected to A, B to B and GND to GND),
 - 12V and GND secondary terminals to the remote display,
 - EEV to EEV terminal,
