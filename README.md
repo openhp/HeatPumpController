@@ -327,6 +327,7 @@ Some more options
 ```
 
 <b>Next sections: advanced options</b><br><br>
+![console statistics screenshot](./m_add_graph.png)
 Temperature sensors used in a system, comment to disable 
 
 ```c
