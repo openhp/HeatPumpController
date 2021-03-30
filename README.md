@@ -1,6 +1,6 @@
 
 ## Valden Heat Pump Controller v1.x
-<b>The Valden Heat Pump controller is a platform to precisely control heat pumps. This controller can be used for the automation of newly created Heat Pumps (HPs), as a repair controller for old systems or as control system for performing experiments on refrigeration equipment.</b>
+<b>The Valden Heat Pump controller is an open source platform to precisely control heat pumps. This controller can be used for the automation of newly built Heat Pumps (HPs), as a repair controller for old systems or as control system for performing experiments on refrigeration equipment.</b>
 <br><br>
 
 ## Specs
