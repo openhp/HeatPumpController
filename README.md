@@ -327,7 +327,7 @@ Some more options
 ```
 
 <b>Next sections: advanced options</b><br>
-<img src="./m_add_graph.png" width="880"><br>
+<img src="./m_add_graph.png" width="826"><br>
 Temperature sensors used in a system, comment to disable 
 
 ```c
