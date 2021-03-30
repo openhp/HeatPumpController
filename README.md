@@ -67,7 +67,7 @@ To run a self-tests:
 
 Video {- demostration "How self-tests works":-}
 To check EEV, you can use a stepper motor as shown in the video. If you are testing a real EEV, it should be closed after the first "beep" and partially opened after the second "beep".<br>
-To check temperature sensors connectors prepare one array of sensors. Plug it to all sensors connectors one-by-one and check results in a serial console.<br>
+To check temperature sensors connectors crimp one array of sensors. Plug it to all sensors connectors one-by-one and check results in a serial console.<br>
 {-Photo: PCB with connected arrays of sensors (I have enough sensors, so all 3 arrays are connected except Ts2 and Treg) -}<br>
 {-Screenshot: serial console with temperature readings: -}<br>
 After tests completed comment 3 self-test defines and re-upload firmware.<br><br>
