@@ -162,7 +162,7 @@ I tried the scheme with a flooded evaporator in 2019 and found it terribly trick
 Deep regeneration schemes are useful only for some refrigerants and only in certain temperature ranges. I've tried deep regeneration too. As a result, the theory coincided with practice and I also refused this idea.<br>
 In general, it is possible by complicating the refrigeration scheme to win somewhere 1%, somewhere 3%, but all this leads to significant time and money cost getting suddenly a small profit.<br>
 Summary: If you want experiments - Experiment. Want reliably - make the system simple.<br><br>
-<img src="./m_add_freezed1.jpg" height="400"> <img src="./m_add_freezed2.jpg" height="400"> <img src="./m_add_freezed3.jpg" height="400"><br><br>
+<img src="./m_add_freezed1.jpg" height="300"> <img src="./m_add_freezed2.jpg" height="300"> <img src="./m_add_freezed3.jpg" height="300"><br><br>
 
 ## License
 GPLv3. <br><br>
