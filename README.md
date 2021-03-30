@@ -37,6 +37,7 @@
 - download PCB Gerber file or get your own copy {-link here-}
 - order electronic components, see BOM (Bill Of Materials) appendix below,
 - solder electronic components. {- assembly instructions here-}<br><br>
+{-soldered photo here-}
 
 ## Firmware upload
 This process is the same as for other Arduinos:
@@ -49,6 +50,8 @@ This process is the same as for other Arduinos:
 For arduinos with an old bootloader you need to update it. (Tools-> Burn Bootloader).<br>
 For successful compilation, you must have "SoftwareSerial", "OneWire" and "DallasTemperature" libraries installed (see Tools -> Manage Libraries).<br>
 For the first time it's enough to upload firmware without any tuning. Think of it as of a commercial closed-source controller, where you cannot fine-tune internal options. And any other manual configuration do not required too, just upload firmware.<br><br>
+<img src="./m_add_IDE.png" height="300"><br><br>
+{-IDE photo here-}
 
 ## Self-tests
 QA tests are available to test the assembled board.<br>
@@ -430,6 +433,7 @@ Last option
 #define MAX_SEQUENTIAL_ERRORS 	15 		//max cycles to wait auto-clean error, ex: T sensor appears, stop compressor after counter exceeded (millis_cycle * MAX_SEQUENTIAL_ERRORS)
 ```
 ## Appendix D: bill of materials
+<img src="./m_add_parts.jpg"><br>
 | Part | Quantity |
 | ------------- | ------------- |
 | **1206 Resistors:**	||
