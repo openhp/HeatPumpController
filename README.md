@@ -110,7 +110,7 @@ Also remember about animals and children during the installation at a permanent 
 This is a first interface to Heat Pump controller you'll see after uploading firmware (Tools->Serial Monitor).<br>
 The console itself is simple to use, several commands are available. Type in command, press "Send". Help and hotkeys:<br>
 ![console help screenshot](./m_console_help.png)<br>
-Every **HUMAN_AUTOINFO** times you'll see stats. For example, after a startup of your compressor, you'll see something like this:<br>
+Every 30 sec. (**HUMAN_AUTOINFO** option) you'll see stats. For example, after a startup of your compressor, you'll see something like this:<br>
 ![console statistics screenshot](./m_console_stats.png)
 At this example, "hot in" ~30 °C, compressor ~80 °C and so on. Heat Pump (HP, compressor) ON, Hot water pump ON, Cold water pump ON. Power consumption 980 watts.
 Abbreviations: refer to Appendix A below.<br>
