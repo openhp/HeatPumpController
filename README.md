@@ -293,7 +293,7 @@ Additionally, you can think "I'll take an old AC parts... Housing... Slightly ch
 Ok, I think that's enough for this appendix, this is a controller page, and not how-to-build-refrigeration-systems page.<br>
 Overall, your system with sensor locations will look like at a scheme below. Refrigerators (heat pumps) are simple devices.<br>
 <img src="./m_Valden_Heat_Pump_Controller_model.jpg" width="1000"><br><br>
-Your system will be started or not run depending on Thi temperature. For the end user it looks like installing comfortable temperature of the warm floor via Remote Display.
+Your system works (or sleeps) depending on Thi temperature. For the end user it looks like setting up comfortable temperature of the warm floor via Remote Display.
 
 ## Appendix D: Firmware options and fine-tuning
 
