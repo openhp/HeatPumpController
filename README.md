@@ -146,7 +146,8 @@ Let's say you don't know how to calculate the amount of refrigerant in a recentl
 
 This algo is good and safe both the first time and as a starting point. As you gain experience, you will get yours much easier and faster.<br>
 Also, use "manual EEV mode" during refilling process.<br>
-Keep your eyes protected and do not freeze your fingers.<br><br>
+Keep your eyes protected and do not freeze your fingers.<br>
+<img src="./m_add_charge.jpg" height="200"><br><br>
 
 ## Hints
 For more information about Heat Pumps look at [Wikipedia HP page](https://en.wikipedia.org/wiki/Heat_pump).<br>
@@ -162,7 +163,7 @@ I tried the scheme with a flooded evaporator in 2019 and found it terribly trick
 Deep regeneration schemes are useful only for some refrigerants and only in certain temperature ranges. I've tried deep regeneration too. As a result, the theory coincided with practice and I also refused this idea.<br>
 In general, it is possible by complicating the refrigeration scheme to win somewhere 1%, somewhere 3%, but all this leads to significant time and money cost getting suddenly a small profit.<br>
 Summary: If you want experiments - Experiment. Want reliably - make the system simple.<br><br>
-<img src="./m_add_freezed1.jpg" height="350"> <img src="./m_add_freezed2.jpg" height="350"> <img src="./m_add_freezed3.jpg" height="350"><br><br>
+<img src="./m_add_freezed1.jpg" height="300"> <img src="./m_add_freezed2.jpg" height="300"> <img src="./m_add_freezed3.jpg" height="300"><br><br>
 
 ## License
 GPLv3. <br><br>
@@ -378,6 +379,7 @@ Watts, cycles times (milliseconds)
 ```
 
 EEV options.<br>
+<img src="./m_add_eev.jpg" height="200"><br>
 If you are using a capillary tube or TXV: simply skip next section.<br>
 Depending on how many milliseconds allocated per step, the speed of automatic tuning will change.<br>
 Remember that your refrigeration system reaction on every step is not immediate. The system reacts after a few minutes, sometimes after tens of minutes.<br>
