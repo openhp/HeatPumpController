@@ -73,7 +73,7 @@ To check temperature sensors connectors crimp one array of sensors. Plug it to a
 After tests completed comment 3 self-test defines and re-upload firmware.<br><br>
 
 ## Wiring
-Wiring is very simple despite the many connections: <br>
+Wiring is very simple, despite a lot of terminals.<br>
 Phases (1st wire in electrical cables):
 - connect the "power inlet" wire to one of the "phase" terminals,
 - and connect the second "phase" terminal to the AC input of the 12V power supply,
