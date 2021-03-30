@@ -85,31 +85,29 @@ Phases (1st wire in electrical cables):
 - when using a compressor heater: connect the "Crankcase heater" relay output to the heater cable (highly recommended for outdoor installation and year-round use).
 Neutral (2nd cable in electrical cables),
 - connect all the second wires of power cords to the "neutral" terminals on the board.
-
 {-Photo of HV connections-}<br>
 
 Crimp and plug low-voltage connectors:
-- SCT013 sensor (the only one low-voltage device in this circuit with interchangeable wires), connect and install it on the inlet phase wire,
-- RS485 to the Remote Display, using a wire of desired length (note that A is connected to A, B to B and GND to GND),
-- 12V and GND secondary terminals to the remote display,
-- EEV to EEV terminal,
-- insert T sensors arrays appropriate terminals (if you do not need to control over all temperatures, disable and do not install unnecessary sensors),
-- crimp and plug pressure sensors outputs: crimp 1st wires together to the right terminal, 2nd cold side wire to the left terminal, 2nd hot side wire to the middle terminal; use the dummy if no pressure sensors used in your system.
-
-You may prefer to solder the wires over using terminals and crimping connectors. But in this case, it will be difficult to disassemble the system if you want to change something. The choice is yours.<br>
-{-Photo: T sensors with abbreviations and full names-}<br>
+- crimp SCT013 sensor wires (the only one low-voltage device in this circuit with interchangeable wires), connect and install it on the inlet phase wire,
+{-Photo: power wire + SCT013-}<br>
+- crimp RS485 to the Remote Display, using a wire of desired length (note that A is connected to A, B to B and GND to GND),
+- crimp  12V and GND secondary terminals to the remote display,
 {-Photo: RS485 and 12V power for display-}<br>
-{-Photo: all together-}<br>
+- connect EEV to EEV terminal,
+{-Photo: EEV connected-}<br>
+- install all T sensors on pipes, insulate tubes,
+- crimp T sensors arrays,
+- insert T sensors arrays to appropriate terminals (if you do not need to control over all temperatures, disable and do not install unnecessary sensors),
+{-Photo: T sensors connected-}<br>
+- crimp and plug pressure sensors outputs: crimp 1st wires together to the right terminal, 2nd cold side wire to the left terminal, 2nd hot side wire to the middle terminal; use the dummy if no pressure sensors used in your system.
+{-Photo: pressure sensors crimped and sensors bodies-}<br>
+{-Photo: pressure sensor dummy -}<br><br>
+
+You may prefer to solder the wires over using terminals and crimping connectors. But in this case, it will be difficult to disassemble the system if you want to change something. The choice is yours.<br><br>
 And one more: **remember! 230V inside!** Do not turn on the phase without need.<br>
 Have you ever received 230V with your own hands? If yes - you know. If no - do not try.<br>
 Also remember about animals and children during the installation at a permanent place.<br><br>
-
-## Sensors mount
-{-Sensors scheme-}
-{-Photo: power wire + SCT013-}<br>
-{-Few photos: DS18B20 sensor installed -}<br>
-{-Photo: pressure sensors installed -}<br>
-{-Photo: pressure sensor dummy -}<br><br>
+{-Photo: all together-}<br><br>
 
 ## Control and usage: serial console
 This is a first interface to Heat Pump controller you'll see after uploading firmware (Tools->Serial Monitor).<br>
