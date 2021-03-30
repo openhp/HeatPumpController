@@ -73,7 +73,7 @@ To check temperature sensors connectors crimp one array of sensors. Plug it to a
 After tests completed comment 3 self-test defines and re-upload firmware.<br><br>
 
 ## Wiring (permanent controller installation).
-Here are no instructions for choosing the right placement for permanent installation of the controller. It depends. I prefer to install everything with HV inside in metal boxes of appropriate size. You're building your system, and you know much better "where" and "how".<br>
+Here are no instructions for choosing the right placement for permanent installation of the controller. It depends. You're building your system, and you know much better "where" and "how".<br>
 Assuming you have installed your controller to the permanent place, the next step is wiring.<br><br>
 Wiring is very simple, despite a lot of terminals.<br>
 Phases (1st wire in electrical cables):
@@ -96,7 +96,7 @@ Crimp and plug low-voltage connectors:
 - insert T sensors arrays appropriate terminals (if you do not need to control over all temperatures, disable and do not install unnecessary sensors),
 - crimp and plug pressure sensors outputs: crimp 1st wires together to the right terminal, 2nd cold side wire to the left terminal, 2nd hot side wire to the middle terminal; use the dummy if no pressure sensors used in your system.
 
-You may prefer to solder the wires over using connectors. But in this case, it will be difficult to disassemble the system if you want to change something. The choice is yours.<br>
+You may prefer to solder the wires over using terminals and crimping connectors. But in this case, it will be difficult to disassemble the system if you want to change something. The choice is yours.<br>
 {-Photo: T sensors with abbreviations and full names-}<br>
 {-Photo: RS485 and 12V power for display-}<br>
 {-Photo: all together-}<br>
