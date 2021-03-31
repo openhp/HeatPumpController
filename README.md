@@ -491,7 +491,7 @@ Indicate changes: If you make modifications or additions, you must indicate in a
 You are free: to share and adapt the material for any purpose, even commercially, as long as you follow the license terms.</sub><br>
 
 The firmware source code licensed under [GPLv3](https://www.gnu.org/licenses/gpl-3.0.en.html). <br>
-<sub>This product is distributed in the hope that it will be useful,	but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.<sub><br>
+<sub>This product is distributed in the hope that it will be useful,	but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.</sub><br>
 
 For third-party libraries licenses used in this product please refer to those libraries.<br>
 ## Author
