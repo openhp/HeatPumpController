@@ -481,12 +481,12 @@ Last option
 | Current sensor SCT-013-000			| 1	|
 
 ## License
-For third-party libraries licenses used in this project please refer to those libriries.<br><br>
+For third-party libraries licenses used in this project please refer to those libriries.<br>
 
-© 2021 D.A.A. All rights reserved; gonzho AT web.de; https://github.com/openhp/.<br><br>
+© 2021 D.A.A. All rights reserved; gonzho AT web.de; https://github.com/openhp/.<br>
 
-Firmware source code licensed under [GPLv3](https://www.gnu.org/licenses/gpl-3.0.en.html). <br><br>
-This product is distributed in the hope that it will be useful,	but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.<br><br>
+Firmware source code licensed under [GPLv3](https://www.gnu.org/licenses/gpl-3.0.en.html). <br>
+This product is distributed in the hope that it will be useful,	but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.<br>
 
 Text and media materials licensed under [CC-BY-SA License v4.0](https://creativecommons.org/licenses/by-sa/4.0/).<br>
 Attribution: You must clearly attribute Valden Heat Pump (https://github.com/openhp/) original work in any derivative works.<br>
