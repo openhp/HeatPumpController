@@ -120,15 +120,15 @@ At this example, "hot in" ~30 °C, compressor ~80 °C and so on. Heat Pump (HP, 
 Abbreviations: refer to Appendix A below.<br>
 And you'll see diagnostic messages in the serial console.<br><br>
 
-## Control and usage: [remote control display](https://github.com/openhp/Display/)
+## Control and usage: [Remote Control Display](https://github.com/openhp/Display/)
 This is a way for the end user to control Heat Pump.<br>
 <img src="./m_display_main.jpg" width="300"><br><br>
-End user does not want to know much about refrigerants, evaporation, discharge temperatures and so on, so this display designed as simple as it was possible. See [display page](https://github.com/openhp/Display/) for details. And yes, this display is open product too, with available Gerber, PCB and source code.<br><br>
+End user does not want to know much about refrigerants, evaporation, discharge temperatures and so on, so this display designed as simple as it was possible. See [Remote Display page](https://github.com/openhp/Display/) for details. And yes, this display is open product too, with available Gerber, PCB and source code.<br><br>
 
-## Control and usage: [service display](https://github.com/openhp/ServiceDisplay/) 
+## Control and usage: [Service Display](https://github.com/openhp/ServiceDisplay/) 
 One day I've realized that a netbook with a serial console is a good diagnostic tool, but I want a compact tool to get maximum available information from a Heat Pumps. So, this "Quickly Assembled Service Display" appeared. It fits everywhere and with a good power bank it can work 2-3 days long, without any additional power source. The diagnostic display is build from scratch, no PCB and housing here (and no plans to create it), because I do not see this service display as a permanently mounted device. <br>
 <img src="./m_tft_mainscreen.jpg" width="300"><br><br>
-If you want a compact and visual tool - this device is for you, so check [the Service Display Page](https://github.com/openhp/ServiceDisplay/) .<br><br>
+If you want a compact and visual tool - this device is for you, so check the [Service Display Page](https://github.com/openhp/ServiceDisplay/) .<br><br>
 
 ## Starting up the heat pump system for the first time and charging refrigerant
 This is an easy part, but if you don't have experience it will take time.<br>
