@@ -487,7 +487,7 @@ Text, media and other materials licensed under [CC-BY-SA License v4.0](https://c
 Attribution: You must clearly attribute Valden Heat Pump (https://github.com/openhp/HeatPumpController/) original work in any derivative works.<br>
 Share and Share Alike: If you make modifications or additions to the content you re-use, you must license them under the CC-BY-SA License v4.0 or later.<br>
 Indicate changes: If you make modifications or additions, you must indicate in a reasonable fashion that the original work has been modified.<br>
-You are free: to share and adapt the material for any purpose, even commercially as long as you follow the license terms.<br>
+You are free: to share and adapt the material for any purpose, even commercially, as long as you follow the license terms.<br>
 
 The firmware source code licensed under [GPLv3](https://www.gnu.org/licenses/gpl-3.0.en.html). <br>
 This product is distributed in the hope that it will be useful,	but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.<br>
