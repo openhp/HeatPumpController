@@ -70,7 +70,13 @@ To check EEV connection, you can use a stepper motor as shown in the video.  If 
 To check temperature sensors connectors crimp one array of sensors. Plug it to all sensors connectors one-by-one and check results in a serial console.<br>
 {-Photo: PCB with connected arrays of sensors (I have enough sensors, so all 3 arrays are connected except Ts2 and Treg) -}<br>
 {-Screenshot: serial console with temperature readings: -}<br>
-After tests completed comment 3 self-test defines and re-upload firmware. Your controller is ready to a first start (after wiring).<br><br>
+After tests completed comment 3 self-test defines.<br>
+Choose what so you wand to heat and uncomment one of those options:
+```c
+#define SETPOINT_THI 	//"warm floor" scheme: "hot in" (Thi) temperature used as setpoint
+//#define SETPOINT_TS1 	//"swimming pool" or "water tank heater" scheme: "sensor 1" (Ts1) is used as setpoint and located somewhere in a water tank
+```
+Re-upload firmware. Your controller is ready to a first start (after wiring). Probably you'll never need to change other options.<br><br>
 
 ## Wiring (permanent controller installation).
 Here are no instructions for choosing the right placement for permanent installation of the controller. It depends. You're building your system, and you know much better "where" and "how".<br>
@@ -316,7 +322,7 @@ System type, comment both if HP with EEV
 //#define NO_EEV 	//capillary tube or TXV, EEV not used
 ```
 
-What sensor is used to check setpoint, uncomment one of those options
+Sensor used to check setpoint, uncomment one of those options
 ```c
 #define SETPOINT_THI 	//"warm floor" scheme: "hot in" (Thi) temperature used as setpoint
 //#define SETPOINT_TS1 	//"swimming pool" or "water tank heater" scheme: "sensor 1" (Ts1) is used as setpoint and located somewhere in a water tank
