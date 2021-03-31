@@ -481,19 +481,18 @@ Last option
 | Current sensor SCT-013-000			| 1	|
 
 ## License
-For third-party libraries licenses used in this project please refer to those libriries.<br>
-
 © 2021 D.A.A. All rights reserved; gonzho AT web.de; https://github.com/openhp/.<br>
 
-Firmware source code licensed under [GPLv3](https://www.gnu.org/licenses/gpl-3.0.en.html). <br>
-This product is distributed in the hope that it will be useful,	but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.<br>
-
-Text and media materials licensed under [CC-BY-SA License v4.0](https://creativecommons.org/licenses/by-sa/4.0/).<br>
+Text, media and other materials licensed under [CC-BY-SA License v4.0](https://creativecommons.org/licenses/by-sa/4.0/).<br>
 Attribution: You must clearly attribute Valden Heat Pump (https://github.com/openhp/) original work in any derivative works.<br>
 Share and Share Alike: If you make modifications or additions to the content you re-use, you must license them under the CC-BY-SA License v4.0 or later.<br>
 Indicate changes: If you make modifications or additions, you must indicate in a reasonable fashion that the original work has been modified.<br>
 You are free: to share and adapt the material for any purpose, even commercially as long as you follow the license terms.<br>
 
+The firmware source code licensed under [GPLv3](https://www.gnu.org/licenses/gpl-3.0.en.html). <br>
+This product is distributed in the hope that it will be useful,	but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.<br>
+
+For third-party libraries licenses used in this project please refer to those libraries.<br>
 ## Author
 <br>
 gonzho АТ web.de (c) 2018-2021<br>
