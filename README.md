@@ -70,7 +70,7 @@ To check EEV connection, you can use a stepper motor as shown in the video.  If 
 To check temperature sensors connectors crimp one array of sensors. Plug it to all sensors connectors one-by-one and check results in a serial console.<br>
 {-Photo: PCB with connected arrays of sensors (I have enough sensors, so all 3 arrays are connected except Ts2 and Treg) -}<br>
 {-Screenshot: serial console with temperature readings: -}<br>
-After tests completed comment 3 self-test defines and re-upload firmware.<br><br>
+After tests completed comment 3 self-test defines and re-upload firmware. Your controller is ready to a first start (after wiring).<br><br>
 
 ## Wiring (permanent controller installation).
 Here are no instructions for choosing the right placement for permanent installation of the controller. It depends. You're building your system, and you know much better "where" and "how".<br>
@@ -96,7 +96,8 @@ Crimp and plug low-voltage connectors:
 - connect EEV to EEV terminal,
 {-Photo: EEV connected-}<br>
 - install all T sensors on pipes, insulate tubes,
-- crimp T sensors arrays,
+- crimp T sensors arrays, you can crimp all four GND wires at every array to one GND connector pin or make 1-to-4 connection somewhere closer to sensors location (same for +5V wires),
+{-Photo: 4 wires crimped-}<br>
 - insert T sensors arrays to appropriate terminals (if you do not need to control over all temperatures, disable and do not install unnecessary sensors),
 {-Photo: T sensors connected-}<br>
 - crimp and plug pressure sensors outputs: crimp 1st wires together to the right terminal, 2nd cold side wire to the left terminal, 2nd hot side wire to the middle terminal; use the dummy if no pressure sensors used in your system.
