@@ -492,7 +492,7 @@ You are free: to share and adapt the material for any purpose, even commercially
 The firmware source code licensed under [GPLv3](https://www.gnu.org/licenses/gpl-3.0.en.html). <br>
 This product is distributed in the hope that it will be useful,	but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.<br>
 
-For third-party libraries licenses used in this project please refer to those libraries.<br>
+For third-party libraries licenses used in this product please refer to those libraries.<br>
 ## Author
 <br>
 gonzho АТ web.de (c) 2018-2021<br>
