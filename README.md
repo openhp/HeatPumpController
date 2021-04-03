@@ -224,7 +224,7 @@ Other:
 | HP	| heat pump				|
 
 ## Appendix B: LEDs
-**LEDs allow you to make rapid diagnostics without connecting a serial console or a Service Display. **
+LEDs allow you to make rapid diagnostics without connecting a serial console or a Service Display.<br>
 | LED | description |
 | ------------- | ------------- |
 | **EEV_opening**     	|  EEV is opening  |
