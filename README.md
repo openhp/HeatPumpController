@@ -223,7 +223,23 @@ Other:
 | EEVP	| EEV position				|
 | HP	| heat pump				|
 
-## Appendix B: Diagnostic and status messages
+## Appendix B: LEDs
+**LEDs allow you to make rapid diagnostics without connecting a serial console or a Service Display. **
+| LED | description |
+| ------------- | ------------- |
+| **EEV_opening**     	|  EEV is opening  |
+| **EEV_closing**     	|  EEV is closing  |
+| **EEV_fast**     	|  EEV mode is "fast" (non-precise) |
+| **485_RX**     	|  485 transceiver is in listening state  |
+| **485_TX**     	|  485 transceiver transmits a reply  |
+| **Manual mode**     	|  EEV in a manual mode   |
+| **LSC: error**     	|  Last stop was caused by an error. If you see this LED ON, it's a reason to connect either console or Service Display. Diagnostics  required.   |
+| **LSC: protection**	|  Last stop was caused by protection. In some conditions (like long powered-on periods or refilling) this can occur. This LED indicates that something exceeded normal run conditions. |
+| **OK**     |  System OK.  |
+| **ERROR**     |  Something wrong: not all T sensors connected, one of the pressure sensors is not OK. Diagnostics required.   |
+| **Relays LEDs**     |  Indicates corresponding relay state  |
+
+## Appendix C: Diagnostic and status messages
 **LastStopCause (LSC) messages. Why the compressor has stopped working.**
 | Message | description |
 | ------------- | ------------- |
@@ -277,7 +293,7 @@ Other:
 | **HWP_ON** 		| Hot side pump powered on.    |
 | **Err:_errorcode_**	| Error code: 1 = temperature sensor error, 2 = Hot side pressure too high, 3 = cold side pressure too low. |
 
-##  Appendix C: secret appendix
+##  Appendix D: secret appendix
 Are you still reading? It seems you are interested in Heat Pumps, so this appendix is for you.<br>
 About sensors: avoid using cheap "waterproof epoxy-covered" sensors. "Waterproof" lasts for a short time.<br>
 Buy DS18B20s chips. No matter what sensors are buying: cheap or at a high price. I've never seen "bad" DSes. Solder sensors to the wires and cover with two layers of 2-component epoxy resin as pictured below. It will work for years. White/orange - GND, white/blue - signal, orange - +5V.<br>
@@ -299,7 +315,7 @@ Overall, your system with sensor locations will look like at a scheme below. Ref
 <img src="./m_Valden_Heat_Pump_Controller_model.jpg" width="1000"><br><br>
 Your system works (or sleeps) depending on Thi temperature. For the end user it looks like setting up comfortable temperature of the warm floor via Remote Display.
 
-## Appendix D: Firmware options and fine-tuning
+## Appendix E: Firmware options and fine-tuning
 
 QA tests, uncomment to enable
 ```c
