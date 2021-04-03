@@ -234,7 +234,7 @@ LEDs allow you to make rapid diagnostics without connecting a serial console or 
 | **485_TX**     	|  485 transceiver transmits a reply  |
 | **Manual mode**     	|  EEV in a manual mode   |
 | **LSC: error**     	|  Last stop was caused by an error. If you see this LED ON, it's a reason to connect either console or Service Display. Diagnostics  required.   |
-| **LSC: protection**	|  Last stop was caused by protection. In some conditions (like long powered-on periods or refilling) this can occur. This LED indicates that something exceeded normal run conditions. |
+| **LSC: protection**	|  Last stop was caused by protection. In some cases (like long powered-on periods or refilling) this can occur. Here no recommendations about diagnostic, since all systems and operation conditions are different. This LED indicates that something exceeded normal run conditions. |
 | **OK**     |  System OK.  |
 | **ERROR**     |  Something wrong: not all T sensors connected, one of the pressure sensors is not OK. Diagnostics required.   |
 | **Relays LEDs**     |  Indicates corresponding relay state  |
