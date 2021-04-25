@@ -34,9 +34,9 @@
 - 06 Feb 2021: product is technically completed and ready for public access. Documentation and release stage.<br><br>
 
 ## Get your own PCB copy. Assembly.
-- download PCB Gerber file or get your own copy {-link here-}
-- order electronic components, see BOM (Bill Of Materials) appendix below,
-- solder electronic components. {- assembly instructions here-}<br><br>
+- download PCB Gerber file or get your own copy {-link here-},
+- order electronic components, see BOM (Bill Of Materials) appendix,
+- solder electronic components. {- assembly instructions here-}<br><br>.
 {-soldered photo here-}
 
 ## Firmware upload
