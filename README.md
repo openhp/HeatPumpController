@@ -63,7 +63,8 @@ To run a self-tests:
 //#define SELFTEST_T_SENSORS              //temperature sensors QA test, uncomment to enable
 ```
 - upload firmware,
-- connect 12V power supply.<br>
+- connect 12V power supply,
+- disconnect +5V wire from USB-UART converter.<br>
 
 Video {- demostration "How self-tests works":-}
 To check EEV connection, you can use a stepper motor as shown in the video.  If you are testing a real EEV, it will be closed after the first "beep" and partially opened after the second "beep".<br>
@@ -124,7 +125,8 @@ Every 30 sec. (**HUMAN_AUTOINFO** option) you'll see stats. For example, after a
 ![console statistics screenshot](./m_console_stats.png)<br>
 At this example, "hot in" ~30 °C, compressor ~80 °C and so on. Heat Pump (HP, compressor) ON, Hot water pump ON, Cold water pump ON. Power consumption 980 watts.
 Abbreviations: refer to Appendix A below.<br>
-And you'll see diagnostic messages in the serial console.<br><br>
+Also, you'll see diagnostic messages in your serial console.<br>
+Do not connect +5V wire from USB-UART converter, if you are using a serial console.<br><br>
 
 ## Control and usage: [Remote Control Display](https://github.com/openhp/Display/)
 This is a way for the end user to control Heat Pump.<br>
