@@ -84,13 +84,16 @@ Assuming you have installed your controller to the permanent place, the next ste
 Wiring is very simple, despite a lot of terminals.<br>
 Phases (1st wire in electrical cables):
 - connect the "power inlet" wire to one of the "phase" terminals,
-- and connect the second "phase" terminal to the AC input of the 12V power supply,
 - connect the "Compressor" relay output to the Compressor input,
 - connect the "Hot CP" relay output to the Hot Circulation Pump input (or to the fan power input of the indoor unit if you are using an air system),
 - connect the "Cold CP" relay output to the Cold Circulation Pump input (or to the fan power input of the outdoor unit),
 - when using a compressor heater: connect the "Crankcase heater" relay output to the heater cable (highly recommended for outdoor installation and year-round use),
 - connect all the second wires of power cords to the "neutral" terminals on the board.
 {-Photo of HV connections-}<br>
+
+- connect the second "phase" and one of "neutral" terminals to the AC input of the 12V power supply,
+- connect 12V power supply output to GND and 12V 
+{-Photo of 12V connections-}<br>
 
 Crimp and plug low-voltage connectors:
 - crimp SCT013 sensor wires (the only one low-voltage device in this circuit with interchangeable wires), connect and install it on the inlet phase wire,
@@ -113,7 +116,7 @@ You may prefer to solder the wires over using terminals and crimping connectors.
 And one more: **remember! 230V inside!** Do not turn on the phase without need.<br>
 Have you ever received 230V with your own hands? If yes - you know. If no - do not try.<br>
 Also remember about animals and children during the installation at a permanent place.<br><br>
-{-Photo: all together-}<br><br>
+{-? Photo: all together ?-}<br><br>
 
 ## Control and usage: serial console
 This is a first interface to Heat Pump controller you'll see after uploading firmware (Tools->Serial Monitor).<br>
