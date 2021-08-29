@@ -88,8 +88,7 @@ Phases (1st wire in electrical cables):
 - connect the "Compressor" relay output to the Compressor input,
 - connect the "Hot CP" relay output to the Hot Circulation Pump input (or to the fan power input of the indoor unit if you are using an air system),
 - connect the "Cold CP" relay output to the Cold Circulation Pump input (or to the fan power input of the outdoor unit),
-- when using a compressor heater: connect the "Crankcase heater" relay output to the heater cable (highly recommended for outdoor installation and year-round use).
-Neutral (2nd cable in electrical cables),
+- when using a compressor heater: connect the "Crankcase heater" relay output to the heater cable (highly recommended for outdoor installation and year-round use),
 - connect all the second wires of power cords to the "neutral" terminals on the board.
 {-Photo of HV connections-}<br>
 
