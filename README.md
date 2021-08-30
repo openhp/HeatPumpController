@@ -70,7 +70,7 @@ To check EEV connection, you can use a stepper motor.  If you are testing a real
 <img src="./m_c_selftest_EEV.jpg" width="500"><br>
 To check temperature sensors connectors crimp one array of sensors. Plug it to all sensor connectors one-by-one and check results in a serial console.<br>
 <img src="./m_c_selftest_t_sensors.jpg" width="500"><br>
-<img src="./m_c_selftest_t_readings.png"<br>
+<img src="./m_c_selftest_t_readings.png"><br>
 After tests completed, comment 3 self-test defines.<br>
 Choose your installation scheme and uncomment one of those options:
 ```c
