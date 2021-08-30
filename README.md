@@ -34,7 +34,7 @@
 - 06 Feb 2021: product is technically completed and ready for public access. Documentation and release stage.<br><br>
 
 ## Get your own PCB copy. Assembly.
-- download PCB Gerber file {-link here-} or get your own copy {-link there-} ,
+- download PCB Gerber file [here](./Valden_HeatPumpController_Gerber.zip) or get your own copy {-link there-} ,
 - order electronic components, see BOM (Bill Of Materials) appendix,
 - solder electronic components. {- assembly instructions here-}<br><br>.
 <img src="./m_c_assembly_completed.jpg" width="500"><br><br>
