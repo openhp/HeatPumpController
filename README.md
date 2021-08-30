@@ -14,7 +14,7 @@
 - automatic power saving mode,
 - built-in protections: cold start, overheat, short-term power loss, power overload, ground loop freeze, compressor protection against liquid and other,
 - LED indication,
-- control via [remote display](https://github.com/openhp/Display/) or local Serial (UART 5V),
+- control via [remote display](https://github.com/openhp/Display/) or local Serial (UART 5V).
 <br><br>
 
 ## Refrigeration schemes supported
@@ -25,6 +25,7 @@
 ## Installations supported
 - Indoor: a house or technical building with an almost stable temperature,
 - Outdoor: harsh climatic conditions taken into account. Outdoor HP installations tested down to a minus 32 °C.<br><br>
+<img src="./m_controller_and_display.jpg" width="700"><br><br>
 
 ## Changelog and history
 - 2018: PCB prototype, first real installation,
