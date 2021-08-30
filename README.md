@@ -91,6 +91,7 @@ Phases (1st wire in electrical cables):
 - connect all the second wires of power cords to the "neutral" terminals on the board.
 {-Photo of HV connections-}<br>
 
+12V Power Supply:
 - connect the second "phase" and one of "neutral" terminals to the AC input of the 12V power supply,
 - connect 12V power supply output to GND and 12V 
 {-Photo of 12V connections-}<br>
