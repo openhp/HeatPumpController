@@ -37,7 +37,7 @@
 - download PCB Gerber file {-link here-} or get your own copy {-link there-} ,
 - order electronic components, see BOM (Bill Of Materials) appendix,
 - solder electronic components. {- assembly instructions here-}<br><br>.
-{-soldered photo here-}
+<img src="./m_c_assembly_completed.jpg" width="500"><br><br>
 
 ## Firmware upload
 This process is the same as for other Arduinos:
@@ -66,10 +66,11 @@ To run a self-tests:
 - connect 12V power supply,
 - disconnect +5V wire from USB-UART converter.<br>
 
-To check EEV connection, you can use a stepper motor.  If you are testing a real EEV, it will be closed after the first "beep" and partially opened after the second "beep". If it's not, check if stepper or EEV center pin(s) connected to +12V and try to swap coil-end pins (EEV1..EEV4). {-EEV photo here-}
+To check EEV connection, you can use a stepper motor.  If you are testing a real EEV, it will be closed after the first "beep" and partially opened after the second "beep". If it's not, check if stepper or EEV center pin(s) connected to +12V and try to swap coil-end pins (EEV1..EEV4).<br>
+<img src="./m_c_selftest_EEV.jpg" width="500"><br>
 To check temperature sensors connectors crimp one array of sensors. Plug it to all sensor connectors one-by-one and check results in a serial console.<br>
-{-Photo: PCB-}<br>
-{-Screenshot: serial console with temperature readings: -}<br>
+<img src="./m_c_selftest_t_sensors.jpg" width="500"><br>
+<img src="./m_c_selftest_t_readings.png"<br>
 After tests completed, comment 3 self-test defines.<br>
 Choose your installation scheme and uncomment one of those options:
 ```c
