@@ -90,28 +90,28 @@ Phases (1st wire in electrical cables):
 - connect the "Cold CP" relay output to the Cold Circulation Pump input (or to the fan power input of the outdoor unit),
 - when using a compressor heater: connect the "Crankcase heater" relay output to the heater cable (highly recommended for outdoor installation and year-round use),
 - connect all the second wires of power cords to the "neutral" terminals on the board.<br>
-<img src="./m_c_wiring_power.jpg" width="500"><br>
+<img src="./m_c_wiring_power.jpg" width="600"><br>
 
 12V Power Supply:
 - connect the second "phase" and one of "neutral" terminals to the AC input of the 12V power supply,
 - connect 12V power supply output to GND and 12V<br>
-<img src="./m_c_wiring_12v.jpg" width="500"><br>
+<img src="./m_c_wiring_12v.jpg" width="600"><br>
 
 Crimp and plug low-voltage connectors:
 - crimp SCT013 sensor wires (the only one low-voltage device in this circuit with interchangeable wires), connect and install it on the inlet phase wire,
-<img src="./m_c_wiring_current_sensor.jpg" width="500">
+<img src="./m_c_wiring_current_sensor.jpg" width="600">
 - crimp RS485 to the Remote Display, using a wire of desired length (note that A is connected to A, B to B and GND to GND),
 - crimp  12V and GND secondary terminals to the remote display,
-<img src="./m_c_wiring_display.jpg" width="500">
+<img src="./m_c_wiring_display.jpg" width="600">
 - connect EEV to EEV terminal,
-<img src="./m_c_wiring_EEV.jpg" width="500">
+<img src="./m_c_wiring_EEV.jpg" width="600">
 - install all T sensors on pipes, insulate tubes,
 - crimp T sensors arrays, you can crimp all four GND wires at every array to one GND connector pin or make 1-to-4 connection somewhere closer to sensors location (same for +5V wires),
 - insert T sensors arrays to appropriate terminals (if you do not need to control over all temperatures, disable and do not install unnecessary sensors),
-<img src="./m_c_wiring_t_sensors.jpg" width="500">
+<img src="./m_c_wiring_t_sensors.jpg" width="600">
 - crimp and plug pressure sensors outputs: crimp 1st wires together to **12V** (right output of the terminal), 2nd cold side wire to the **Pco** (left), 2nd hot side wire to the **Phi** (middle); use the dummy if no pressure sensors used in your system.
-<img src="./m_c_wiring_pressure.jpg" width="500"><br>
-<img src="./m_c_wiring_pressure_dummy.jpg" width="500"><br>
+<img src="./m_c_wiring_pressure.jpg" width="600"><br>
+<img src="./m_c_wiring_pressure_dummy.jpg" width="600"><br>
 
 You may prefer to solder the wires over using terminals and crimping connectors. But in this case, it will be difficult to disassemble the system if you want to change something. The choice is yours.<br><br>
 And one more: **remember! 230V inside!** Do not turn on the phase without need.<br>
