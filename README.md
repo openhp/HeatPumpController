@@ -306,11 +306,11 @@ For sensors at your compressor and discharge (+100 °C and higher) use heat-resi
 To get precise temperature readings protect sensors against ambient air temperature influence with additional thermal insulation. Temperature readings from most of the sensors are interesting, but +/- few degrees does not matter. So, cover most of the sensors with thermal insulation as you wish.<br>
 But two sensors "Before evaporator" and "After evaporator" are critical to EEV and needs an extra attention. The temperature of these sensors must be as close to the temperature of the copper tube as it possible. So, install Tae and Tbe sensors as pictured below. You can use thermal paste, but it is no significant difference with much more available silicone. Tape not shown at photos below, for clarity, but should be used with every insulation layer.<br>
 <img src="./m_ds18b20_evaporator_mount.jpg" height="700"><br><br>
-About water(glycol)<->refrigerant heat exchangers. You can use plate heat exchangers. Pros: the best efficiency. Cons: costs money.<br>
+About water(glycol)<->refrigerant heat exchangers. You can use plate heat exchangers. Pros: the best efficiency. Cons: costs money. Potential oil return difficulties.<br>
 <img src="./m_plate_heat_exchangers.jpg" width="500"><br><br>
 And oxygen brazing with (20%+)silver+copper solder required here:<br>
 <img src="./m_plate_echangers_oxygen_brazing.jpg" width="500"><br><br>
-You can build your own "tube-in-tube" heat exchangers. It's not hard. Cheaper. The heat exchange efficiency is worse. Very easy soldering.<br>
+You can build your own "tube-in-tube" heat exchangers. It's not hard. Cheaper. The heat exchange efficiency is worse. No oil return problems. Very easy soldering. Heat exchanger math: 0.7..1.5 m<sup>2</sup> of a copper tube per every 3kW of heat transfer.<br>
 <img src="./m_tube-in-tube_diy1.jpg" width="400"> <img src="./m_tube-in-tube_diy2.jpg" width="400"><br><br>
 Additionally, you can think "I'll take an old AC parts... Housing... Slightly change... An hour or two, day of work maximum and I'll get a refrigerant<->water heat exchanger in for a penny!". This idea is obvious. It was the first thing I've tried. You can try this, but to achieve "not very bad" performance it'll take more than a one day and much more than a few $$, even if you have unlimited access to older ACs.<br>
 Ok, I think that's enough for this appendix, this is a controller page, and not how-to-build-refrigeration-systems page.<br>
