@@ -109,7 +109,7 @@ Crimp and plug low-voltage connectors:
 {-Photo: 4 wires crimped-}<br>
 - insert T sensors arrays to appropriate terminals (if you do not need to control over all temperatures, disable and do not install unnecessary sensors),
 {-Photo: T sensors connected-}<br>
-- crimp and plug pressure sensors outputs: crimp 1st wires together to the right terminal, 2nd cold side wire to the left terminal, 2nd hot side wire to the middle terminal; use the dummy if no pressure sensors used in your system.
+- crimp and plug pressure sensors outputs: crimp 1st wires together to **12V** (right output of the terminal), 2nd cold side wire to the **Pco** (left), 2nd hot side wire to the **Phi** (middle); use the dummy if no pressure sensors used in your system.
 {-Photo: pressure sensors crimped and sensors bodies-}<br>
 {-Photo: pressure sensor dummy -}<br><br>
 
