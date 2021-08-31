@@ -40,7 +40,9 @@
 - solder electronic components. {- assembly instructions here-}<br><br>.
 
 ## 
+<br>
 <img src="./m_c_assembly_completed.jpg" width="500"><br><br>
+## 
 
 ## Firmware upload
 This process is the same as for other Arduinos:
