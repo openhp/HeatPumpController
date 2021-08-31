@@ -38,6 +38,8 @@
 - download PCB Gerber file [here](./Valden_HeatPumpController_Gerber.zip) or get your own copy {-link there-} ,
 - order electronic components, see BOM (Bill Of Materials) appendix,
 - solder electronic components. {- assembly instructions here-}<br><br>.
+
+## 
 <img src="./m_c_assembly_completed.jpg" width="500"><br><br>
 
 ## Firmware upload
