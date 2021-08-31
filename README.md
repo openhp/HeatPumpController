@@ -16,6 +16,7 @@
 - LED indication,
 - control via [remote display](https://github.com/openhp/Display/) or local Serial (UART 5V).
 <br><br>
+<img src="./m_c_assembly_completed.jpg" width="500"><br><br>
 
 ## Refrigeration schemes supported
 - Heat Pump (HP) with Electronic Expansion Valve (EEV),
@@ -38,11 +39,6 @@
 - download PCB Gerber file [here](./Valden_HeatPumpController_Gerber.zip) or get your own copy {-link there-} ,
 - order electronic components, see BOM (Bill Of Materials) appendix,
 - solder electronic components. {- assembly instructions here-}<br><br>.
-
-## 
-<br>
-<img src="./m_c_assembly_completed.jpg" width="500"><br><br>
-## 
 
 ## Firmware upload
 This process is the same as for other Arduinos:
