@@ -32,7 +32,8 @@
 - 2019: 2-layer PCB, through-hole components, integrated buttons and display (public access),
 - 2019: controller redesigned taking into account development and operating experience, 2-layer PCB, SMD,
 - 2019-2021: installations, development, tests, revisions, redesigns (limited access), 
-- 06 Feb 2021: product is technically completed and ready for public access. Documentation and release stage.<br><br>
+- 06 Feb 2021: product is technically completed and ready for public access. Documentation and release stage,
+- 31 Aug 2021: public access granted.<br><br>
 
 ## Get your own PCB copy. Assembly.
 - download PCB Gerber file [here](./Valden_HeatPumpController_Gerber.zip) or get your own copy [there](https://www.pcbway.com/project/shareproject/Valden_Heat_Pump_Controller_v1.html),
